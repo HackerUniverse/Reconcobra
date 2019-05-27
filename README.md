@@ -1,5 +1,5 @@
 # F.A.Q
-- Reconcobra is Foot printing software for Ultimate Information Gathering
+-                   Reconcobra is Foot printing software for Ultimate Information Gathering
 
 
 <div align="center">
