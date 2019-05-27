@@ -1,6 +1,12 @@
 # F.A.Q
 - Reconcobra is Foot printing software for Ultimate Information Gathering
 
+
+<div align="center">
+    <img src="https://imgur.com/kq7wdp6" width="400px"</img> 
+</div>
+
+
 # Installing
 - Run chmod u+x installer.sh
 - Load installer.sh
