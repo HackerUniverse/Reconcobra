@@ -579,7 +579,7 @@ print color('bold red'),"       	   						 	  	  _....---;:'::' ~ __/\n";
 print color('bold red'),"               	          				 	  	.' `'`___....---=-'`\n";
 print color('bold red'),"         							 	 /::' (`         	\n";
 print color('bold red'),"        							          '   `:.		\n";
-print color('bold red'),"#   version 1.9 a						 	   `\::.  ';-\"\":::-._  \{\}\n";
+print color('bold red'),"                						 	   `\::.  ';-\"\":::-._  \{\}\n";
 print color('bold green'),"#  ------------   --------   -----------  -----------     ------";print color('bold red'),"         _.--'`\:' .'`-.`'`.' `{I}\n";
 print color('bold green'),"#  ************  **********  ***********  ***********    ********";print color('bold red'),"      .-' `' .;;`\::.   '. _: {-I}`\/\n";
 print color('bold green'),"#  ---          ----    ---- ----      ** ----    ---   ----------  ";print color('bold red')," .'  .:.  `:: _):::  _;' `{=I}.:||\n";
@@ -588,14 +588,14 @@ print color('bold green'),"#  ---          ---      --- -----------  ---------  
 print color('bold green'),"#  ***          ****    **** ****      ** ****  ****   ************";print color('bold red'),"  \\:   .:. ''' .:| .:, _:./':.|\n";
 print color('bold green'),"#  ------------  ----------  -----------  ----   ----  ----    ----";print color('bold red'),"   '--.:::...---'\\:'.:`':`':./\n";
 print color('bold green'),"#  ------------  ----------  -----------  ----   ----  ----    ---- ";print color('bold red'),"                  \'-::..:::-\'\n";
-#print color('bold magenta')," Recon Cobra        							         		\n";                   
+print color('reset');
+print color('bold black on_white'),"# Recon Cobra  ";print color('reset'),"";print color('bold white on_red'),"			version 1.9a, [Coded By: Haroon Awan], -[Mail: mrharoonawan\@gmail.com]\n";
+print color('reset');
 
+print color('bold black on_white'),"# Official Web ";print color('reset'),"";print color('bold white on_red'),"				http://www.mubassirkamdar.com - fb.com\\Mubassir.py\n";
+print color('reset');
 
-
-
-
-
-                                                                                          
+                                                                     
 
 
 print color('bold cyan'),"\n               #---------------------------------------------------------# \n"; 
@@ -667,7 +667,7 @@ sub menu {
     print color('bold cyan'),"#                              ";print color('reset'),item('59'),"Bypass Cloud Flare";print color('bold cyan'),"                                 #   \n";                                
     print color('bold cyan'),"#                              ";print color('reset'),item('60'),"DNS Cached Records";print color('bold cyan'),"                                 #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('61'),"Bypass Content Management System Waf Firewall";print color('bold cyan'),"      #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"      #   \n";         
+    print color('bold cyan'),"#                              ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"                                          #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
