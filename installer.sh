@@ -91,10 +91,11 @@ echo "y" | apt-get install xdg-utils
 echo "y" | apt-get install hping3
 echo "y" | apt-get install python3
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
+echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
+echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
-echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
-echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
+echo "y" | https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/FortyNorthSecurity/EyeWitness.git
 cd EyeWitness/setup
