@@ -18,6 +18,9 @@
 # Standalone
 - perl reconcobra.pl
 
+# Depdencies
+- All depdencies are automatically handled
+
 # Coded By
 - Haroon Awan
 
