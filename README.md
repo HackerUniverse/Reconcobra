@@ -12,17 +12,16 @@
 - Load installer.sh
 - It will integrate in Kali then run reconcobra for interface
 
-# Interface
-- Run reconcobra anywhere in Kali
-
 # Standalone
 - perl reconcobra.pl
+
+# Automation
+- Fully automatic and guided attacks
 
 # Depdencies
 - All depdencies are automatically handled
 
-# Coded By
-- Haroon Awan
-
 # Mail
 - mrharoonawan@gmail.com
+- Haroon Awan
+
