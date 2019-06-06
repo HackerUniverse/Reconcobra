@@ -112,6 +112,7 @@ GetOptions(
     "ae|dnscache=s" => \$dnscache,
     "af|cmswaf=s" => \$cmswaf,
     "ag|sharedns=s" => \$SharedNS,
+    "ah|apisubdomains=s" => \$apidomain,
 );
 
 if ($help) { banner();help(); }
@@ -177,6 +178,7 @@ if ($cloud) { banner();Bypasscloudflare(); }
 if ($dnscache) { banner();Dnscachedrecords(); }
 if ($cmswaf) { banner();Cmswaffirewall(); }
 if ($sharedns) { banner();SharedNS(); }
+if ($apidomain) { banner();ApiSubDomains(); }
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -565,6 +567,12 @@ sub help {
     print color("bold white"),"reconcobra -aj site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
+    print color('bold cyan'),"#                   ";
+    print item('62'),"Shared NS ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ak site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
 
 }
 
@@ -668,6 +676,7 @@ sub menu {
     print color('bold cyan'),"#                              ";print color('reset'),item('60'),"DNS Cached Records";print color('bold cyan'),"                                 #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('61'),"Bypass Content Management System Waf Firewall";print color('bold cyan'),"      #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"                                          #   \n";         
+    print color('bold cyan'),"#                              ";print color('reset'),item('63'),"API Based Complete Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1226,6 +1235,16 @@ sub menu {
         print "\n";
         SharedNS();
         enter();
+    }if($number eq '63'){
+        banner();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');
+        #chomp($sharedns=<STDIN>);
+        print "\n";
+        ApiSubDomains();
+        enter();
+
     }
     if($number eq '0'){
         exit;
@@ -2763,6 +2782,17 @@ $p = HTML::TokeParser->new(\$response);
 }
 
 
+#--------------------------------------------------------------#
+#63 API Based Complete Subdomains Enumeration                  #
+#--------------------------------------------------------------#
+sub ApiSubDomains {
+     if (system("./vasl.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make vasl.sh available in same folder\n[~] Command failed\n";
+	}
+}
 
 
 #--------------------------------------------------------------#
