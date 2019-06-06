@@ -7,10 +7,12 @@
 </div>
 
 
-# Installing
-- Run chmod u+x installer.sh
-- Load installer.sh
-- It will integrate in Kali then run reconcobra for interface
+# Installation
+- git clone https://github.com/haroonawanofficial/Reconcobra.git
+- cd Reconcobra
+- sudo chmod u+x *.sh
+- ./installer.sh
+- After installation, ReconCobra will integrate as system software
 
 # Standalone
 - perl reconcobra.pl
@@ -20,6 +22,9 @@
 
 # Depdencies
 - All depdencies are automatically handled
+
+# Platform
+- Kali/Debian 
 
 # Mail
 - mrharoonawan@gmail.com
