@@ -676,7 +676,7 @@ sub menu {
 
     if($number eq '1'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($info=<STDIN>);
@@ -685,7 +685,7 @@ sub menu {
         enter();
     }if($number eq '2'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($whois=<STDIN>);
@@ -694,7 +694,7 @@ sub menu {
         enter();
     }if($number eq '3'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($geo=<STDIN>);
@@ -707,7 +707,7 @@ sub menu {
         enter();
     }if($number eq '5'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($sub=<STDIN>);
@@ -716,7 +716,7 @@ sub menu {
         enter();
     }if($number eq '6'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($revwhoiis=<STDIN>);
@@ -725,7 +725,7 @@ sub menu {
         enter();
     }if($number eq '7'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($dnszt=<STDIN>);
@@ -734,7 +734,7 @@ sub menu {
         enter();
     }if($number eq '8'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($rev=<STDIN>);
@@ -743,7 +743,7 @@ sub menu {
         enter();
     }if($number eq '9'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fwdip=<STDIN>);
@@ -752,7 +752,7 @@ sub menu {
         enter();
         }if($number eq '10'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($revdns=<STDIN>);
@@ -761,7 +761,7 @@ sub menu {
         enter();
     }if($number eq '11'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fwddns=<STDIN>);
@@ -770,7 +770,7 @@ sub menu {
         enter();
     }if($number eq '12'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($shrdns=<STDIN>);
@@ -779,7 +779,7 @@ sub menu {
         enter();
     }if($number eq '13'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($techlookup=<STDIN>);
@@ -788,7 +788,7 @@ sub menu {
         enter();
     }if($number eq '14'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($webrecon=<STDIN>);
@@ -797,7 +797,7 @@ sub menu {
         enter();
     }if($number eq '15'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($mdc=<STDIN>);
@@ -806,7 +806,7 @@ sub menu {
         enter();
     }if($number eq '16'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($mgd=<STDIN>);
@@ -815,25 +815,25 @@ sub menu {
         enter();
     }if($number eq '17'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($sbds=<STDIN>);
+        #chomp($sbds=<STDIN>);
         print "\n";
         Subdomainscanner();
         enter();
     }if($number eq '18'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($sbtk=<STDIN>);
+        #chomp($sbtk=<STDIN>);
         print "\n";
         Subdomaintakeover();
         enter();
     }if($number eq '19'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($brtd=<STDIN>);
@@ -842,7 +842,7 @@ sub menu {
         enter();
     }if($number eq '20'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($brtdns=<STDIN>);
@@ -851,7 +851,7 @@ sub menu {
         enter();
     }if($number eq '21'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cfe=<STDIN>);
@@ -860,7 +860,7 @@ sub menu {
         enter();
     }if($number eq '22'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fasn=<STDIN>);
@@ -869,7 +869,7 @@ sub menu {
         enter();
     }if($number eq '23'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($fnb=<STDIN>);
@@ -878,7 +878,7 @@ sub menu {
         enter();
     }if($number eq '24'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cpshots=<STDIN>);
@@ -887,7 +887,7 @@ sub menu {
         enter();
     }if($number eq '25'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($findnear=<STDIN>);
@@ -896,7 +896,7 @@ sub menu {
         enter();
     }if($number eq '26'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($snb=<STDIN>);
@@ -905,7 +905,7 @@ sub menu {
         enter();
     }if($number eq '27'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($panthera=<STDIN>);
@@ -914,7 +914,7 @@ sub menu {
         enter();
         }if($number eq '28'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($enames=<STDIN>);
@@ -923,7 +923,7 @@ sub menu {
         enter();
     }if($number eq '29'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($findci=<STDIN>);
@@ -932,7 +932,7 @@ sub menu {
         enter();
     }if($number eq '30'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cpscan=<STDIN>);
@@ -941,7 +941,7 @@ sub menu {
         enter();
     }if($number eq '31'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($phin=<STDIN>);
@@ -949,7 +949,7 @@ sub menu {
         enter();
     }if($number eq '32'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($finss=<STDIN>);
@@ -958,7 +958,7 @@ sub menu {
         enter();
     }if($number eq '33'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($dsgmd=<STDIN>);
@@ -967,7 +967,7 @@ sub menu {
         enter();
     }if($number eq '34'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fsbi=<STDIN>);
@@ -976,7 +976,7 @@ sub menu {
         enter();
     }if($number eq '35'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($euff=<STDIN>);
@@ -985,7 +985,7 @@ sub menu {
         enter();
     }if($number eq '36'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($eufp=<STDIN>);
@@ -994,7 +994,7 @@ sub menu {
         enter();
         }if($number eq '37'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($eufi=<STDIN>);
@@ -1003,7 +1003,7 @@ sub menu {
         enter();
     }if($number eq '38'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($eufs=<STDIN>);
@@ -1012,7 +1012,7 @@ sub menu {
         enter();
     }if($number eq '39'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($euff=<STDIN>);
@@ -1021,7 +1021,7 @@ sub menu {
         enter();
         }if($number eq '40'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($efpifs=<STDIN>);
@@ -1030,7 +1030,7 @@ sub menu {
         enter();
     }if($number eq '41'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($eifc=<STDIN>);
@@ -1039,7 +1039,7 @@ sub menu {
         enter();
     }if($number eq '42'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fchsld=<STDIN>);
@@ -1048,7 +1048,7 @@ sub menu {
         enter();
         }if($number eq '43'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fuss=<STDIN>);
@@ -1057,7 +1057,7 @@ sub menu {
         enter();
     }if($number eq '44'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fdfr=<STDIN>);
@@ -1066,7 +1066,7 @@ sub menu {
         enter();
     }if($number eq '45'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fafu=<STDIN>);
@@ -1075,7 +1075,7 @@ sub menu {
         enter();
         }if($number eq '46'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fafes=<STDIN>);
@@ -1084,7 +1084,7 @@ sub menu {
         enter();
     }if($number eq '47'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cloud=<STDIN>);
@@ -1093,7 +1093,7 @@ sub menu {
         enter();
     }if($number eq '48'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($dnsh=<STDIN>);
@@ -1102,7 +1102,7 @@ sub menu {
         enter();
         }if($number eq '49'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($dnsh=<STDIN>);
@@ -1111,7 +1111,7 @@ sub menu {
         enter();
     }if($number eq '50'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($pasds=<STDIN>);
@@ -1120,7 +1120,7 @@ sub menu {
         enter();
     }if($number eq '51'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cvt=<STDIN>);
@@ -1129,7 +1129,7 @@ sub menu {
         enter();
         }if($number eq '52'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($rlu=<STDIN>);
@@ -1138,7 +1138,7 @@ sub menu {
         enter();
     }if($number eq '53'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fdl=<STDIN>);
@@ -1147,7 +1147,7 @@ sub menu {
         enter();
     }if($number eq '54'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($wineni=<STDIN>);
@@ -1156,7 +1156,7 @@ sub menu {
         enter();
     }if($number eq '55'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($winipc=<STDIN>);
@@ -1165,7 +1165,7 @@ sub menu {
         enter();
     }if($number eq '56'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($wfn=<STDIN>);
@@ -1174,7 +1174,7 @@ sub menu {
         enter();
     }if($number eq '57'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($wtn=<STDIN>);
@@ -1183,7 +1183,7 @@ sub menu {
         enter();
     }if($number eq '58'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($ips=<STDIN>);
@@ -1192,7 +1192,7 @@ sub menu {
         enter();
     }if($number eq '59'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Traget Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cloud=<STDIN>);
@@ -1201,7 +1201,7 @@ sub menu {
         enter();
     }if($number eq '60'){
         banner();
-        print line_u(),color('bold cyan'),"#              ";print color('reset'),item(),"Enter Traget Website (caution: This may take a while)";print color('bold cyan'),"               #   \n",line_d();
+        print line_u(),color('bold cyan'),"#              ";print color('reset'),item(),"Enter Target Website (caution: This may take a while)";print color('bold cyan'),"               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($dnscache=<STDIN>);
@@ -1435,7 +1435,7 @@ sub Findiplocation {
 #4                        Port Scanner                         #
 #--------------------------------------------------------------#
 sub port {
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Traget Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
         print color('bold green'),"\n\nC0bra: _>  ";
         print color('bold white');
         chop ($op = <stdin>);
@@ -1767,60 +1767,28 @@ if (system("./maing.sh") == 0) {
 #17                        Subdomain Scanner                   #
 #--------------------------------------------------------------#
 sub Subdomainscanner {
-for (my $i=1; $i<=2000; $i+=10) {
-$url = "https://google.com/search?q=site%3A$sbds+-www%3A$sbds&btnG=Search&hl=en-US&biw=&bih=&gbv=1&start=$i&filter=0";
-#    $request = $ua->get($url);
-#    $response = $request->content;
-
-$request = $ua->request(HTTP::Request->new(GET => $url));
-$response = $request->content;
-
-$p = HTML::TokeParser->new(\$response);
-  while ($p->get_tag("cite")) {
-      my @link = $p->get_trimmed_text("/cite");
-      foreach(@link)
-      # { print "$_\n"; }
-    {  
-	print item(),"$_\n";
-        print color('reset');
-        sleep(1);
-    }
-    if ($response =~ m/Our systems have detected unusual traffic/i){
-        print item(),"Google is blocking our requests, change IP and clear cache\n\n";
-        print item('Note'),"Enter Website Without HTTP/HTTPs\n";
-    }
-  }
- } 
+if (system("./shaheenx.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make ShaheenX.sh available in same folder\n[~] Command failed\n";
+	}
 }
+
 
 
 #--------------------------------------------------------------#
 #18                       Subdomain Takeover Scanner           #
 #--------------------------------------------------------------#
 sub Subdomaintakeover {
-for (my $i=1; $i<=2000; $i+=10) {
-$url = "https://google.com/search?q=site%3A$sbtk+-www%3A$sbtk&btnG=Search&hl=en-US&biw=&bih=&gbv=1&start=$i&filter=0";
-
-$request = $ua->request(HTTP::Request->new(GET => $url));
-$response = $request->content;
-
-$p = HTML::TokeParser->new(\$response);
-  while ($p->get_tag("cite")) {
-      my @link = $p->get_trimmed_text("/cite");
-      foreach(@link)
-      # { print "$_\n"; }
-    {  
-	print item(),"$_\n";
-        print color('reset');
-        sleep(1);
-    }
-    if ($response =~ m/Our systems have detected unusual traffic/i){
-        print item(),"Google is blocking our requests, change IP and clear cache\n\n";
-        print item('Note'),"Enter Website Without HTTP/HTTPs\n";
-    }
-  }
+if (system("./shaheenx.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make ShaheenX.sh available in same folder\n[~] Command failed\n";
+	}
 }
-}
+
 
 
 #--------------------------------------------------------------#
