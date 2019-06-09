@@ -112,7 +112,11 @@ GetOptions(
     "ae|dnscache=s" => \$dnscache,
     "af|cmswaf=s" => \$cmswaf,
     "ag|sharedns=s" => \$SharedNS,
-    "ah|apisubdomains=s" => \$apidomain,
+    "ah|MDSSE=s" => \$MDSSE,
+    "ai|subnetdomain=s" => \$subnetdomain,
+    "aj|domaincert=s" => \$domaincertificate,
+    "ak|apisubdomain=s" => \$apisubdomain,
+    "al|cname=s" => \$cname,
 );
 
 if ($help) { banner();help(); }
@@ -178,7 +182,10 @@ if ($cloud) { banner();Bypasscloudflare(); }
 if ($dnscache) { banner();Dnscachedrecords(); }
 if ($cmswaf) { banner();Cmswaffirewall(); }
 if ($sharedns) { banner();SharedNS(); }
-if ($apidomain) { banner();ApiSubDomains(); }
+if ($MDSSE) { banner();MDSSE(); }
+if ($dcse) { banner();DomainCertificate(); } 
+if ($apisubdomain) { banner();Apisubdomain(); } 
+if ($cname) { banner();Cname(); } 
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -556,24 +563,40 @@ sub help {
     print color('bold cyan'),"                 #   \n",line_d();
 
     print color('bold cyan'),"#                   ";
-    print item('61'),"CMS Firewall ";
+    print item('61'),"Bypass Content Management System Waf Firewall ";
     print color('bold red'),"        => ";
     print color("bold white"),"reconcobra -ai site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
     print color('bold cyan'),"#                   ";
-    print item('61'),"Shared NS ";
+    print item('62'),"Shared NS ";
     print color('bold red'),"        => ";
     print color("bold white"),"reconcobra -aj site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
     print color('bold cyan'),"#                   ";
-    print item('62'),"Shared NS ";
+    print item('63'),"Master Domain Subdomain Subnet Scanner ";
     print color('bold red'),"        => ";
     print color("bold white"),"reconcobra -ak site.com";
+    print color('bold cyan'),"                 #   \n",line_d();    
+
+    print color('bold cyan'),"#                   ";
+    print item('64'),"Domain Certificate Subdomain Enumeration ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -al site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
-
+    print color('bold cyan'),"#                   ";
+    print item('65'),"Find Subdomains using API Searcher ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -am site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('66'),"Find Cname Information of netblock ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -an site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
 }
 
 #--------------------------------------------------------------#
@@ -630,11 +653,11 @@ sub menu {
     print color('bold cyan'),"#                              ";print color('reset'),item('14'),"Website Recon";print color('bold cyan'),"                                      #   \n";
     print color('bold cyan'),"#                              ";print color('reset'),item('15'),"Metadata Crawler";print color('bold cyan'),"                                   #   \n";
     print color('bold cyan'),"#                              ";print color('reset'),item('16'),"Metadata Googler";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('17'),"Subdomain Scanner";print color('bold cyan'),"                                  #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('18'),"Subdomain Takeover Scanner";print color('bold cyan'),"                         #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('19'),"Brute Subdomains";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#                              ";print color('reset'),item('17'),"Subdomain Scanner using Search Engines";print color('bold cyan'),"             #   \n";
+    print color('bold cyan'),"#                              ";print color('reset'),item('18'),"Subdomain Takeover Scanner using file";print color('bold cyan'),"              #   \n";
+    print color('bold cyan'),"#                              ";print color('reset'),item('19'),"Brute Subdomains using nmap";print color('bold cyan'),"                        #   \n";
     print color('bold cyan'),"#                              ";print color('reset'),item('20'),"Brute DNS Subdomains";print color('bold cyan'),"                               #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('21'),"Configuration Errors";print color('bold cyan'),"                               #   \n";                    
+    print color('bold cyan'),"#                              ";print color('reset'),item('21'),"Find Configuration Errors on Target using google";print color('bold cyan'),"   #   \n";                    
     print color('bold cyan'),"#                              ";print color('reset'),item('22'),"Find ASN";print color('bold cyan'),"                                           #   \n";                    
     print color('bold cyan'),"#                              ";print color('reset'),item('23'),"Find Netblocks";print color('bold cyan'),"                                     #   \n";                    
     print color('bold cyan'),"#                              ";print color('reset'),item('24'),"Capture Screenshots";print color('bold cyan'),"                                #   \n";                    
@@ -676,7 +699,10 @@ sub menu {
     print color('bold cyan'),"#                              ";print color('reset'),item('60'),"DNS Cached Records";print color('bold cyan'),"                                 #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('61'),"Bypass Content Management System Waf Firewall";print color('bold cyan'),"      #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"                                          #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('63'),"API Based Complete Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
+    print color('bold cyan'),"#                              ";print color('reset'),item('63'),"Master Domain Subdomain Subnet Scanner";print color('bold cyan'),"             #   \n";         
+    print color('bold cyan'),"#                              ";print color('reset'),item('64'),"Domain Certificate Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
+    print color('bold cyan'),"#                              ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                 #   \n";         
+    print color('bold cyan'),"#                              ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                 #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1228,7 +1254,7 @@ sub menu {
         enter();    
     }if($number eq '62'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter IP Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($sharedns=<STDIN>);
@@ -1237,14 +1263,36 @@ sub menu {
         enter();
     }if($number eq '63'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                       #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        #chomp($sharedns=<STDIN>);
         print "\n";
-        ApiSubDomains();
+        MDSSE();
         enter();
-
+    }if($number eq '64'){
+        banner();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        DomainCertificate();
+        enter();
+    }if($number eq '65'){
+        banner();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        Apisubdomain();
+        enter();
+    }if($number eq '66'){
+        banner();
+        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        Cname();
+        enter();
     }
     if($number eq '0'){
         exit;
@@ -1792,6 +1840,14 @@ if (system("./shaheenx.sh") == 0) {
 	else {
 	print "[~] Make ShaheenX.sh available in same folder\n[~] Command failed\n";
 	}
+
+if (system("./sub1.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make sub1.sh available in same folder\n[~] Command failed\n";
+	}
+
 }
 
 
@@ -1800,11 +1856,11 @@ if (system("./shaheenx.sh") == 0) {
 #18                       Subdomain Takeover Scanner           #
 #--------------------------------------------------------------#
 sub Subdomaintakeover {
-if (system("./shaheenx.sh") == 0) {
+if (system("./takeoverscanner.sh") == 0) {
 	print "success!\n";
 	}
 	else {
-	print "[~] Make ShaheenX.sh available in same folder\n[~] Command failed\n";
+	print "[~] Make takoverscanner.sh available in same folder\n[~] Command failed\n";
 	}
 }
 
@@ -2783,14 +2839,90 @@ $p = HTML::TokeParser->new(\$response);
 
 
 #--------------------------------------------------------------#
-#63 API Based Complete Subdomains Enumeration                  #
+#63 Master Domain Subdomains Subnet Enumeration                #
 #--------------------------------------------------------------#
-sub ApiSubDomains {
+sub MDSSE {
+    print item(),"1 - Enumerate Subdomains Subnet IP of Domain\n";
+	print item(),"2 - Scan commong ports of subdomains subnet using nmap via file\n";
+	print item(),"Enter Option: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+     if (system("./mdsse.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make mdsse.sh available in same folder\n[~] Command failed\n";
+	}
+	}
+if ($enter =~2)  {
+     if (system("./nmapasnlookup.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make nmapasnlookup.sh available in same folder\n[~] Command failed\n";
+	}
+	}
+}
+
+
+#--------------------------------------------------------------#
+#64 Domain Certificate Subdomain Enumeration                   #
+#--------------------------------------------------------------#
+sub SubnetDomains() {
+     if (system("./crt.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make crt.sh available in same folder\n[~] Command failed\n";
+	}
+}
+
+
+#--------------------------------------------------------------#
+#65   Find Subdomains using API Searcher                       #
+#--------------------------------------------------------------#
+sub Apisubdomain() {
+	print item(),"1 - Censys API Search\n";
+	print item(),"2 - Security Trails API Search\n";
+	print item(),"3 - Virustotal API Search\n";
+	print item(),"Enter API Search Engine: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
      if (system("./vasl.sh") == 0) {
 	print "success!\n";
 	}
 	else {
 	print "[~] Make vasl.sh available in same folder\n[~] Command failed\n";
+	}
+}
+if ($enter =~2)  {
+     if (system("./censys.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make censys.sh available in same folder\n[~] Command failed\n";
+	}
+}
+if ($enter =~3)  {
+     if (system("./virustotal.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make censys.sh available in same folder\n[~] Command failed\n";
+	}
+}
+}
+
+
+#--------------------------------------------------------------#
+#66   Find Cname Information of netblock                       #
+#--------------------------------------------------------------#
+sub Cname() {
+     if (system("./cname.sh") == 0) {
+	print "success!\n";
+	}
+	else {
+	print "[~] Make cname.sh available in same folder\n[~] Command failed\n";
 	}
 }
 
