@@ -93,10 +93,17 @@ echo "y" | apt-get install python3
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
+echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
 echo "y" | https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
+echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
+cd SearchEngineScrapy
+pip install -r requirements.txt
+sudo virtualenv --python="2" env
+sudo env/bin/activate
+cd ..
 echo "y" | git clone https://github.com/FortyNorthSecurity/EyeWitness.git
 cd EyeWitness/setup
 chmod u+x setup.sh
