@@ -701,8 +701,8 @@ sub menu {
     print color('bold cyan'),"#                              ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"                                          #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('63'),"Master Domain Subdomain Subnet Scanner";print color('bold cyan'),"             #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('64'),"Domain Certificate Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                 #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                 #   \n";         
+    print color('bold cyan'),"#                              ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
+    print color('bold cyan'),"#                              ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
     print color('bold cyan'),"#                              ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
