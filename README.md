@@ -12,19 +12,11 @@
 - cd Reconcobra
 - sudo chmod u+x *.sh
 - ./installer.sh
-- After installation, ReconCobra will integrate as system software
+- ReconCobra will integrate as system software
+- Dependencies will be handled automatically
 
 # Standalone
 - perl reconcobra.pl
-
-# Automation
-- Fully automatic and guided attacks
-
-# Depdencies
-- All depdencies are automatically handled
-
-# Platform
-- Kali/Debian 
 
 # Mail
 - mrharoonawan@gmail.com
