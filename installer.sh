@@ -99,6 +99,7 @@ echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
 echo "y" | https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
+echo "y" | apt-get install nmap
 cd SearchEngineScrapy
 pip install -r requirements.txt
 sudo virtualenv --python="2" env
