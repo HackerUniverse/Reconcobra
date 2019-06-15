@@ -41,7 +41,7 @@ echo "                                                   [Contact: mrharoonawan@
 echo "                                                                                               ";
 echo "                                                                                               ";
 echo "                                                                                               ";
-}
+
 
 
 echo -e "$red [$green+$red]$off Installing Perl ...";
