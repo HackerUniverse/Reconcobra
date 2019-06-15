@@ -26,6 +26,7 @@ echo " Ultimate Recon and Foot Printing Software     Version 1.0a ";
 echo " [Coded By: Haroon Awan] / [Contact: mrharoonawan@gmail.com]";
 
 echo -e "Installing Perl ...";
+sudo apt-get install -y perl
 apt-get install -y perl
 echo -e "Installing JSON Module ...";
 cpan install JSON
@@ -53,8 +54,12 @@ echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
 cd SearchEngineScrapy
 pip install -r requirements.txt
+sudo virtualenv --python="2" env
+sudo env/bin/activate
 virtualenv --python="2" env
+
 env/bin/activate
+
 cd ..
 echo "y" | git clone https://github.com/FortyNorthSecurity/EyeWitness.git
 cd EyeWitness/setup
