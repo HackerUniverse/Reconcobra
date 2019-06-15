@@ -20,35 +20,16 @@
 
 #!/bin/bash
 
-red="\e[0;31m"
-green="\e[0;32m"
-off="\e[0m"
-
 clear
-echo "                                                                                               ";
-echo "                                                                                               ";
-echo "                                                                                               ";
-echo "        .########...########..######.....#######...##....##.....######.....#######....######....########......########..      "; 
-echo "         .##.....##..##.......##....##..##.....##..###...##....##....##...##.....##...##...##...##.....##....##.....##.	 "; 
-echo "         .##.....##..##.......##........##.....##..####..##....##.........##.....##...##..##....##......##...##.....##.	 "; 
-echo "         .########...######...##........##.....##..##.##.##....##.........##.....##...##..##....#########....#########.	 "; 
-echo "         .##...##....##.......##........##.....##..##..####....##.........##.....##...##...##...##....##.....##.....##.	 "; 
-echo "         .##....##...##.......##....##..##.....##..##...###....##....##...##.....##...##...###..##.....##....##.....##.	 "; 
-echo "         .##.....##..########..######....#######...##....##.....######.....#######....#######...##......##...##.....##.	 ";  
-echo "                                       	  Ultimate Recon and Foot Printing Software     Version 1.0a        ";   
-echo "                                                        [Coded By: Haroon Awan]                                       ";
-echo "                                                   [Contact: mrharoonawan@gmail.com]                                  ";
-echo "                                                                                               ";
-echo "                                                                                               ";
-echo "                                                                                               ";
-}
+echo "   Termux Installer    ";   
+echo " Ultimate Recon and Foot Printing Software     Version 1.0a ";   
+echo " [Coded By: Haroon Awan] / [Contact: mrharoonawan@gmail.com]";
 
-
-echo -e "$red [$green+$red]$off Installing Perl ...";
-sudo apt-get install -y perl
-echo -e "$red [$green+$red]$off Installing JSON Module ...";
+echo -e "Installing Perl ...";
+apt-get install -y perl
+echo -e "Installing JSON Module ...";
 cpan install JSON
-echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
+echo -e "Installing Extra Perl Modules ...";
 echo "y" | cpan install WWW::Mechanize 
 echo "y" | cpan install use HTML::TokeParser
 echo "y" | cpan install Term::ANSIColor
@@ -56,7 +37,7 @@ echo "y" | cpan install Mojo::DOM
 echo "y" | cpan install Data::Dumper
 echo "y" | cpan install Win32::Console::ANSI
 echo "y" | cpan install HTML::TableExtract
-echo -e "$red [$green+$red]$off Installing dependencies ...";
+echo -e "Installing dependencies ...";
 echo "y" | apt-get install xdg-utils
 echo "y" | apt-get install hping3
 echo "y" | apt-get install python3
@@ -80,4 +61,4 @@ cd EyeWitness/setup
 chmod u+x setup.sh
 ./setup.sh
 cd ..
-echo -e "$red [$green+$red]$off Installed, run perl ReconCobra.pl for interface!";
+echo -e "Installed, run perl ReconCobra.pl for interface!";
