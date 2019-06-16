@@ -79,7 +79,7 @@ echo -e "#!/bin/bash
 perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
     chmod +x "ReconCobra";
     sudo mkdir "/usr/share/ReconCobra"
-    sudo cp "install.sh" "/usr/share/ReconCobra"
+    sudo cp "installer.sh" "/usr/share/ReconCobra"
     sudo cp "ReconCobra.pl" "/usr/share/ReconCobra"
     sudo cp "config/ReconCobra.jpeg" "/usr/share/icons"
     sudo cp "config/ReconCobra.desktop" "/usr/share/applications"
