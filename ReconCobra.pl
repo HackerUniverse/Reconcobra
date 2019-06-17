@@ -114,7 +114,7 @@ GetOptions(
     "ag|sharedns=s" => \$SharedNS,
     "ah|MDSSE=s" => \$MDSSE,
     "ai|subnetdomain=s" => \$subnetdomain,
-    "aj|domaincert=s" => \$domaincertificate,
+    "aj|domaincert=s" => \$domainCertificate,
     "ak|apisubdomain=s" => \$apisubdomain,
     "al|cname=s" => \$cname,
 );
@@ -2223,11 +2223,11 @@ sub Extractfullpossibleinformationfromsnmp {
 #41  Extract Possible Information from Certificates            #
 #--------------------------------------------------------------#
 sub Extractpossibleinformationfromcertificaties {
-     if (system("./snmp.sh") == 0) {
+     if (system("./crtstart.sh ") == 0) {
 	print "success!\n";
 	}
 	else {
-	print "[~] Make snmp.sh available in same folder\n[~] Command failed\n";
+	print "[~] Make crt.sh available in same folder\n[~] Command failed\n";
 	}
 }
 
@@ -2868,13 +2868,48 @@ if ($enter =~2)  {
 #--------------------------------------------------------------#
 #64 Domain Certificate Subdomain Enumeration                   #
 #--------------------------------------------------------------#
-sub SubnetDomains() {
-     if (system("./crt.sh") == 0) {
-	print "success!\n";
+sub DomainCertificate() {
+	print item(),"1 - CRT Certificate Search\n";
+	print item(),"2 - Google Transparency Certificate Search\n";
+	print item(),"3 - Certspotter Certificate Search\n";
+	print item(),"4 - Entrust Certificate Search\n";
+	print item(),"Enter Certificate Search Engine: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+     if (system("./crtstart.sh") == 0) {
+	print "success! Find results at crt folder\n";
 	}
 	else {
-	print "[~] Make crt.sh available in same folder\n[~] Command failed\n";
+	print "[~] Make crtstart.sh available in same folder\n[~] Command failed\n";
 	}
+}
+if ($enter =~2)  {
+     if (system("./googlegct.sh") == 0) {
+	print "success! Find results at crt folder\n";
+	}
+	else {
+	print "[~] Make googlegct.sh available in same folder\n[~] Command failed\n";
+	}
+}
+
+if ($enter =~3)  {
+     if (system("./certspot.sh") == 0) {
+	print "success! Find results at crt folder\n";
+	}
+	else {
+	print "[~] Make certspot.sh available in same folder\n[~] Command failed\n";
+	}
+}
+
+if ($enter =~4)  {
+     if (system("./entrust.sh") == 0) {
+	print "success! Find results at crt folder\n";
+	}
+	else {
+	print "[~] Make entrust.sh available in same folder\n[~] Command failed\n";
+	}
+}
+
 }
 
 
