@@ -81,7 +81,7 @@ print color("yellow"), "\n";
 
 # PAGE SCRAPE ALROGITHM ######
 for (my $i=1; $i<=2000; $i+=10) {
- $url = "https://www.bing.com/search?q=site%3A$dork.com+ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:pdf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv&filt=all&first=$i&FORM=PERE";
+ $url = "https://www.bing.com/search?q=site%3A$dork+ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:pdf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv&filt=all&first=$i&FORM=PERE";
 $resp = $ag->request(HTTP::Request->new(GET => $url));
 $rrs = $resp->content;
 
@@ -116,14 +116,15 @@ $ag->agent("Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.3) Gecko/20010801");
 $ag->timeout(10);
 
 # DORK AND QUERY ALGORITHM ######
-print color("bold Green"),"  \n\n        [ + ] Enter domain name only: ";
+print color("bold Green"),"  \n\n        [ + ] Enter domain name : ";
 chomp($dork=<STDIN>);
 print color("yellow"), "\n";
 
 
 # PAGE SCRAPE ALROGITHM ######
 for (my $i=1; $i<=2000; $i+=10) {
-$url = "https://google.com/search?q=site%3A$dork.com+ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:pdf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv&btnG=Search&hl=en-US&biw=&bih=&gbv=1&start=$i&filter=0";
+#$url = "https://google.com/search?q=site%3A$dork.com+ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:pdf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv&btnG=Search&hl=en-US&biw=&bih=&gbv=1&start=$i&filter=0";
+$url = "https://google.com/search?q=site%3A$dork+ext:xml+%7C+ext:conf+%7C+ext:cnf+%7C+ext:reg+%7C+ext:inf+%7C+ext:pdf+%7C+ext:rdp+%7C+ext:cfg+%7C+ext:txt+%7C+ext:ora+%7C+ext:ini+%7C+ext:doc+%7C+ext:docx+%7C+ext:odt+%7C+ext:pdf+%7C+ext:rtf+%7C+ext:sxw+%7C+ext:psw+%7C+ext:ppt+%7C+ext:pptx+%7C+ext:pps+%7C+ext:csv&btnG=Search&hl=en-US&biw=&bih=&gbv=1&start=$i&filter=0";
 $resp = $ag->request(HTTP::Request->new(GET => $url));
 $rrs = $resp->content;
 
