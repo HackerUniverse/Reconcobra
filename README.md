@@ -8,7 +8,7 @@ EULA
 - Runs on Kali
 - Runs on Termux
 
-# Interface
+# Kali Interface
 - Software have 66 Options with full automation and powerful information gathering
 <div align="center">
     <img src="http://oi66.tinypic.com/2u9l3dk.jpg" width="400px"</img> 
@@ -32,6 +32,14 @@ EULA
     <img src="http://oi64.tinypic.com/34pxfzb.jpg" width="400px"</img> 
 </div>
 
+# Termux Interface
+<div align="center">
+    <img src="http://oi66.tinypic.com/24zbvb8.jpg" width="400px"</img> 
+</div>
+
+<div align="center">
+    <img src="http://oi64.tinypic.com/34pxfzb.jpg" width="400px"</img> 
+</div>
 
 # Installation
 - git clone https://github.com/haroonawanofficial/Reconcobra.git
