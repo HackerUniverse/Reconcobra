@@ -110,7 +110,8 @@ echo "y" | git clone https://github.com/FortyNorthSecurity/EyeWitness.git
 cd EyeWitness/setup
 chmod u+x setup.sh
 ./setup.sh
-
+cd ..
+chmod u+x *.sh
 
 if [ -d "/usr/share/ReconCobra" ] ;
 then
