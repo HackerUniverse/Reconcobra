@@ -883,7 +883,7 @@ sub menu {
         print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($brtdns=<STDIN>);
+        #chomp($brtdns=<STDIN>);
         print "\n";
         Brutednsdomain();
         enter();
@@ -1885,8 +1885,10 @@ if (system("./maahro.sh") == 0) {
 #--------------------------------------------------------------#
 #20                       Brute DNS Subdomains                 #
 #--------------------------------------------------------------#
-sub Brutedomain {
-if (system("perl ./dnsbrute.pl") == 0) {
+sub Brutednsdomain {
+	print item(),"Browse panthera folder for wordllist files and provide given file list\n";
+sleep(5);
+if (system("perl panthera/dnsbrute.pl") == 0) {
 	print "success!\n";
 	}
 	else {
