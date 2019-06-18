@@ -70,7 +70,7 @@ if [ -d "/usr/share/ReconCobra" ]; then
       sudo rm "/usr/local/bin/ReconCobra"
 
 else
-echo -e "$red [$green✘$red]$off If You Want To Install You Must Remove Previous Installations";
+echo -e "$red [$green+$red]$off If You Want To Install You Must Remove Previous Installations";
         exit
     fi
 fi 
@@ -123,7 +123,7 @@ echo -e "$red [$green+$red]$off ReconCobra Successfully Installed, Starting";
 sleep 2;
 ReconCobra
 else
-echo -e "$red [$green✘$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
+echo -e "$red [$green+$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi 
 }
@@ -133,6 +133,6 @@ banner
 echo -e "$red [$green+$red]$off ReconCobra Will Be Installed In Your System";
 linux
 else
-echo -e "$red [$green✘$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
+echo -e "$red [$green+$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi
