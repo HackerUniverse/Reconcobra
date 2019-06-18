@@ -5,10 +5,9 @@
 EULA
 
 # Interface
-- Software have 66 Options with full automation and powerful information gathering with full potential
-- Do Ignore picture quality for now
+- Software have 66 Options with full automation and powerful information gathering
 <div align="center">
-    <img src="http://oi65.tinypic.com/2506l1u.jpg" width="400px"</img> 
+    <img src="http://oi66.tinypic.com/2u9l3dk.jpg" width="400px"</img> 
 </div>
 
 <div align="center">
