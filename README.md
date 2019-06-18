@@ -41,7 +41,7 @@ EULA
     <img src="http://oi65.tinypic.com/v827ps.jpg" width="400px"</img> 
 </div>
 
-# Installation
+# Kali Installation
 - git clone https://github.com/haroonawanofficial/Reconcobra.git
 - cd Reconcobra
 - sudo chmod u+x *.sh
@@ -50,8 +50,17 @@ EULA
 - Dependencies will be handled automatically
 - Third party software(s)/dependencies/modules will be handled automatically
 
-# Standalone
-- perl reconcobra.pl
+# Termux Installation
+- git clone https://github.com/haroonawanofficial/Reconcobra.git
+- cd Reconcobra
+- chmod u+x *.sh
+- ./termuxinstaller.sh
+- ReconCobra will integrate as system software for Termux
+- Dependencies will be handled automatically for Termux
+- Third party software(s)/dependencies/modules will be handled automatically for Termux
+
+# Universal Stand-alone
+- perl ReconCobra.pl
 
 # Mail
 - mrharoonawan@gmail.com
