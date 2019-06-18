@@ -67,7 +67,7 @@ echo "y" | cpan install HTML::TableExtract
 echo -e "Installing dependencies ...";
 echo "y" | apt-get install xdg-utils
 echo "y" | apt-get install hping3
-echo "y" | apt-get install python3
+echo "y" | apt-get install python
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
