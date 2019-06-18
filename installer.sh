@@ -61,7 +61,7 @@ echo -e "$red [$green+$red]$off Checking directories..."
 if [ -d "/usr/share/ReconCobra" ]; then
     echo -e "$red [$green+$red]$off A Directory ReconCobra Was Found! Do You Want To Replace It? [Y/n]:" ;
     read replace
-    if [ "$replace" = "y" ]; then
+    if [ "$replace" = "Y" ]; then
       sudo rm -r "/usr/share/ReconCobra"
       sudo rm "/usr/share/icons/ReconCobra.png"
       sudo rm "/usr/share/applications/ReconCobra.desktop"
@@ -69,7 +69,6 @@ if [ -d "/usr/share/ReconCobra" ]; then
 
 else
 echo -e "$red [$green✘$red]$off If You Want To Install You Must Remove Previous Installations";
-echo -e "$red [$green✘$red]$off Installation Failed";
         exit
     fi
 fi 
@@ -77,15 +76,15 @@ fi
 echo -e "$red [$green+$red]$off Installing ...";
 echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
 echo -e "#!/bin/bash
-perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "reconcobra";
-    chmod +x "reconcobra";
+perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
+    chmod +x "ReconCobra";
     sudo mkdir "/usr/share/ReconCobra"
-    sudo cp "install.sh" "/usr/share/ReconCobra"
-    sudo cp "reconcobra.pl" "/usr/share/ReconCobra"
+    sudo cp "installer.sh" "/usr/share/ReconCobra"
+    sudo cp "ReconCobra.pl" "/usr/share/ReconCobra"
     sudo cp "config/ReconCobra.jpeg" "/usr/share/icons"
     sudo cp "config/ReconCobra.desktop" "/usr/share/applications"
-    sudo cp "reconcobra" "/usr/local/bin/"
-    rm "reconcobra";
+    sudo cp "ReconCobra" "/usr/local/bin/"
+    rm "ReconCobra";
 
 echo "y" | apt-get install xdg-utils
 echo "y" | apt-get install hping3
@@ -96,7 +95,7 @@ echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
-echo "y" | https://github.com/haroonawanofficial/vasl.git
+echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
 echo "y" | apt-get install nmap
@@ -113,12 +112,11 @@ chmod u+x setup.sh
 
 if [ -d "/usr/share/ReconCobra" ] ;
 then
-echo -e "$red [$green+$red]$off ReconCobra Successfully Installed And Will Start In 5s!";
-echo -e "$red [$green+$red]$off You can execute ReconCobra by typing reconcobra"
-sleep 5;
-reconcobra
+echo -e "$red [$green+$red]$off ReconCobra Successfully Installed, Starting";
+sleep 2;
+ReconCobra
 else
-echo -e "$red [$green✘$red]$off ReconCobra Cannot Be Installed On Your System! Use It As Portable !";
+echo -e "$red [$green✘$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi 
 }
@@ -128,6 +126,6 @@ banner
 echo -e "$red [$green+$red]$off ReconCobra Will Be Installed In Your System";
 linux
 else
-echo -e "$red [$green✘$red]$off ReconCobra Cannot Be Installed On Your System! Use It As Portable !";
+echo -e "$red [$green✘$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi
