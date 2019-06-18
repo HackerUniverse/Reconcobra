@@ -54,12 +54,15 @@ echo "y" | cpan install Mojo::DOM
 echo "y" | cpan install Data::Dumper
 echo "y" | cpan install Win32::Console::ANSI
 echo "y" | cpan install HTML::TableExtract
-echo "y" | apt-get install golang
-echo "y" | apt-get install curl
+echo "y" | cpan install Data::Validate::Domain
+
 echo -e "Installing dependencies ...";
 echo "y" | apt-get install xdg-utils
+echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
 echo "y" | apt-get install python
+echo "y" | apt-get install golang
+echo "y" | apt-get install curl
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
@@ -70,6 +73,8 @@ echo "y" | https://github.com/haroonawanofficial/vasl.git
 echo "y" | apt-get install nmap
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
+pip install requests
+pip install request
 cd SearchEngineScrapy
 pip install -r requirements.txt
 virtualenv --python="2" env
