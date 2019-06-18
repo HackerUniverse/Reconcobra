@@ -57,6 +57,8 @@ echo "y" | cpan install Mojo::DOM
 echo "y" | cpan install Data::Dumper
 echo "y" | cpan install Win32::Console::ANSI
 echo "y" | cpan install HTML::TableExtract
+echo "y" | apt-get install golang
+echo "y" | apt-get install curl
 echo -e "$red [$green+$red]$off Checking directories..."
 if [ -d "/usr/share/ReconCobra" ]; then
     echo -e "$red [$green+$red]$off A Directory ReconCobra Was Found! Do You Want To Replace It? [Y/n]:" ;
