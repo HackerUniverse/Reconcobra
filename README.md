@@ -38,7 +38,7 @@ EULA
 </div>
 
 <div align="center">
-    <img src="http://oi64.tinypic.com/34pxfzb.jpg" width="400px"</img> 
+    <img src="http://oi65.tinypic.com/v827ps.jpg" width="400px"</img> 
 </div>
 
 # Installation
