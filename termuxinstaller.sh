@@ -23,7 +23,7 @@
 clear
 
 echo "Ultimate Recon and Foot Printing Software     Version 1.0a";   
-echo "Termux Installer By: Hacker_Universe";
+echo "Termux Installer By: Hacker_Universe / Haroon Awan";
 echo "Coded By: Haroon Awan";
 echo "Mail: mrharoonawan@gmail.com";
 echo "";
