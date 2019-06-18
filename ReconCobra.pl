@@ -1816,7 +1816,7 @@ if (system("./coba.sh") == 0) {
 	print "success!\n";
 	}
 	else {
-	print "[~] Make available meta crawler in same folder\n[~] Command failed\n";
+	print "[~] Make available coba.sh in same folder\n[~] Command failed\n";
 	}
 }
 
@@ -1828,7 +1828,7 @@ if (system("./cobb.sh") == 0) {
 	print "Success!\n";
 	}
 	else {
-	print "[~] Make available meta crawler in same folder\n[~] Command failed\n";
+	print "[~] Make available cobb.sh in same folder\n[~] Command failed\n";
 	}
 }
 
