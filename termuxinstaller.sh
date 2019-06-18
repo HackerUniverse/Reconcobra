@@ -35,17 +35,28 @@ echo "         .##.....##..########..######....#######...##....##.....######....
 echo "                                       	  Ultimate Recon and Foot Printing Software     Version 1.0a        ";   
 echo "                                                        [Coded By: Haroon Awan]                                       ";
 echo "                                                   [Contact: mrharoonawan@gmail.com]                                  ";
-echo "                                                                                               ";
+echo "                                                                                                                                                  ";
 echo "                                                                                               ";
 echo "                                                                                               ";
 
-
-
+echo -e "prerequisite install"
+apt-get install wget
+apt-get install make
+apt-get install clang
+apt-get install unzip
+apt-get install tar
 echo -e "Installing Perl ...";
 apt-get install -y perl
 echo -e "Installing JSON Module ...";
 cpan install JSON
 echo -e "Installing Extra Perl Modules ...";
+echo "y" | wget https://cpan.metacpan.org/authors/id/B/BP/BPS/HTTP-Server-Simple-0.52.tar.gz
+tar -xvfz HTTP-Server-Simple-0.52.tar.gz
+cd HTTP-Server-Simple-0.52
+perl Makefile.PL
+make
+make install
+cd ..
 echo "y" | cpan install WWW::Mechanize 
 echo "y" | cpan install use HTML::TokeParser
 echo "y" | cpan install Term::ANSIColor
