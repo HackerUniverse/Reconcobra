@@ -51,7 +51,7 @@ echo -e "Installing JSON Module ...";
 cpan install JSON
 echo -e "Installing Extra Perl Modules ...";
 echo "y" | wget https://cpan.metacpan.org/authors/id/B/BP/BPS/HTTP-Server-Simple-0.52.tar.gz
-tar -xvfz HTTP-Server-Simple-0.52.tar.gz
+tar -xvf HTTP-Server-Simple-0.52.tar.gz
 cd HTTP-Server-Simple-0.52
 perl Makefile.PL
 make
