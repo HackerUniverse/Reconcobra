@@ -57,8 +57,8 @@ echo "y" | cpan install Mojo::DOM
 echo "y" | cpan install Data::Dumper
 echo "y" | cpan install Win32::Console::ANSI
 echo "y" | cpan install HTML::TableExtract
-echo "y" | apt-get install golang
-echo "y" | apt-get install curl
+echo "y" | cpan install Data::Validate::Domain
+
 echo -e "$red [$green+$red]$off Checking directories..."
 if [ -d "/usr/share/ReconCobra" ]; then
     echo -e "$red [$green+$red]$off A Directory ReconCobra Was Found! Do You Want To Replace It? [Y/n]:" ;
@@ -89,8 +89,11 @@ perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
     rm "ReconCobra";
 
 echo "y" | apt-get install xdg-utils
+echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
 echo "y" | apt-get install python3
+echo "y" | apt-get install golang
+echo "y" | apt-get install curl
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
@@ -101,6 +104,8 @@ echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
 echo "y" | apt-get install nmap
+pip install requests
+pip install request
 cd SearchEngineScrapy
 pip install -r requirements.txt
 sudo virtualenv --python="2" env
@@ -110,8 +115,7 @@ echo "y" | git clone https://github.com/FortyNorthSecurity/EyeWitness.git
 cd EyeWitness/setup
 chmod u+x setup.sh
 ./setup.sh
-cd ..
-chmod u+x *.sh
+
 
 if [ -d "/usr/share/ReconCobra" ] ;
 then
