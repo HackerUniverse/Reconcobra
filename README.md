@@ -4,6 +4,9 @@
 # LICENSE
 EULA
 
+# ReconCobra 
+- Supported in Kali and Termux
+
 # Interface
 - Software have 66 Options with full automation and powerful information gathering
 <div align="center">
@@ -18,6 +21,12 @@ EULA
     <img src="http://oi68.tinypic.com/72ps0p.jpg" width="400px"</img> 
 </div>
 
+# In-Action
+- Extracting subdomains via certificate search
+<div align="center">
+    <img src="http://oi63.tinypic.com/wcbayp.jpg" width="400px"</img> 
+</div>
+
 
 # Installation
 - git clone https://github.com/haroonawanofficial/Reconcobra.git
@@ -26,8 +35,7 @@ EULA
 - ./installer.sh
 - ReconCobra will integrate as system software
 - Dependencies will be handled automatically
-- Software needs Sed, Awk, Nmap, Bash on Kali for Kali
-- Software needs minigw and Sed, Awk, Nmap, Bash on Windows for Windows
+- Third party software(s)/dependencies/modules will be handled automatically
 
 # Standalone
 - perl reconcobra.pl
