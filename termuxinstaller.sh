@@ -22,22 +22,12 @@
 
 clear
 
-echo "                                                                                               ";
-echo "                                                                                               ";
-echo "                                                                                               ";
-echo "        .########...########..######.....#######...##....##.....######.....#######....######....########......########..      "; 
-echo "         .##.....##..##.......##....##..##.....##..###...##....##....##...##.....##...##...##...##.....##....##.....##.	 "; 
-echo "         .##.....##..##.......##........##.....##..####..##....##.........##.....##...##..##....##......##...##.....##.	 "; 
-echo "         .########...######...##........##.....##..##.##.##....##.........##.....##...##..##....#########....#########.	 "; 
-echo "         .##...##....##.......##........##.....##..##..####....##.........##.....##...##...##...##....##.....##.....##.	 "; 
-echo "         .##....##...##.......##....##..##.....##..##...###....##....##...##.....##...##...###..##.....##....##.....##.	 "; 
-echo "         .##.....##..########..######....#######...##....##.....######.....#######....#######...##......##...##.....##.	 ";  
-echo "                                       	  Ultimate Recon and Foot Printing Software     Version 1.0a        ";   
-echo "                                                        [Coded By: Haroon Awan]                                       ";
-echo "                                                   [Contact: mrharoonawan@gmail.com]                                  ";
-echo "                                                                                                                                                  ";
-echo "                                                                                               ";
-echo "                                                                                               ";
+echo "Ultimate Recon and Foot Printing Software     Version 1.0a";   
+echo "Termux Installer By: Hacker_Universe";
+echo "Coded By: Haroon Awan";
+echo "Mail: mrharoonawan@gmail.com";
+echo "";
+
 
 echo -e "prerequisite install"
 apt-get install wget
@@ -64,6 +54,8 @@ echo "y" | cpan install Mojo::DOM
 echo "y" | cpan install Data::Dumper
 echo "y" | cpan install Win32::Console::ANSI
 echo "y" | cpan install HTML::TableExtract
+echo "y" | apt-get install golang
+echo "y" | apt-get install curl
 echo -e "Installing dependencies ...";
 echo "y" | apt-get install xdg-utils
 echo "y" | apt-get install hping3
@@ -88,4 +80,5 @@ cd EyeWitness/setup
 chmod u+x setup.sh
 ./setup.sh
 cd ..
+chmod u+x *.sh
 echo -e "Installed, run perl ReconCobra.pl for interface!";
