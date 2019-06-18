@@ -1812,7 +1812,7 @@ $p = HTML::TokeParser->new(\$response);
 #15                       Metadata Crawler                     #
 #--------------------------------------------------------------#
 sub Metadatacrawler {
-if (system("./main.sh") == 0) {
+if (system("./coba.sh") == 0) {
 	print "success!\n";
 	}
 	else {
@@ -1824,7 +1824,7 @@ if (system("./main.sh") == 0) {
 #16                        Metadata Googler                    #
 #--------------------------------------------------------------#
 sub Metadatagoogler {
-if (system("./maing.sh") == 0) {
+if (system("./cobb.sh") == 0) {
 	print "Success!\n";
 	}
 	else {
