@@ -5,7 +5,8 @@
 EULA
 
 # ReconCobra 
-- Supported in Kali and Termux
+- Runs on Kali
+- Runs on Termux
 
 # Interface
 - Software have 66 Options with full automation and powerful information gathering
