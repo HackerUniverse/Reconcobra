@@ -626,6 +626,9 @@ print color('reset');
 print color('bold black on_white'),"# Official Web ";print color('reset'),"";print color('bold white on_red'),"				http://www.mubassirkamdar.com - fb.com\\Mubassir.py\n";
 print color('reset');
 
+print color('bold black on_white'),"# Instagram ";print color('reset'),"";print color('bold white on_red'),"					http://www.instagram.com/\Hacker_Universe\n";
+print color('reset');
+
                                                                      
 
 
