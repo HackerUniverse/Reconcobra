@@ -930,7 +930,7 @@ sub menu {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($findnear=<STDIN>);
+        #chomp($findnear=<STDIN>);
         print "\n";
         nearestvictim();
         enter();
