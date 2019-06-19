@@ -58,6 +58,9 @@ echo "y" | cpan install Data::Dumper
 echo "y" | cpan install Win32::Console::ANSI
 echo "y" | cpan install HTML::TableExtract
 echo "y" | cpan install Data::Validate::Domain
+echo "y" | cpan install LWP::Protocol::https
+echo "y" | cpan install Mozilla::CA
+echo "y" | cpan install Bundle::LWP
 
 echo -e "$red [$green+$red]$off Checking directories..."
 if [ -d "/usr/share/ReconCobra" ]; then
@@ -94,6 +97,7 @@ echo "y" | apt-get install hping3
 echo "y" | apt-get install python3
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
+echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git

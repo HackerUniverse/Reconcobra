@@ -23,7 +23,7 @@
 clear
 
 echo "Ultimate Recon and Foot Printing Software     Version 1.0a";   
-echo "Termux Installer By: Hacker_Universe / Haroon Awan";
+echo "Termux Installer By: Hacker_Universe";
 echo "Coded By: Haroon Awan";
 echo "Mail: mrharoonawan@gmail.com";
 echo "";
@@ -55,6 +55,10 @@ echo "y" | cpan install Data::Dumper
 echo "y" | cpan install Win32::Console::ANSI
 echo "y" | cpan install HTML::TableExtract
 echo "y" | cpan install Data::Validate::Domain
+echo "y" | cpan install LWP::Protocol::https
+echo "y" | cpan install Mozilla::CA
+echo "y" | cpan install Bundle::LWP
+
 
 echo -e "Installing dependencies ...";
 echo "y" | apt-get install xdg-utils
@@ -63,6 +67,7 @@ echo "y" | apt-get install hping3
 echo "y" | apt-get install python
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
+echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
