@@ -1507,7 +1507,7 @@ sub Findiplocation {
 #4                        Port Scanner                         #
 #--------------------------------------------------------------#
 sub port {
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nC0bra: _>  ";
         print color('bold white');
         chop ($op = <stdin>);
