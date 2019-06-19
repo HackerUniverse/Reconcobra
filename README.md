@@ -11,7 +11,7 @@ EULA
 # Kali Interface
 - Software have 66 Options with full automation and powerful information gathering
 <div align="center">
-    <img src="http://oi66.tinypic.com/2u9l3dk.jpg" width="400px"</img> 
+    <img src="http://oi68.tinypic.com/2eftkt0.jpg" width="400px"</img> 
 </div>
 
 <div align="center">
