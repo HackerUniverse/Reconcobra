@@ -1948,7 +1948,7 @@ if (system("./netblock.sh") == 0) {
 #24                       Capture Screenshots                  #
 #--------------------------------------------------------------#
 sub Capturescreenshots {
-if (system("./screenshost.sh") == 0) {
+if (system("./screenshot.sh") == 0) {
 	print "success!\n";
 	}
 	else {
