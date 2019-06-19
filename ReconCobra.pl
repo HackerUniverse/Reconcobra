@@ -876,7 +876,7 @@ sub menu {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($brtd=<STDIN>);
+        #chomp($brtd=<STDIN>);
         print "\n";
         Brutedomain();
         enter();
@@ -894,7 +894,7 @@ sub menu {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($cfe=<STDIN>);
+        #chomp($cfe=<STDIN>);
         print "\n";
         Configerrors();
         enter();
@@ -1886,7 +1886,7 @@ if (system("./maahro.sh") == 0) {
 	print "success!\n";
 	}
 	else {
-	print "[~] Make Maahro available in same folder\n[~] Command failed\n";
+	print "[~] Make maahro.sh available in same folder\n[~] Command failed\n";
 	}
 }
 

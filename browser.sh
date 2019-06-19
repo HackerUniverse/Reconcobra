@@ -9,8 +9,10 @@ OKORANGE='\033[93m'
 DELAY=1
 RESET='\e[0m'
 
-if [ -z $TARGET ]; then
-	echo -e "$OKORANGE + -- --=[Usage: browser.sh <domain>$RESET"
+echo "[ + ] Enter Url" 
+read URL
+if [ -z $URL ]; then
+	echo -e "$OKORANGE + browser.sh URL $RESET"
 	exit
 fi
 
