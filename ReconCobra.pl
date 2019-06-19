@@ -606,109 +606,109 @@ sub banner {
     if ($^O =~ /MSWin32/) {system("mode con: cols=130 lines=40");system("cls"); }else { system("resize -s 40 130");system("clear"); }
 
 print color('bold green on_black');
-print"		▄████████##▄██████▄##▀█████████▄#####▄████████####▄████████#\n";
-print"		███####███#███####███###███####███###███####███###███####███#\n";
-print"		███####█▀##███####███###███####███###███####███###███####███#\n";
-print"		███########███####███##▄███▄▄▄██▀###▄███▄▄▄▄██▀###███####███#\n";
-print"		███########███####███#▀▀███▀▀▀██▄##▀▀███▀▀▀▀▀###▀███████████#\n";
-print"		███####█▄##███####███###███####██▄#▀███████████###███####███#\n";
-print"		███####███#███####███###███####███###███####███###███####███#\n";
-print"		████████▀###▀██████▀##▄█████████▀####███####███###███####█▀##\n";
-print"		#####################################███####███##############\n";
+print"	▄████████##▄██████▄##▀█████████▄#####▄████████####▄████████#\n";
+print"	███####███#███####███###███####███###███####███###███####███#\n";
+print"	███####█▀##███####███###███####███###███####███###███####███#\n";
+print"	███########███####███##▄███▄▄▄██▀###▄███▄▄▄▄██▀###███####███#\n";
+print"	███########███####███#▀▀███▀▀▀██▄##▀▀███▀▀▀▀▀###▀███████████#\n";
+print"	███####█▄##███####███###███####██▄#▀███████████###███####███#\n";
+print"	███####███#███####███###███####███###███####███###███####███#\n";
+print"	████████▀###▀██████▀##▄█████████▀####███####███###███####█▀##\n";
+print"	#####################################███####███##############\n";
 print color('reset');
-print color('bold red on_black'),"		Info          ";print color('reset'),"";print color('bold white'),"      version 1.9a, [Coded By: Haroon Awan]\n";
-print color('reset');
-
-print color('bold red on_blue'),"		Mail          ";print color('reset'),"";print color('bold red'),"      mrharoonawan\@gmail.com\n";
+print color('bold red on_black'),"	Info          ";print color('reset'),"";print color('bold white'),"      version 1.9a, [Coded By: Haroon Awan]\n";
 print color('reset');
 
-print color('bold yellow on_red'),"		Official Web  ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
+print color('bold red on_blue'),"	Mail          ";print color('reset'),"";print color('bold red'),"      mrharoonawan\@gmail.com\n";
 print color('reset');
 
-print color('bold green on_black'),"		Facebook      ";print color('reset'),"";print color('bold green'),"      fb.com\\Mubassir.py\n";
+print color('bold yellow on_red'),"	Official Web  ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
 print color('reset');
 
-print color('bold white on_blue'),"		Instagram     ";print color('reset'),"";print color('bold white'),"      http://www.instagram.com/\Hacker_Universe\n";
+print color('bold green on_black'),"	Facebook      ";print color('reset'),"";print color('bold green'),"      fb.com\\Mubassir.py\n";
+print color('reset');
+
+print color('bold white on_blue'),"	Instagram     ";print color('reset'),"";print color('bold white'),"      http://www.instagram.com/\Hacker_Universe\n";
 print color('reset');
 
                                                                      
 
 
-print color('bold cyan'),"\n               #---------------------------------------------------------# \n"; 
-print color('bold cyan'),"               # ";print color('bold magenta'),"   Ultimate Reconnaissance for Information Gathering  "; print color('bold cyan'),"  # \n"; 
-print color('bold cyan'),"               #---------------------------------------------------------# \n"; 
+print color('bold cyan'),"\n    #---------------------------------------------------------# \n"; 
+print color('bold cyan'),"    # ";print color('bold magenta'),"   Ultimate Reconnaissance for Information Gathering  "; print color('bold cyan'),"  # \n"; 
+print color('bold cyan'),"    #---------------------------------------------------------# \n"; 
 }
 #--------------------------------------------------------------#
 #                             Menu                             #
 #--------------------------------------------------------------#
 sub menu {
-    print line_u(),color('bold cyan'),"#                              ";print color('reset'),item('1'),"Website Information";print color('bold cyan'),"                       	        #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('2'),"Domain Whois Lookup";print color('bold cyan'),"                    	        #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('3'),"Find IP Location";print color('bold cyan'),"                                    #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('4'),"Basic Port Scanner";print color('bold cyan'),"                    	        #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('5'),"DNS Whois Lookup";print color('bold cyan'),"                                    #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('6'),"Reverse Whois Lookup";print color('bold cyan'),"                                #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('7'),"DNS Zone Transfers Lookup";print color('bold cyan'),"                           #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('8'),"Reverse IP Lookup";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('9'),"Forward IP Lookup";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('10'),"Reverse DNS Lookup";print color('bold cyan'),"                                 #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('11'),"Forward DNS Lookup";print color('bold cyan'),"                                 #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('12'),"Shared DNS Lookup";print color('bold cyan'),"                                  #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('13'),"Technology lookup";print color('bold cyan'),"                                  #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('14'),"Website Recon";print color('bold cyan'),"                                      #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('15'),"Metadata Crawler";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('16'),"Metadata Googler";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('17'),"Subdomain Scanner using Search Engines";print color('bold cyan'),"             #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('18'),"Subdomain Takeover Scanner using file";print color('bold cyan'),"              #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('19'),"Brute Subdomains using nmap";print color('bold cyan'),"                        #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('20'),"Brute DNS Subdomains";print color('bold cyan'),"                               #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('21'),"Find Configuration Errors on Target using google";print color('bold cyan'),"   #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('22'),"Find ASN";print color('bold cyan'),"                                           #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('23'),"Find Netblocks";print color('bold cyan'),"                                     #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('24'),"Capture Screenshots";print color('bold cyan'),"                                #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('25'),"Find Nearest Servers to Victim";print color('bold cyan'),"                     #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('26'),"Sweep Netblocks & Resolve";print color('bold cyan'),"                          #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('27'),"Load DNS Hacking Suite Panthera";print color('bold cyan'),"                    #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('28'),"Find Emails and Names";print color('bold cyan'),"                              #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('29'),"Find Contact Information";print color('bold cyan'),"                           #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('30'),"Common Nmap Port Scan";print color('bold cyan'),"                              #   \n";                    
-    print color('bold cyan'),"#                              ";print color('reset'),item('31'),"Ping Hop and Firewalk";print color('bold cyan'),"                              #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('32'),"Find Internal Networks & Sweep";print color('bold cyan'),"                     #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('33'),"Decoy Scan & Generate Metasploit Data";print color('bold cyan'),"              #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('34'),"Find SSL Bugs & Information";print color('bold cyan'),"                        #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('35'),"Extract Users via FTP";print color('bold cyan'),"                              #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('36'),"Extract Users via POP3";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('37'),"Extract Users via IMAP";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('38'),"Extract Users via SMTP";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('39'),"Extract Users via Form";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('40'),"Extract Full Possible Information via SNMP";print color('bold cyan'),"         #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('41'),"Extract Possible Information from Certificates";print color('bold cyan'),"     #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('42'),"Find Victim HTTPS Leaked Data ";print color('bold cyan'),"                     #   \n";                                                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('43'),"Find Users via sitemap";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('44'),"Find Directories from robots.txt";print color('bold cyan'),"                   #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('45'),"Find all accounts by user";print color('bold cyan'),"                          #   \n";    
-    print color('bold cyan'),"#                              ";print color('reset'),item('46'),"Find all accounts by email";print color('bold cyan'),"                         #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('47'),"Find all tags by account";print color('bold cyan'),"                           #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('48'),"DNS History";print color('bold cyan'),"                                        #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('49'),"Passive DNS Search";print color('bold cyan'),"                                 #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('50'),"Use Common Crawl on Target";print color('bold cyan'),"                         #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('51'),"Cached View  Target";print color('bold cyan'),"                                #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('52'),"Reverse NS Lookup";print color('bold cyan'),"                                  #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('53'),"Forward NS Lookup";print color('bold cyan'),"                                  #   \n";
-    print color('bold cyan'),"#                              ";print color('reset'),item('54'),"Win - Extract Netbios Information";print color('bold cyan'),"                  #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('55'),"Win - Contact & Extract Null Shares IPC\$";print color('bold cyan'),"           #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('56'),"Win - Gather Full Information via Netbios";print color('bold cyan'),"          #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('57'),"Win - Connect to Open Netbios";print color('bold cyan'),"                      #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('58'),"Invisible Port Scanner";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('59'),"Bypass Cloud Flare";print color('bold cyan'),"                                 #   \n";                                
-    print color('bold cyan'),"#                              ";print color('reset'),item('60'),"DNS Cached Records";print color('bold cyan'),"                                 #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('61'),"Bypass Content Management System Waf Firewall";print color('bold cyan'),"      #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"                                          #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('63'),"Master Domain Subdomain Subnet Scanner";print color('bold cyan'),"             #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('64'),"Domain Certificate Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
-    print color('bold cyan'),"#                              ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
+    print line_u(),color('bold cyan'),"#          ";print color('reset'),item('1'),"Website Information";print color('bold cyan'),"                                 #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('2'),"Domain Whois Lookup";print color('bold cyan'),"                    	            #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('3'),"Find IP Location";print color('bold cyan'),"                                    #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('4'),"Basic Port Scanner";print color('bold cyan'),"                    	            #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('5'),"DNS Whois Lookup";print color('bold cyan'),"                                    #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('6'),"Reverse Whois Lookup";print color('bold cyan'),"                                #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('7'),"DNS Zone Transfers Lookup";print color('bold cyan'),"                           #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('8'),"Reverse IP Lookup";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('9'),"Forward IP Lookup";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('10'),"Reverse DNS Lookup";print color('bold cyan'),"                                 #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('11'),"Forward DNS Lookup";print color('bold cyan'),"                                 #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('12'),"Shared DNS Lookup";print color('bold cyan'),"                                  #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('13'),"Technology lookup";print color('bold cyan'),"                                  #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('14'),"Website Recon";print color('bold cyan'),"                                      #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('15'),"Metadata Crawler";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('16'),"Metadata Googler";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('17'),"Subdomain Scanner using Search Engines";print color('bold cyan'),"             #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('18'),"Subdomain Takeover Scanner using file";print color('bold cyan'),"              #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('19'),"Brute Subdomains using nmap";print color('bold cyan'),"                        #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('20'),"Brute DNS Subdomains";print color('bold cyan'),"                               #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('21'),"Find Configuration Errors on Target using google";print color('bold cyan'),"   #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('22'),"Find ASN";print color('bold cyan'),"                                           #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('23'),"Find Netblocks";print color('bold cyan'),"                                     #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('24'),"Capture Screenshots";print color('bold cyan'),"                                #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('25'),"Find Nearest Servers to Victim";print color('bold cyan'),"                     #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('26'),"Sweep Netblocks & Resolve";print color('bold cyan'),"                          #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('27'),"Load DNS Hacking Suite Panthera";print color('bold cyan'),"                    #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('28'),"Find Emails and Names";print color('bold cyan'),"                              #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('29'),"Find Contact Information";print color('bold cyan'),"                           #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('30'),"Common Nmap Port Scan";print color('bold cyan'),"                              #   \n";                    
+    print color('bold cyan'),"#          ";print color('reset'),item('31'),"Ping Hop and Firewalk";print color('bold cyan'),"                              #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('32'),"Find Internal Networks & Sweep";print color('bold cyan'),"                     #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('33'),"Decoy Scan & Generate Metasploit Data";print color('bold cyan'),"              #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('34'),"Find SSL Bugs & Information";print color('bold cyan'),"                        #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('35'),"Extract Users via FTP";print color('bold cyan'),"                              #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('36'),"Extract Users via POP3";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('37'),"Extract Users via IMAP";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('38'),"Extract Users via SMTP";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('39'),"Extract Users via Form";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('40'),"Extract Full Possible Information via SNMP";print color('bold cyan'),"         #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('41'),"Extract Possible Information from Certificates";print color('bold cyan'),"     #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('42'),"Find Victim HTTPS Leaked Data ";print color('bold cyan'),"                     #   \n";                                                                
+    print color('bold cyan'),"#          ";print color('reset'),item('43'),"Find Users via sitemap";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('44'),"Find Directories from robots.txt";print color('bold cyan'),"                   #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('45'),"Find all accounts by user";print color('bold cyan'),"                          #   \n";    
+    print color('bold cyan'),"#          ";print color('reset'),item('46'),"Find all accounts by email";print color('bold cyan'),"                         #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('47'),"Find all tags by account";print color('bold cyan'),"                           #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('48'),"DNS History";print color('bold cyan'),"                                        #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('49'),"Passive DNS Search";print color('bold cyan'),"                                 #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('50'),"Use Common Crawl on Target";print color('bold cyan'),"                         #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('51'),"Cached View  Target";print color('bold cyan'),"                                #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('52'),"Reverse NS Lookup";print color('bold cyan'),"                                  #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('53'),"Forward NS Lookup";print color('bold cyan'),"                                  #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('54'),"Win - Extract Netbios Information";print color('bold cyan'),"                  #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('55'),"Win - Contact & Extract Null Shares IPC\$";print color('bold cyan'),"           #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('56'),"Win - Gather Full Information via Netbios";print color('bold cyan'),"          #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('57'),"Win - Connect to Open Netbios";print color('bold cyan'),"                      #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('58'),"Invisible Port Scanner";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('59'),"Bypass Cloud Flare";print color('bold cyan'),"                                 #   \n";                                
+    print color('bold cyan'),"#          ";print color('reset'),item('60'),"DNS Cached Records";print color('bold cyan'),"                                 #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('61'),"Bypass Content Management System Waf Firewall";print color('bold cyan'),"      #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"                                          #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('63'),"Master Domain Subdomain Subnet Scanner";print color('bold cyan'),"             #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('64'),"Domain Certificate Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
 
@@ -716,7 +716,7 @@ sub menu {
 
     if($number eq '1'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#       ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                        	    #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($info=<STDIN>);
@@ -725,7 +725,7 @@ sub menu {
         enter();
     }if($number eq '2'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                    		    #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($whois=<STDIN>);
@@ -734,7 +734,7 @@ sub menu {
         enter();
     }if($number eq '3'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($geo=<STDIN>);
@@ -747,7 +747,7 @@ sub menu {
         enter();
     }if($number eq '5'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($sub=<STDIN>);
@@ -756,7 +756,7 @@ sub menu {
         enter();
     }if($number eq '6'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($revwhoiis=<STDIN>);
@@ -765,7 +765,7 @@ sub menu {
         enter();
     }if($number eq '7'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($dnszt=<STDIN>);
@@ -774,7 +774,7 @@ sub menu {
         enter();
     }if($number eq '8'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($rev=<STDIN>);
@@ -783,7 +783,7 @@ sub menu {
         enter();
     }if($number eq '9'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fwdip=<STDIN>);
@@ -792,7 +792,7 @@ sub menu {
         enter();
         }if($number eq '10'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($revdns=<STDIN>);
@@ -801,7 +801,7 @@ sub menu {
         enter();
     }if($number eq '11'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fwddns=<STDIN>);
@@ -810,7 +810,7 @@ sub menu {
         enter();
     }if($number eq '12'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($shrdns=<STDIN>);
@@ -819,7 +819,7 @@ sub menu {
         enter();
     }if($number eq '13'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($techlookup=<STDIN>);
@@ -828,7 +828,7 @@ sub menu {
         enter();
     }if($number eq '14'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($webrecon=<STDIN>);
@@ -837,7 +837,7 @@ sub menu {
         enter();
     }if($number eq '15'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($mdc=<STDIN>);
@@ -846,7 +846,7 @@ sub menu {
         enter();
     }if($number eq '16'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($mgd=<STDIN>);
@@ -855,7 +855,7 @@ sub menu {
         enter();
     }if($number eq '17'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($sbds=<STDIN>);
@@ -864,7 +864,7 @@ sub menu {
         enter();
     }if($number eq '18'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($sbtk=<STDIN>);
@@ -873,7 +873,7 @@ sub menu {
         enter();
     }if($number eq '19'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($brtd=<STDIN>);
@@ -882,7 +882,7 @@ sub menu {
         enter();
     }if($number eq '20'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($brtdns=<STDIN>);
@@ -891,7 +891,7 @@ sub menu {
         enter();
     }if($number eq '21'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cfe=<STDIN>);
@@ -900,7 +900,7 @@ sub menu {
         enter();
     }if($number eq '22'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fasn=<STDIN>);
@@ -909,7 +909,7 @@ sub menu {
         enter();
     }if($number eq '23'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($fnb=<STDIN>);
@@ -918,7 +918,7 @@ sub menu {
         enter();
     }if($number eq '24'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cpshots=<STDIN>);
@@ -927,7 +927,7 @@ sub menu {
         enter();
     }if($number eq '25'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($findnear=<STDIN>);
@@ -936,7 +936,7 @@ sub menu {
         enter();
     }if($number eq '26'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#       ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                   #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($snb=<STDIN>);
@@ -945,7 +945,7 @@ sub menu {
         enter();
     }if($number eq '27'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($panthera=<STDIN>);
@@ -954,7 +954,7 @@ sub menu {
         enter();
         }if($number eq '28'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($enames=<STDIN>);
@@ -963,7 +963,7 @@ sub menu {
         enter();
     }if($number eq '29'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($findci=<STDIN>);
@@ -972,7 +972,7 @@ sub menu {
         enter();
     }if($number eq '30'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cpscan=<STDIN>);
@@ -981,7 +981,7 @@ sub menu {
         enter();
     }if($number eq '31'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($phin=<STDIN>);
@@ -989,7 +989,7 @@ sub menu {
         enter();
     }if($number eq '32'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($finss=<STDIN>);
@@ -998,7 +998,7 @@ sub menu {
         enter();
     }if($number eq '33'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($dsgmd=<STDIN>);
@@ -1007,7 +1007,7 @@ sub menu {
         enter();
     }if($number eq '34'){
         banner();
-        print line_u(),color('bold cyan'),"#                             ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                              #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fsbi=<STDIN>);
@@ -1016,7 +1016,7 @@ sub menu {
         enter();
     }if($number eq '35'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($euff=<STDIN>);
@@ -1025,7 +1025,7 @@ sub menu {
         enter();
     }if($number eq '36'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($eufp=<STDIN>);
@@ -1034,7 +1034,7 @@ sub menu {
         enter();
         }if($number eq '37'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($eufi=<STDIN>);
@@ -1043,7 +1043,7 @@ sub menu {
         enter();
     }if($number eq '38'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($eufs=<STDIN>);
@@ -1052,7 +1052,7 @@ sub menu {
         enter();
     }if($number eq '39'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#       ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($euff=<STDIN>);
@@ -1061,7 +1061,7 @@ sub menu {
         enter();
         }if($number eq '40'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($efpifs=<STDIN>);
@@ -1070,7 +1070,7 @@ sub menu {
         enter();
     }if($number eq '41'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($eifc=<STDIN>);
@@ -1079,7 +1079,7 @@ sub menu {
         enter();
     }if($number eq '42'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fchsld=<STDIN>);
@@ -1088,7 +1088,7 @@ sub menu {
         enter();
         }if($number eq '43'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fuss=<STDIN>);
@@ -1097,7 +1097,7 @@ sub menu {
         enter();
     }if($number eq '44'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fdfr=<STDIN>);
@@ -1106,7 +1106,7 @@ sub menu {
         enter();
     }if($number eq '45'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fafu=<STDIN>);
@@ -1115,7 +1115,7 @@ sub menu {
         enter();
         }if($number eq '46'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fafes=<STDIN>);
@@ -1124,7 +1124,7 @@ sub menu {
         enter();
     }if($number eq '47'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cloud=<STDIN>);
@@ -1133,7 +1133,7 @@ sub menu {
         enter();
     }if($number eq '48'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($dnsh=<STDIN>);
@@ -1142,7 +1142,7 @@ sub menu {
         enter();
         }if($number eq '49'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         #chomp($dnsh=<STDIN>);
@@ -1151,7 +1151,7 @@ sub menu {
         enter();
     }if($number eq '50'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($pasds=<STDIN>);
@@ -1160,7 +1160,7 @@ sub menu {
         enter();
     }if($number eq '51'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cvt=<STDIN>);
@@ -1169,7 +1169,7 @@ sub menu {
         enter();
         }if($number eq '52'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($rlu=<STDIN>);
@@ -1178,7 +1178,7 @@ sub menu {
         enter();
     }if($number eq '53'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($fdl=<STDIN>);
@@ -1187,7 +1187,7 @@ sub menu {
         enter();
     }if($number eq '54'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($wineni=<STDIN>);
@@ -1196,7 +1196,7 @@ sub menu {
         enter();
     }if($number eq '55'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($winipc=<STDIN>);
@@ -1205,7 +1205,7 @@ sub menu {
         enter();
     }if($number eq '56'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($wfn=<STDIN>);
@@ -1214,7 +1214,7 @@ sub menu {
         enter();
     }if($number eq '57'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($wtn=<STDIN>);
@@ -1223,7 +1223,7 @@ sub menu {
         enter();
     }if($number eq '58'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($ips=<STDIN>);
@@ -1232,7 +1232,7 @@ sub menu {
         enter();
     }if($number eq '59'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
+        print line_u(),color('bold cyan'),"#         ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cloud=<STDIN>);
@@ -1241,7 +1241,7 @@ sub menu {
         enter();
     }if($number eq '60'){
         banner();
-        print line_u(),color('bold cyan'),"#              ";print color('reset'),item(),"Enter Target Website (caution: This may take a while)";print color('bold cyan'),"               #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website (caution: This may take a while)";print color('bold cyan')," #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($dnscache=<STDIN>);
@@ -1250,7 +1250,7 @@ sub menu {
         enter();
     }if($number eq '61'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter IP Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter IP Address";print color('bold cyan'),"                                      #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($cmswaf=<STDIN>);
@@ -1259,7 +1259,7 @@ sub menu {
         enter();    
     }if($number eq '62'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         chomp($sharedns=<STDIN>);
@@ -1268,7 +1268,7 @@ sub menu {
         enter();
     }if($number eq '63'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                       #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
         print "\n";
@@ -1276,7 +1276,7 @@ sub menu {
         enter();
     }if($number eq '64'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');       
         print "\n";
@@ -1284,7 +1284,7 @@ sub menu {
         enter();
     }if($number eq '65'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');       
         print "\n";
@@ -1292,7 +1292,7 @@ sub menu {
         enter();
     }if($number eq '66'){
         banner();
-        print line_u(),color('bold cyan'),"#                              ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                    #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');       
         print "\n";
@@ -3005,16 +3005,17 @@ sub item
 sub line_u
 {
     return 
-    color('bold cyan'),"#---------------------------------------------------------------------------------------# \n",
-    "#                                                                                       # \n";
+    color('bold cyan'),"#-------------------------------------------------------------------# \n",
+    "#                                                                   # \n";
     
 }
 
 sub line_d
 {
     return
-    color('bold cyan'),"#                                                                                       # \n",
-    "#---------------------------------------------------------------------------------------# \n";
+    color('bold cyan'),"#                                                                   # \n",
+    color('bold cyan'),"#-------------------------------------------------------------------# ",
+    "                                                                    ";
 }
 #--------------------------------------------------------------#
 #                          ~~The End~~                         #
