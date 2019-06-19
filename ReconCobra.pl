@@ -752,7 +752,7 @@ sub menu {
         print color('bold white');
         chomp($sub=<STDIN>);
         print "\n";
-        subdomain();
+        DNS_Whois_Lookup();
         enter();
     }if($number eq '6'){
         banner();
@@ -1841,22 +1841,27 @@ if (system("./cobb.sh") == 0) {
 #17                        Subdomain Scanner                   #
 #--------------------------------------------------------------#
 sub Subdomainscanner {
-if (system("./shaheenx.sh") == 0) {
+	print item(),"1 - Start Search Engine Subdomain Scanner\n";
+	print item(),"2 - Try Pages Inventory\n";
+	print item(),"Enter Search Engine: ";
+	chomp($enter=<STDIN>);
+if ($enter =~1) {
+	if (system("./ShaheenX.sh") == 0) {
 	print "success!\n";
 	}
 	else {
 	print "[~] Make ShaheenX.sh available in same folder\n[~] Command failed\n";
-	}
-
-if (system("./sub1.sh") == 0) {
+}
+}
+if ($enter =~2) {
+	if (system("./sub1.sh") == 0) {
 	print "success!\n";
 	}
 	else {
 	print "[~] Make sub1.sh available in same folder\n[~] Command failed\n";
 	}
-
 }
-
+}
 
 
 #--------------------------------------------------------------#
