@@ -605,28 +605,30 @@ sub help {
 sub banner {
     if ($^O =~ /MSWin32/) {system("mode con: cols=130 lines=40");system("cls"); }else { system("resize -s 40 130");system("clear"); }
 
-print color('bold red')," 	                    					 	  	     _.--\\....\n";
-print color('bold red'),"       	   						 	  	  _....---;:'::' ~ __/\n";
-print color('bold red'),"               	          				 	  	.' `'`___....---=-'`\n";
-print color('bold red'),"         							 	 /::' (`         	\n";
-print color('bold red'),"        							          '   `:.		\n";
-print color('bold red'),"                						 	   `\::.  ';-\"\":::-._  \{\}\n";
-print color('bold green'),"#  ------------   --------   -----------  -----------     ------";print color('bold red'),"         _.--'`\:' .'`-.`'`.' `{I}\n";
-print color('bold green'),"#  ************  **********  ***********  ***********    ********";print color('bold red'),"      .-' `' .;;`\::.   '. _: {-I}`\/\n";
-print color('bold green'),"#  ---          ----    ---- ----      ** ----    ---   ----------  ";print color('bold red')," .'  .:.  `:: _):::  _;' `{=I}.:||\n";
-print color('bold green'),"#  ***          ***      *** ***********  *********    ****    ****";print color('bold red')," /.  ::::`\":::` ':'.-'`':. {_I}:://\n";
-print color('bold green'),"#  ---          ---      --- -----------  ---------    ------------ ";print color('bold red'),"|:. ':'  :::::  .':'`:. `'|':||:'\n";
-print color('bold green'),"#  ***          ****    **** ****      ** ****  ****   ************";print color('bold red'),"  \\:   .:. ''' .:| .:, _:./':.|\n";
-print color('bold green'),"#  ------------  ----------  -----------  ----   ----  ----    ----";print color('bold red'),"   '--.:::...---'\\:'.:`':`':./\n";
-print color('bold green'),"#  ------------  ----------  -----------  ----   ----  ----    ---- ";print color('bold red'),"                  \'-::..:::-\'\n";
+print color('bold green on_black');
+print"		▄████████##▄██████▄##▀█████████▄#####▄████████####▄████████#\n";
+print"		███####███#███####███###███####███###███####███###███####███#\n";
+print"		███####█▀##███####███###███####███###███####███###███####███#\n";
+print"		███########███####███##▄███▄▄▄██▀###▄███▄▄▄▄██▀###███####███#\n";
+print"		███########███####███#▀▀███▀▀▀██▄##▀▀███▀▀▀▀▀###▀███████████#\n";
+print"		███####█▄##███####███###███####██▄#▀███████████###███####███#\n";
+print"		███####███#███####███###███####███###███####███###███####███#\n";
+print"		████████▀###▀██████▀##▄█████████▀####███####███###███####█▀##\n";
+print"		#####################################███####███##############\n";
 print color('reset');
-print color('bold black on_white'),"# Recon Cobra  ";print color('reset'),"";print color('bold white on_red'),"			version 1.9a, [Coded By: Haroon Awan], -[Mail: mrharoonawan\@gmail.com]\n";
+print color('bold red on_black'),"		Info          ";print color('reset'),"";print color('bold white'),"      version 1.9a, [Coded By: Haroon Awan]\n";
 print color('reset');
 
-print color('bold black on_white'),"# Official Web ";print color('reset'),"";print color('bold white on_red'),"				http://www.mubassirkamdar.com - fb.com\\Mubassir.py\n";
+print color('bold red on_blue'),"		Mail          ";print color('reset'),"";print color('bold red'),"      mrharoonawan\@gmail.com\n";
 print color('reset');
 
-print color('bold black on_white'),"# Instagram ";print color('reset'),"";print color('bold white on_red'),"					http://www.instagram.com/\Hacker_Universe\n";
+print color('bold yellow on_red'),"		Official Web  ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
+print color('reset');
+
+print color('bold green on_black'),"		Facebook      ";print color('reset'),"";print color('bold green'),"      fb.com\\Mubassir.py\n";
+print color('reset');
+
+print color('bold white on_blue'),"		Instagram     ";print color('reset'),"";print color('bold white'),"      http://www.instagram.com/\Hacker_Universe\n";
 print color('reset');
 
                                                                      
