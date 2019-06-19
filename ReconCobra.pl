@@ -1815,7 +1815,7 @@ $p = HTML::TokeParser->new(\$response);
 #--------------------------------------------------------------#
 sub Metadatacrawler {
 if (system("./coba.sh") == 0) {
-	print "success!\n";
+	print "Success!\n";
 	}
 	else {
 	print "[~] Make available coba.sh in same folder\n[~] Command failed\n";
@@ -1827,7 +1827,9 @@ if (system("./coba.sh") == 0) {
 #--------------------------------------------------------------#
 sub Metadatagoogler {
 if (system("./cobb.sh") == 0) {
-	print "Success!\n";
+	print "Success! \n";
+	print "Downlaoded meta files are stored in downloaded_meta_files directory \n";
+	print "Results are stored in metacrawler_results directory \n";
 	}
 	else {
 	print "[~] Make available cobb.sh in same folder\n[~] Command failed\n";
