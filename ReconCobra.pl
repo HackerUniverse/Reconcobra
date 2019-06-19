@@ -903,7 +903,7 @@ sub menu {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($fasn=<STDIN>);
+        #chomp($fasn=<STDIN>);
         print "\n";
         Findasn();
         enter();
@@ -1939,6 +1939,7 @@ if (system("./netblock.sh") == 0) {
 	}
 	else {
 	print "[~] Make netblock.sh in same folder\n[~] Command failed\n";
+	print "[~] Did you forgot to create input.txt file for nmap\n";
 	}
 
 }
