@@ -119,6 +119,7 @@ GetOptions(
     "al|cname=s" => \$cname,
     "am|endpoints=s" => \$endpoints,
     "an|cors=s" => \$cors,
+    "ao|wayback=s" => \$wayback,
 );
 
 if ($help) { banner();help(); }
@@ -190,6 +191,7 @@ if ($apisubdomain) { banner();Apisubdomain(); }
 if ($cname) { banner();Cname(); } 
 if ($endpoints) { banner();endpoints(); } 
 if ($cors) { banner();cors(); } 
+if ($wayback) { banner();wayback(); } 
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -614,6 +616,12 @@ sub help {
     print color("bold white"),"reconcobra -ap site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
+    print color('bold cyan'),"#                   ";
+    print item('69'),"Wayback Web Downloader ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ar site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
 
 }
 
@@ -728,6 +736,7 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('67'),"Endpoint Extraction ";print color('bold cyan'),"                               #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('68'),"Test CORS ";print color('bold cyan'),"   	                                   #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('69'),"Wayback Web Downloader ";print color('bold cyan'),"                            #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1333,6 +1342,14 @@ sub menu {
         print color('bold white');       
         print "\n";
         cors();
+        enter();
+    }if($number eq '69'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        wayback();
         enter();
     }
     if($number eq '0'){
@@ -3079,6 +3096,21 @@ sub cors() {
 	}
 	else {
 	print item(),"Make cors.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+
+#--------------------------------------------------------------#
+#69   Wayback URL Download			               #
+#--------------------------------------------------------------#
+sub wayback() {
+     if (system("./wayback.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in wayback_results folder\n";
+	}
+	else {
+	print item(),"Make wayback.sh available in same folder\n";
 	print item(),"Command failed\n";
 	}
 }
