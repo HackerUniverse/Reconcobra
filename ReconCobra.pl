@@ -118,6 +118,7 @@ GetOptions(
     "ak|apisubdomain=s" => \$apisubdomain,
     "al|cname=s" => \$cname,
     "am|endpoints=s" => \$endpoints,
+    "an|cors=s" => \$cors,
 );
 
 if ($help) { banner();help(); }
@@ -187,7 +188,8 @@ if ($MDSSE) { banner();MDSSE(); }
 if ($dcse) { banner();DomainCertificate(); } 
 if ($apisubdomain) { banner();Apisubdomain(); } 
 if ($cname) { banner();Cname(); } 
-if ($cname) { banner();endpoints(); } 
+if ($endpoints) { banner();endpoints(); } 
+if ($cors) { banner();cors(); } 
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -606,6 +608,13 @@ sub help {
     print color("bold white"),"reconcobra -ao site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
+    print color('bold cyan'),"#                   ";
+    print item('68'),"Test CORS ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ap site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
+
 }
 
 #--------------------------------------------------------------#
@@ -718,6 +727,7 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('67'),"Endpoint Extraction ";print color('bold cyan'),"                               #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('68'),"Test CORS ";print color('bold cyan'),"   	                                   #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1315,6 +1325,14 @@ sub menu {
         print color('bold white');       
         print "\n";
         endpoints();
+        enter();
+    }if($number eq '68'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        cors();
         enter();
     }
     if($number eq '0'){
@@ -3049,6 +3067,22 @@ sub endpoints() {
 	print item(),"Command failed\n";
 	}
 }
+
+
+#--------------------------------------------------------------#
+#68   Testing CORS			                       #
+#--------------------------------------------------------------#
+sub cors() {
+     if (system("./cors.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in cors_results folder\n";
+	}
+	else {
+	print item(),"Make cors.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
 
 
 
