@@ -1847,7 +1847,7 @@ sub Subdomainscanner {
 	chomp($enter=<STDIN>);
 if ($enter =~1) {
 	if (system("./ShaheenX.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make ShaheenX.sh available in same folder\n[~] Command failed\n";
@@ -1855,7 +1855,7 @@ if ($enter =~1) {
 }
 if ($enter =~2) {
 	if (system("./sub1.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make sub1.sh available in same folder\n[~] Command failed\n";
@@ -1869,7 +1869,7 @@ if ($enter =~2) {
 #--------------------------------------------------------------#
 sub Subdomaintakeover {
 if (system("./takeoverscanner.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make takoverscanner.sh available in same folder\n[~] Command failed\n";
@@ -1883,7 +1883,7 @@ if (system("./takeoverscanner.sh") == 0) {
 #--------------------------------------------------------------#
 sub Brutedomain {
 if (system("./maahro.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make maahro.sh available in same folder\n[~] Command failed\n";
@@ -1898,7 +1898,7 @@ sub Brutednsdomain {
 	print item(),"Browse panthera folder for wordllist files and provide given file list\n";
 sleep(5);
 if (system("perl panthera/dnsbrute.pl") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make Panthera available in same folder\n[~] Command failed\n";
@@ -1911,7 +1911,7 @@ if (system("perl panthera/dnsbrute.pl") == 0) {
 #--------------------------------------------------------------#
 sub Configerrors {
 if (system("./browser.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make browser.sh in same folder\n[~] Command failed\n";
@@ -1935,7 +1935,7 @@ if (system("./findasn.sh") == 0) {
 #--------------------------------------------------------------#
 sub Findnetblock {
 if (system("./netblock.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make netblock.sh in same folder\n[~] Command failed\n";
@@ -1949,7 +1949,7 @@ if (system("./netblock.sh") == 0) {
 #--------------------------------------------------------------#
 sub Capturescreenshots {
 if (system("./screenshot.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make screenshost.sh in same folder\n[~] Command failed\n";
@@ -1962,7 +1962,7 @@ if (system("./screenshot.sh") == 0) {
 #--------------------------------------------------------------#
 sub nearestvictim {
 if (system("./bile.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make bile.sh in same folder\n[~] Command failed\n";
@@ -1976,7 +1976,7 @@ if (system("./bile.sh") == 0) {
 #--------------------------------------------------------------#
 sub Sweepandnetblock() {
 if (system("./resolve.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make resolve.sh in same folder\n[~] Command failed\n";
@@ -1991,7 +1991,7 @@ sub Panthera {
 print item(), "Enter the Panthera Perl Script with path to Load: ";
 $file=<STDIN>;
 if (system("perl $file") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make Panthera file available in same folder\n[~] Command failed\n";
@@ -2005,7 +2005,7 @@ if (system("perl $file") == 0) {
 #--------------------------------------------------------------#
 sub Findemailsandnames {
 if (system("./email.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make email.sh in same folder\n[~] Command failed\n";
@@ -2019,7 +2019,7 @@ if (system("./email.sh") == 0) {
 #--------------------------------------------------------------#
 sub Findcontactinformation {
 if (system("./theharvester.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Did you forget to install the harvester\n[~] Command failed\n";
@@ -2032,7 +2032,7 @@ if (system("./theharvester.sh") == 0) {
 #--------------------------------------------------------------#
 sub Commonnmapportscan {
 if (system("./nmapcommonscan.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Did you forget the make input.txt from nmap \n[~] Command failed\n";
@@ -2136,7 +2136,7 @@ $p = HTML::TokeParser->new(\$response);
 print "\n\n\n";
 print item(), "Starting SSL protocol check\n\n";
 if (system("./ssl.sh $fsbi") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "\n",item(),"Make ssl.sh in same folder\n";
@@ -2150,7 +2150,7 @@ if (system("./ssl.sh $fsbi") == 0) {
 #--------------------------------------------------------------#
 sub Extractusersfromftp {
 if (system("./ftp.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make ftp.sh available in same folder\n[~] Command failed\n";
@@ -2163,7 +2163,7 @@ if (system("./ftp.sh") == 0) {
 #--------------------------------------------------------------#
 sub Extractusersfrompop3 {
 if (system("./pop3.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "\n",item(),"Make pop3.sh in same folder\n";
@@ -2176,7 +2176,7 @@ if (system("./pop3.sh") == 0) {
 #--------------------------------------------------------------#
 sub Extractusersfromimap {
    if (system("./pop3.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "\n",item(),"Make pop3.sh in same folder\n";
@@ -2190,7 +2190,7 @@ sub Extractusersfromimap {
 #--------------------------------------------------------------#
 sub Extractusersfromsmtp {
      if (system("./pop3.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make ftp.sh available in same folder\n[~] Command failed\n";
@@ -2203,7 +2203,7 @@ sub Extractusersfromsmtp {
 #--------------------------------------------------------------#
 sub Extractusersfromform {
      if (system("./http-form.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 					}
 	else 	{
 	print "[~] Make ftp.sh available in same folder\n[~] Command failed\n";
@@ -2231,7 +2231,7 @@ $lastemail=<STDIN>;
 #--------------------------------------------------------------#
 sub Extractfullpossibleinformationfromsnmp {
      if (system("./snmp.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make snmp.sh available in same folder\n[~] Command failed\n";
@@ -2244,7 +2244,7 @@ sub Extractfullpossibleinformationfromsnmp {
 #--------------------------------------------------------------#
 sub Extractpossibleinformationfromcertificaties {
      if (system("./crtstart.sh ") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make crt.sh available in same folder\n[~] Command failed\n";
@@ -2257,7 +2257,7 @@ sub Extractpossibleinformationfromcertificaties {
 #--------------------------------------------------------------#
 sub Findvictimhttpsleakeddata  {
      if (system("./inteli.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make inteli.sh available in same folder\n[~] Command failed\n";
@@ -2272,7 +2272,7 @@ sub Findvictimhttpsleakeddata  {
 #--------------------------------------------------------------#
 sub  Findusersfromsitemap {
      if (system("./sitemap.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make sitemap.sh available in same folder\n[~] Command failed\n";
@@ -2286,7 +2286,7 @@ sub  Findusersfromsitemap {
 #--------------------------------------------------------------#
 sub  Finddirectoriesfromrobots {
      if (system("./sitemap.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make sitemap.sh available in same folder\n[~] Command failed\n";
@@ -2327,7 +2327,7 @@ print "\n", item(), $_->url() for @foundLinks;
 #--------------------------------------------------------------#
 sub Findallaccountsfromemail  {
      if (system("./sss.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make sss.sh available in same folder\n[~] Command failed\n";
@@ -2340,7 +2340,7 @@ sub Findallaccountsfromemail  {
 #--------------------------------------------------------------#
 sub Findalltagsfromaccount {
      if (system("./fb.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make fb.sh available in same folder\n[~] Command failed\n";
@@ -2484,7 +2484,7 @@ $p = HTML::TokeParser->new(\$response);
 #--------------------------------------------------------------#
 sub Passivednssearch {
      if (system("./passive.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make passive.sh available in same folder\n[~] Command failed\n";
@@ -2496,13 +2496,29 @@ sub Passivednssearch {
 #50 Use Common Crawl on Target                                 #
 #--------------------------------------------------------------#
 sub Usecommoncrawlontarget {
-     if (system("./common.sh") == 0) {
-	print "success!\n";
+	print "\n", item(),"Download website using common crawl: ";
+	print "\n", item(),"Use JSON reader to understand JSON file structure: ";
+	print "\n", item(),"Enter Option: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+     if (system("./common1.sh") == 0) {
+	print item(), "success!\n";
+	print item(), "Results are saved in json-results folder\n";
 	}
 	else {
-	print item(), "Make common.sh available in same folder\n";
+	print item(), "Make common1.sh available in same folder\n";
 	print item(), "Command failed\n";
-
+	}
+	}
+	if ($enter =~2) {
+     if (system("./common2.sh") == 0) {
+	print item(), "success!\n";
+	print item(), "Results are saved in json-results folder\n";
+	}
+	else {
+	print item(), "Make common2.sh available in same folder\n";
+	print item(), "Command failed\n";
+	}
 	}
 }
 
@@ -2694,7 +2710,7 @@ sub Winctonetbios {
 #--------------------------------------------------------------#
 sub Ips {
      if (system("perl sixth.pl -d google.com -t $ips -s 1 -f 65535 -i wlan0") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print item(),"Command failed\n";
@@ -2875,7 +2891,7 @@ sub MDSSE {
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
      if (system("./mdsse.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print item(),"Make mdsse.sh available in same folder\n";
@@ -2884,7 +2900,7 @@ sub MDSSE {
 	}
 if ($enter =~2)  {
      if (system("./nmapasnlookup.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print item(),"Make nmapasnlookup.sh available in same folder\n";
