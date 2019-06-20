@@ -613,7 +613,7 @@ sub help {
     print color('bold cyan'),"                 #   \n",line_d();
 
     print color('bold cyan'),"#                   ";
-    print item('68'),"Test CORS ";
+    print item('68'),"Check misconfigured Cross Origin Resource Sharing ";
     print color('bold red'),"        => ";
     print color("bold white"),"reconcobra -ap site.com";
     print color('bold cyan'),"                 #   \n",line_d();
@@ -743,9 +743,9 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('67'),"Endpoint Extraction ";print color('bold cyan'),"                               #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('68'),"Test CORS ";print color('bold cyan'),"   	                                    #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('68'),"Check misconfigured Cross Origin Resource Sharing ";print color('bold cyan')," #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('69'),"Wayback Web Downloader ";print color('bold cyan'),"                            #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('70'),"JS Link Finder ";print color('bold cyan'),"                                    #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('70'),"JS Find Link & Analyse ( local and remote ) ";print color('bold cyan'),"       #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
