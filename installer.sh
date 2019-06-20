@@ -62,6 +62,7 @@ echo "y" | cpan install LWP::Protocol::https
 echo "y" | cpan install Mozilla::CA
 echo "y" | cpan install Bundle::LWP
 
+
 echo -e "$red [$green+$red]$off Checking directories..."
 if [ -d "/usr/share/ReconCobra" ]; then
     echo -e "$red [$green+$red]$off A Directory ReconCobra Was Found! Do You Want To Replace It? [Y/n]:" ;
@@ -92,6 +93,7 @@ perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
     rm "ReconCobra";
 
 echo "y" | apt-get install xdg-utils
+echo "y" | apt-get install cargo
 echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
 echo "y" | apt-get install python3
@@ -107,6 +109,10 @@ echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
 echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
+echo "y" | git clone https://github.com/heycam/json-describe
+cd json-describe
+cargo install
+cd ..
 echo "y" | apt-get install nmap
 pip install requests
 pip install request
