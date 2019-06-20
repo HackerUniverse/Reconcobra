@@ -19,7 +19,7 @@ EULA
 </div>
 
 <div align="center">
-    <img src="http://oi68.tinypic.com/72ps0p.jpg" width="400px"</img> 
+    <img src="http://oi67.tinypic.com/289llc1.jpg" width="400px"</img> 
 </div>
 
 # In-Action
@@ -35,10 +35,6 @@ EULA
 # Termux Interface
 <div align="center">
     <img src="http://oi66.tinypic.com/24zbvb8.jpg" width="400px"</img> 
-</div>
-
-<div align="center">
-    <img src="http://oi67.tinypic.com/289llc1.jpg" width="400px"</img> 
 </div>
 
 # Kali Installation
