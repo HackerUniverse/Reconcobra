@@ -117,6 +117,7 @@ GetOptions(
     "aj|domaincert=s" => \$domainCertificate,
     "ak|apisubdomain=s" => \$apisubdomain,
     "al|cname=s" => \$cname,
+    "am|endpoints=s" => \$endpoints,
 );
 
 if ($help) { banner();help(); }
@@ -186,6 +187,7 @@ if ($MDSSE) { banner();MDSSE(); }
 if ($dcse) { banner();DomainCertificate(); } 
 if ($apisubdomain) { banner();Apisubdomain(); } 
 if ($cname) { banner();Cname(); } 
+if ($cname) { banner();endpoints(); } 
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -597,6 +599,13 @@ sub help {
     print color('bold red'),"        => ";
     print color("bold white"),"reconcobra -an site.com";
     print color('bold cyan'),"                 #   \n",line_d();
+
+    print color('bold cyan'),"#                   ";
+    print item('67'),"Endpoints Extraction ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ao site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
 }
 
 #--------------------------------------------------------------#
@@ -708,6 +717,7 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('64'),"Domain Certificate Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('67'),"Endpoint Extraction ";print color('bold cyan'),"                               #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1297,6 +1307,14 @@ sub menu {
         print color('bold white');       
         print "\n";
         Cname();
+        enter();
+    }if($number eq '67'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        endpoints();
         enter();
     }
     if($number eq '0'){
@@ -2206,7 +2224,7 @@ sub Extractusersfromform {
 	print item(), "success!\n";
 					}
 	else 	{
-	print "[~] Make ftp.sh available in same folder\n[~] Command failed\n";
+	print "[~] Make http-form.sh available in same folder\n[~] Command failed\n";
 		}
 		{
 print item(), "Enter the injection variable\n";
@@ -3016,6 +3034,22 @@ sub Cname() {
 	print item(),"Command failed\n";
 	}
 }
+
+
+#--------------------------------------------------------------#
+#67   Extraction Endpoints		                       #
+#--------------------------------------------------------------#
+sub endpoints() {
+     if (system("./endpoint_extraction.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in endpoint_extraction_results folder\n";
+	}
+	else {
+	print item(),"Make endpoint_extraction.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
 
 
 #--------------------------------------------------------------#
