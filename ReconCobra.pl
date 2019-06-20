@@ -3105,6 +3105,7 @@ sub cors() {
 #69   Wayback URL Download			               #
 #--------------------------------------------------------------#
 sub wayback() {
+	print item(),"Catuion: Downloading URL may take a while\n";
      if (system("./wayback.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in wayback_results folder\n";
