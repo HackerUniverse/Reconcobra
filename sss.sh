@@ -9,11 +9,8 @@ OKORANGE='\033[93m'
 DELAY=1
 RESET='\e[0m'
 
-if [ -z $TARGET ]; then
-	echo -e "$OKORANGE + -- --=[Usage: sss.sh <domain>$RESET"
-	exit
-fi
-
+echo "Enter Target"
+read Target
 # LOAD WEBSITE IN A WEB BROSER
-$BROWSER "https://www.social-searcher.com/google-social-search/?q=$TARGET&fb=on&tw=on&gp=on&in=on&li=on&pi=on" 2> /dev/null
+$BROWSER "https://www.social-searcher.com/google-social-search/?q=$Target&fb=on&tw=on&gp=on&in=on&li=on&pi=on" 2> /dev/null
 
