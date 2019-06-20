@@ -67,6 +67,7 @@ echo "y" | apt-get install hping3
 echo "y" | apt-get install python
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
+echo "y" | apt-get install cargo
 echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
@@ -74,6 +75,10 @@ echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
+echo "y" | git clone https://github.com/heycam/json-describe
+cd json-describe
+cargo install
+cd ..
 echo "y" | https://github.com/haroonawanofficial/vasl.git
 echo "y" | apt-get install nmap
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
