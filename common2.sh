@@ -1,7 +1,6 @@
 #!/bin/bash
-echo -n "[ + ] Enter File Path: " ; read File
+echo -n "[ + ] Enter File with Path: " ; read File
 mkdir json-results
-cd json-describe
-chmod u+x *
+cd json-describe/target/debug
 ./json-describe $File > /json-results/$File.list
 cd ..
