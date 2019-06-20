@@ -3109,7 +3109,6 @@ sub endpoints() {
 sub cors() {
      if (system("./cors.sh") == 0) {
 	print item(),"success!\n";
-	print item(),"Results are saved in cors_results folder\n";
 	}
 	else {
 	print item(),"Make cors.sh available in same folder\n";
