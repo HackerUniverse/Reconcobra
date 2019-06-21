@@ -2301,14 +2301,49 @@ $lastemail=<STDIN>;
 #40   Extract Full Possible Information via SNMP                #
 #--------------------------------------------------------------#
 sub Extractfullpossibleinformationfromsnmp {
-     if (system("./snmp.sh") == 0) {
+	print "\n", item(),"1 - Use SNMP version 1 using public string";
+	print "\n", item(),"2 - Use SNMP version 1 using private string";
+	print "\n", item(),"3 - Use SNMP version 2 using public string";
+	print "\n", item(),"4 - Use SNMP version 2 using private string";
+	print "\n", item(),"Enter Option: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+     if (system("./snmp1.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
-	print "[~] Make snmp.sh available in same folder\n[~] Command failed\n";
+	print "\n", item(),"Make snmp1.sh available in same folder";
+	print "\n", item(),"Command failed";
 	}
+			}
+	if ($enter =~2) {
+     if (system("./snmp2.sh") == 0) {
+	print item(), "success!\n";
+	}
+	else {
+	print "\n", item(),"Make snmp2.sh available in same folder";
+	print "\n", item(),"Command failed";
+	}
+			}
+	if ($enter =~3) {
+     if (system("./snmp3.sh") == 0) {
+	print item(), "success!\n";
+	}
+	else {
+	print "\n", item(),"Make snmp3.sh available in same folder";
+	print "\n", item(),"Command failed";
+	}
+			}
+	if ($enter =~4) {
+     if (system("./snmp4.sh") == 0) {
+	print item(), "success!\n";
+	}
+	else {
+	print "\n", item(),"Make snmp4.sh available in same folder";
+	print "\n", item(),"Command failed";
+	}
+			}
 }
-
 
 #--------------------------------------------------------------#
 #41  Extract Possible Information from Certificates            #
