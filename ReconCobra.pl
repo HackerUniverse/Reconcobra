@@ -1084,9 +1084,9 @@ sub menu {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($eufs=<STDIN>);
+        #chomp($eufs=<STDIN>);
         print "\n";
-        #Extractusersfromsmtp();
+        Extractusersfromsmtp();
         enter();
     }if($number eq '39'){
         banner();
@@ -1099,10 +1099,10 @@ sub menu {
         enter();
         }if($number eq '40'){
         banner();
-        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target IP     ";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($efpifs=<STDIN>);
+        #chomp($efpifs=<STDIN>);
         print "\n";
         Extractfullpossibleinformationfromsnmp();
         enter();
@@ -2245,11 +2245,11 @@ if (system("./pop3.sh") == 0) {
 # 37         Extract Users via IMAP                            #
 #--------------------------------------------------------------#
 sub Extractusersfromimap {
-   if (system("./pop3.sh") == 0) {
+   if (system("./imap.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
-	print "\n",item(),"Make pop3.sh in same folder\n";
+	print "\n",item(),"Make imap.sh in same folder\n";
 	print "\n",item(),"Command failed\n";
 	}
 }
@@ -2259,11 +2259,12 @@ sub Extractusersfromimap {
 # 38         Extract Users via SMTP                            #
 #--------------------------------------------------------------#
 sub Extractusersfromsmtp {
-     if (system("./pop3.sh") == 0) {
+     if (system("./smtp.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
-	print "[~] Make ftp.sh available in same folder\n[~] Command failed\n";
+	print "\n",item(),"Make smtp.sh in same folder\n";
+	print "\n",item(),"Command failed\n";
 	}
 }
 
