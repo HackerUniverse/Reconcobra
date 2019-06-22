@@ -35,6 +35,8 @@ apt-get install make
 apt-get install clang
 apt-get install unzip
 apt-get install tar
+echo -e "Installing Java ...";
+wget https://raw.githubusercontent.com/MasterDevX/java/master/installjava && bash installjava
 echo -e "Installing Perl ...";
 apt-get install -y perl
 echo -e "Installing JSON Module ...";
