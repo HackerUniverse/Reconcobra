@@ -20,6 +20,11 @@
 
 #!/bin/bash
 
+red="\e[0;31m"
+green="\e[0;32m"
+off="\e[0m"
+
+function banner() {
 clear
 
 echo "Ultimate Recon and Foot Printing Software     Version 1.0a";   
@@ -27,27 +32,15 @@ echo "Termux Installer By: Hacker_Universe";
 echo "Coded By: Haroon Awan";
 echo "Mail: mrharoonawan@gmail.com";
 echo "";
+}
 
-
-echo -e "prerequisite install"
-apt-get install wget
-apt-get install make
-apt-get install clang
-apt-get install unzip
-apt-get install tar
-echo -e "Installing Perl ...";
-apt-get install -y perl
-echo -e "Installing JSON Module ...";
+function linux() {
+echo -e "$red [$green+$red]$off Installing Perl ...";
+sudo apt-get install -y perl
+echo -e "$red [$green+$red]$off Installing JSON Module ...";
 cpan install JSON
-echo -e "Installing Extra Perl Modules ...";
-echo "y" | wget https://cpan.metacpan.org/authors/id/B/BP/BPS/HTTP-Server-Simple-0.52.tar.gz
-tar -xvf HTTP-Server-Simple-0.52.tar.gz
-cd HTTP-Server-Simple-0.52
-perl Makefile.PL
-make
-make install
-cd ..
-echo "y" | cpan install WWW::Mechanize 
+echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
+echo "y" | cpan install WWW::Mechanize
 echo "y" | cpan install use HTML::TokeParser
 echo "y" | cpan install Term::ANSIColor
 echo "y" | cpan install Mojo::DOM
@@ -60,40 +53,94 @@ echo "y" | cpan install Mozilla::CA
 echo "y" | cpan install Bundle::LWP
 
 
-echo -e "Installing dependencies ...";
+echo -e "$red [$green+$red]$off Checking directories..."
+if [ -d "/usr/share/ReconCobra" ]; then
+    echo -e "$red [$green+$red]$off A Directory ReconCobra Was Found! Do You Want To Replace It? [Y/n]:" ;
+    read replace
+    if [ "$replace" = "Y" ]; then
+      sudo rm -r "/usr/share/ReconCobra"
+      sudo rm "/usr/share/icons/ReconCobra.png"
+      sudo rm "/usr/share/applications/ReconCobra.desktop"
+      sudo rm "/usr/local/bin/ReconCobra"
+
+else
+echo -e "$red [$green+$red]$off If You Want To Install You Must Remove Previous Installations";
+        exit
+    fi
+fi 
+
+echo -e "$red [$green+$red]$off Installing ...";
+echo -e "$red [$green+$red]$off Creating Symbolic Link ...";
+echo -e "#!/bin/bash
+perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
+    chmod +x "ReconCobra";
+    sudo mkdir "/usr/share/ReconCobra"
+    sudo cp "installer.sh" "/usr/share/ReconCobra"
+    sudo cp "ReconCobra.pl" "/usr/share/ReconCobra"
+    sudo cp "config/ReconCobra.jpeg" "/usr/share/icons"
+    sudo cp "config/ReconCobra.desktop" "/usr/share/applications"
+    sudo cp "ReconCobra" "/usr/local/bin/"
+    rm "ReconCobra";
+
+echo -e "$red [$green+$red]$off Installing dependencies..."
 echo "y" | apt-get install xdg-utils
+echo "y" | apt-get install cargo
 echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
-echo "y" | apt-get install python
+echo "y" | apt-get install python3
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
-echo "y" | apt-get install cargo
+echo "y" | apt-get install gem
+gem install wayback_machine_downloader
 echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
+echo "y" | git clone https://github.com/Miladkhoshdel/corschecker.git
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
+echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
-echo "y" | git clone https://github.com/heycam/json-describe
-cd json-describe
-cargo install
-cd ..
-echo "y" | https://github.com/haroonawanofficial/vasl.git
-echo "y" | apt-get install nmap
+echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
+echo "y" | git clone https://github.com/heycam/json-describe
+cd json-describe
+cargo build
+cd ..
+echo "y" | apt-get install nmap
 pip install requests
 pip install request
 cd SearchEngineScrapy
 pip install -r requirements.txt
-virtualenv --python="2" env
-env/bin/activate
+sudo virtualenv --python="2" env
+sudo env/bin/activate
 cd ..
 echo "y" | git clone https://github.com/FortyNorthSecurity/EyeWitness.git
 cd EyeWitness/setup
 chmod u+x setup.sh
 ./setup.sh
 cd ..
+cd ..
 chmod u+x *.sh
-echo -e "Installed, run perl ReconCobra.pl for interface!";
+cp * -r /usr/share/ReconCobra
+
+if [ -d "/usr/share/ReconCobra" ] ;
+then
+echo -e "$red [$green+$red]$off ReconCobra Successfully Installed, Starting";
+sleep 2;
+ReconCobra
+else
+echo -e "$red [$green+$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
+    exit
+fi 
+}
+
+if [ -d "/usr/bin/" ];then
+banner
+echo -e "$red [$green+$red]$off ReconCobra Will Be Installed In Your System";
+linux
+else
+echo -e "$red [$green+$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
+    exit
+fi
