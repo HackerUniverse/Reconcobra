@@ -51,7 +51,7 @@ EULA
 - cd Reconcobra
 - chmod u+x *.sh
 - ./termuxinstaller.sh
-- ReconCobra will integrate as system software for Termux
+- perl ReconCobratermux.pl
 - Dependencies will be handled automatically for Termux
 - Third party software(s)/dependencies/modules will be handled automatically for Termux
 
