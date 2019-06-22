@@ -101,4 +101,4 @@ cd ..
 cd ..
 chmod u+x *.sh
 cp * -r /usr/share/ReconCobra
-echo -e "Installed, run perl ReconCobra.pl for interface!";
+echo -e "Installed, run perl ReconCobratermux.pl for interface!";
