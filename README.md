@@ -55,15 +55,11 @@ EULA
 - Dependencies will be handled automatically for Termux
 - Third party software(s)/dependencies/modules will be handled automatically for Termux
 
-# NO Stand-alone
-- If you still need stand-alone for whatever reason:
-- STEP1: First git clone then goto folder
-- STEP2: chmod u+x *.sh
-- STEP3: installer.sh for Kali
-- STEP4: termuxinstaller.sh for Termux
-- STEP5: copy all files/folders into /usr/share/ReconCobra
-- STEP6: In same folder do use perl now
-- STEP7: perl ReconCobra.pl
+# Running in Kali
+- ReconCobra
+
+# Running in Termux
+- perl ReconCobratermux.pl
 
 # Mail
 - mrharoonawan@gmail.com
