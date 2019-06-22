@@ -1360,7 +1360,7 @@ sub menu {
         print "\n";
         wayback();
         enter();
-    }if($number eq '69'){
+    }if($number eq '70'){
         banner();
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
