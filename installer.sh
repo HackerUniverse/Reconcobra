@@ -92,6 +92,7 @@ perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
     sudo cp "ReconCobra" "/usr/local/bin/"
     rm "ReconCobra";
 
+echo -e "$red [$green+$red]$off Installing dependencies..."
 echo "y" | apt-get install xdg-utils
 echo "y" | apt-get install cargo
 echo "y" | apt-get install python-yaml
@@ -99,19 +100,23 @@ echo "y" | apt-get install hping3
 echo "y" | apt-get install python3
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
+echo "y" | apt-get install gem
+gem install wayback_machine_downloader
 echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
+echo "y" | git clone https://github.com/Miladkhoshdel/corschecker.git
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
+echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
 echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
 echo "y" | git clone https://github.com/heycam/json-describe
 cd json-describe
-cargo install
+cargo build
 cd ..
 echo "y" | apt-get install nmap
 pip install requests
@@ -125,7 +130,10 @@ echo "y" | git clone https://github.com/FortyNorthSecurity/EyeWitness.git
 cd EyeWitness/setup
 chmod u+x setup.sh
 ./setup.sh
-
+cd ..
+cd ..
+chmod u+x *.sh
+cp * -r /usr/share/ReconCobra
 
 if [ -d "/usr/share/ReconCobra" ] ;
 then
