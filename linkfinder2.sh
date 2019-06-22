@@ -1,4 +1,5 @@
 #!/bin/bash
 echo -n "Enter URL : " ; read URL
-cd Linkfinder
-./linkfinder.py -i http://$URL -d
+mkdir js_linkfder
+cd js_linkfder
+./js_linkfinder.py -i http://$URL -d
