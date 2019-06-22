@@ -78,6 +78,7 @@ echo "y" | git clone https://github.com/Miladkhoshdel/corschecker.git
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
+echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
 echo "y" | git clone https://github.com/heycam/json-describe
 cd json-describe
 cargo build
