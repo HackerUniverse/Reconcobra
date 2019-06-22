@@ -3175,8 +3175,8 @@ sub wayback() {
 sub linkfinder() {
 	print item(),"Catuion: Downloading JS files may take a while\n";
 	print item(),"1 - Use JS Crawler and Downloader\n";
-	print item(),"2 - Use LinkFinder: ";
-	print item(),"Enter Option\n";
+	print item(),"2 - Use LinkFinder\n ";
+	print item(),"Enter Option: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
      if (system("/usr/share/ReconCobra/linkfinder1.sh") == 0) {
