@@ -1,6 +1,8 @@
 #!/bin/bash
-mkdir js_linkfinder/results
+mkdir js_linkfinder
+mkdir results
 cd js_linkfinder
+
 echo "[ + ] Enter TERMUX option for Termux else press RETURN :"
 read $first
 
