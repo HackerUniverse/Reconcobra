@@ -3176,11 +3176,12 @@ sub linkfinder() {
 	print item(),"Catuion: Downloading JS files may take a while\n";
 	print item(),"1 - Use JS Crawler and Downloader\n";
 	print item(),"2 - Use LinkFinder: ";
+	print item(),"Enter Option\n";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
      if (system("/usr/share/ReconCobra/linkfinder1.sh") == 0) {
 	print item(),"success!\n";
-	print item(),"Results are saved in linkfinder_results folder\n";
+	print item(),"Results are saved in js_linkfinder at results folder\n";
 	}
 	else {
 	print item(),"Make linkfinder1.sh available in same folder\n";
@@ -3190,7 +3191,7 @@ sub linkfinder() {
 	if ($enter =~2) {
      if (system("/usr/share/ReconCobra/linkfinder2.sh") == 0) {
 	print item(),"success!\n";
-	print item(),"Results are saved in linkfinder_results folder\n";
+	print item(),"Results are saved in js_linkfinder at results\n";
 	}
 	else {
 	print item(),"Make linkfinder2.sh available in same folder\n";
