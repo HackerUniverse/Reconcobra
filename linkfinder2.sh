@@ -1,27 +1,7 @@
 #!/bin/bash
-mkdir js_linkfinder
-mkdir results
-cd js_linkfinder
-
-echo "[ + ] Enter TERMUX option for Termux else press RETURN :"
-read $first
-
-if [ "$first" == 'TERMUX' ]
-
-then 
+cd LinkFinder
 
 read -p "[ + ] Enter victim url: " victim
+echo "[ + ] Example: https://www.google.com and result will automatically available at browser
 echo "$victim"
-python js_linkfinder.py --wait=2 --download $victim
-
-else
-
-read -p "[ + ] Enter victim url: " victim
-echo "$victim"
-python3 js_linkfinder.py --wait=2 --download $victim
-
-fi
-
-cp *.js /results
-rm *.js 
-cd ..
+python2 linkfinder.py -i $victim -d
