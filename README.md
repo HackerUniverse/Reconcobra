@@ -59,7 +59,7 @@ EULA
 - ReconCobra
 
 # Running in Termux
-- perl ReconCobratermux.pl
+- perl ReconCobraTermux.pl
 
 # Mail
 - mrharoonawan@gmail.com
