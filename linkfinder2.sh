@@ -20,6 +20,6 @@ python3 js_linkfinder.py --wait=2 --download https://$victim
 
 fi
 
-cp * ./results
-rm * 
+cp *.js /results
+rm *.js 
 cd ..
