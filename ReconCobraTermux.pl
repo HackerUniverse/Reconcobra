@@ -3198,6 +3198,17 @@ sub linkfinder() {
 	print item(),"Command failed\n";
 	}
 	}
+	if ($enter =~3) {
+     if (system("./linkfinder3.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in LinkFinder folder\n";
+	}
+	else {
+	print item(),"Make linkfinder3.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+	}
+
 }
 
 
