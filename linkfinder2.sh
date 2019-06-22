@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir js_linkfinder
+mkdir js_linkfinder/results
 cd js_linkfinder
 echo "[ + ] Enter TERMUX option for Termux else press RETURN :"
 read $first
@@ -19,4 +19,7 @@ echo "$victim"
 python3 js_linkfinder.py --wait=2 --download https://$victim
 
 fi
+
+cp * ./results
+rm * 
 cd ..
