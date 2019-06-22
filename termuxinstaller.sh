@@ -23,7 +23,7 @@
 clear
 
 echo "Ultimate Recon and Foot Printing Software     Version 1.0a";   
-echo "Termux Installer By: Hacker_Universe";
+echo "Termux Installer By: Haroon Awan and Hacker_Universe";
 echo "Coded By: Haroon Awan";
 echo "Mail: mrharoonawan@gmail.com";
 echo "";
@@ -74,7 +74,7 @@ echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
-echo "y" | https://github.com/Miladkhoshdel/corschecker.git
+echo "y" | git clone https://github.com/Miladkhoshdel/corschecker.git
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
@@ -100,5 +100,5 @@ chmod u+x setup.sh
 cd ..
 cd ..
 chmod u+x *.sh
-cp * -r /usr/share/ReconCobra
+
 echo -e "Installed, run perl ReconCobratermux.pl for interface!";
