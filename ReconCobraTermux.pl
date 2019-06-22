@@ -117,6 +117,10 @@ GetOptions(
     "aj|domaincert=s" => \$domainCertificate,
     "ak|apisubdomain=s" => \$apisubdomain,
     "al|cname=s" => \$cname,
+    "am|endpoints=s" => \$endpoints,
+    "an|cors=s" => \$cors,
+    "ao|wayback=s" => \$wayback,
+    "ap|linkfinder=s" => \$linkfinder,
 );
 
 if ($help) { banner();help(); }
@@ -186,6 +190,10 @@ if ($MDSSE) { banner();MDSSE(); }
 if ($dcse) { banner();DomainCertificate(); } 
 if ($apisubdomain) { banner();Apisubdomain(); } 
 if ($cname) { banner();Cname(); } 
+if ($endpoints) { banner();endpoints(); } 
+if ($cors) { banner();cors(); } 
+if ($wayback) { banner();wayback(); } 
+if ($wayback) { banner();linkfinder(); } 
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -597,6 +605,32 @@ sub help {
     print color('bold red'),"        => ";
     print color("bold white"),"reconcobra -an site.com";
     print color('bold cyan'),"                 #   \n",line_d();
+
+    print color('bold cyan'),"#                   ";
+    print item('67'),"Endpoints Extraction ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ao site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
+    print color('bold cyan'),"#                   ";
+    print item('68'),"Check misconfigured Cross Origin Resource Sharing ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ap site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
+    print color('bold cyan'),"#                   ";
+    print item('69'),"Wayback Web Downloader ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ar site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
+    print color('bold cyan'),"#                   ";
+    print item('70'),"Link Finder ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ao site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
+
 }
 
 #--------------------------------------------------------------#
@@ -708,6 +742,10 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('64'),"Domain Certificate Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('67'),"Endpoint Extraction ";print color('bold cyan'),"                               #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('68'),"Check misconfigured Cross Origin Resource Sharing ";print color('bold cyan')," #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('69'),"Wayback Web Downloader ";print color('bold cyan'),"                            #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('70'),"JS Find Link & Analyse ( local and remote ) ";print color('bold cyan'),"       #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1046,9 +1084,9 @@ sub menu {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($eufs=<STDIN>);
+        #chomp($eufs=<STDIN>);
         print "\n";
-        #Extractusersfromsmtp();
+        Extractusersfromsmtp();
         enter();
     }if($number eq '39'){
         banner();
@@ -1061,10 +1099,10 @@ sub menu {
         enter();
         }if($number eq '40'){
         banner();
-        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target IP     ";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($efpifs=<STDIN>);
+        #chomp($efpifs=<STDIN>);
         print "\n";
         Extractfullpossibleinformationfromsnmp();
         enter();
@@ -1154,7 +1192,7 @@ sub menu {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
         print color('bold white');
-        chomp($pasds=<STDIN>);
+        #chomp($pasds=<STDIN>);
         print "\n";
         Usecommoncrawlontarget();
         enter();
@@ -1297,6 +1335,38 @@ sub menu {
         print color('bold white');       
         print "\n";
         Cname();
+        enter();
+    }if($number eq '67'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        endpoints();
+        enter();
+    }if($number eq '68'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        cors();
+        enter();
+    }if($number eq '69'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        wayback();
+        enter();
+    }if($number eq '69'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        linkfinder();
         enter();
     }
     if($number eq '0'){
@@ -1847,7 +1917,7 @@ sub Subdomainscanner {
 	chomp($enter=<STDIN>);
 if ($enter =~1) {
 	if (system("./ShaheenX.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make ShaheenX.sh available in same folder\n[~] Command failed\n";
@@ -1855,7 +1925,7 @@ if ($enter =~1) {
 }
 if ($enter =~2) {
 	if (system("./sub1.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make sub1.sh available in same folder\n[~] Command failed\n";
@@ -1869,7 +1939,7 @@ if ($enter =~2) {
 #--------------------------------------------------------------#
 sub Subdomaintakeover {
 if (system("./takeoverscanner.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make takoverscanner.sh available in same folder\n[~] Command failed\n";
@@ -1883,7 +1953,7 @@ if (system("./takeoverscanner.sh") == 0) {
 #--------------------------------------------------------------#
 sub Brutedomain {
 if (system("./maahro.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make maahro.sh available in same folder\n[~] Command failed\n";
@@ -1898,7 +1968,7 @@ sub Brutednsdomain {
 	print item(),"Browse panthera folder for wordllist files and provide given file list\n";
 sleep(5);
 if (system("perl panthera/dnsbrute.pl") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make Panthera available in same folder\n[~] Command failed\n";
@@ -1911,7 +1981,7 @@ if (system("perl panthera/dnsbrute.pl") == 0) {
 #--------------------------------------------------------------#
 sub Configerrors {
 if (system("./browser.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make browser.sh in same folder\n[~] Command failed\n";
@@ -1935,7 +2005,7 @@ if (system("./findasn.sh") == 0) {
 #--------------------------------------------------------------#
 sub Findnetblock {
 if (system("./netblock.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make netblock.sh in same folder\n[~] Command failed\n";
@@ -1949,7 +2019,7 @@ if (system("./netblock.sh") == 0) {
 #--------------------------------------------------------------#
 sub Capturescreenshots {
 if (system("./screenshot.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make screenshost.sh in same folder\n[~] Command failed\n";
@@ -1962,7 +2032,7 @@ if (system("./screenshot.sh") == 0) {
 #--------------------------------------------------------------#
 sub nearestvictim {
 if (system("./bile.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make bile.sh in same folder\n[~] Command failed\n";
@@ -1976,7 +2046,7 @@ if (system("./bile.sh") == 0) {
 #--------------------------------------------------------------#
 sub Sweepandnetblock() {
 if (system("./resolve.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make resolve.sh in same folder\n[~] Command failed\n";
@@ -1991,7 +2061,7 @@ sub Panthera {
 print item(), "Enter the Panthera Perl Script with path to Load: ";
 $file=<STDIN>;
 if (system("perl $file") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make Panthera file available in same folder\n[~] Command failed\n";
@@ -2005,7 +2075,7 @@ if (system("perl $file") == 0) {
 #--------------------------------------------------------------#
 sub Findemailsandnames {
 if (system("./email.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make email.sh in same folder\n[~] Command failed\n";
@@ -2019,7 +2089,7 @@ if (system("./email.sh") == 0) {
 #--------------------------------------------------------------#
 sub Findcontactinformation {
 if (system("./theharvester.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Did you forget to install the harvester\n[~] Command failed\n";
@@ -2032,7 +2102,7 @@ if (system("./theharvester.sh") == 0) {
 #--------------------------------------------------------------#
 sub Commonnmapportscan {
 if (system("./nmapcommonscan.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Did you forget the make input.txt from nmap \n[~] Command failed\n";
@@ -2136,7 +2206,7 @@ $p = HTML::TokeParser->new(\$response);
 print "\n\n\n";
 print item(), "Starting SSL protocol check\n\n";
 if (system("./ssl.sh $fsbi") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "\n",item(),"Make ssl.sh in same folder\n";
@@ -2150,7 +2220,7 @@ if (system("./ssl.sh $fsbi") == 0) {
 #--------------------------------------------------------------#
 sub Extractusersfromftp {
 if (system("./ftp.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make ftp.sh available in same folder\n[~] Command failed\n";
@@ -2163,7 +2233,7 @@ if (system("./ftp.sh") == 0) {
 #--------------------------------------------------------------#
 sub Extractusersfrompop3 {
 if (system("./pop3.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "\n",item(),"Make pop3.sh in same folder\n";
@@ -2175,11 +2245,11 @@ if (system("./pop3.sh") == 0) {
 # 37         Extract Users via IMAP                            #
 #--------------------------------------------------------------#
 sub Extractusersfromimap {
-   if (system("./pop3.sh") == 0) {
-	print "success!\n";
+   if (system("./imap.sh") == 0) {
+	print item(), "success!\n";
 	}
 	else {
-	print "\n",item(),"Make pop3.sh in same folder\n";
+	print "\n",item(),"Make imap.sh in same folder\n";
 	print "\n",item(),"Command failed\n";
 	}
 }
@@ -2189,11 +2259,12 @@ sub Extractusersfromimap {
 # 38         Extract Users via SMTP                            #
 #--------------------------------------------------------------#
 sub Extractusersfromsmtp {
-     if (system("./pop3.sh") == 0) {
-	print "success!\n";
+     if (system("./smtp.sh") == 0) {
+	print item(), "success!\n";
 	}
 	else {
-	print "[~] Make ftp.sh available in same folder\n[~] Command failed\n";
+	print "\n",item(),"Make smtp.sh in same folder\n";
+	print "\n",item(),"Command failed\n";
 	}
 }
 
@@ -2203,10 +2274,10 @@ sub Extractusersfromsmtp {
 #--------------------------------------------------------------#
 sub Extractusersfromform {
      if (system("./http-form.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 					}
 	else 	{
-	print "[~] Make ftp.sh available in same folder\n[~] Command failed\n";
+	print "[~] Make http-form.sh available in same folder\n[~] Command failed\n";
 		}
 		{
 print item(), "Enter the injection variable\n";
@@ -2230,21 +2301,56 @@ $lastemail=<STDIN>;
 #40   Extract Full Possible Information via SNMP                #
 #--------------------------------------------------------------#
 sub Extractfullpossibleinformationfromsnmp {
-     if (system("./snmp.sh") == 0) {
-	print "success!\n";
+	print "\n", item(),"1 - Use SNMP version 1 using public string";
+	print "\n", item(),"2 - Use SNMP version 1 using private string";
+	print "\n", item(),"3 - Use SNMP version 2 using public string";
+	print "\n", item(),"4 - Use SNMP version 2 using private string";
+	print "\n", item(),"Enter Option: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+     if (system("./snmp1.sh") == 0) {
+	print item(), "success!\n";
 	}
 	else {
-	print "[~] Make snmp.sh available in same folder\n[~] Command failed\n";
+	print "\n", item(),"Make snmp1.sh available in same folder";
+	print "\n", item(),"Command failed";
 	}
+			}
+	if ($enter =~2) {
+     if (system("./snmp2.sh") == 0) {
+	print item(), "success!\n";
+	}
+	else {
+	print "\n", item(),"Make snmp2.sh available in same folder";
+	print "\n", item(),"Command failed";
+	}
+			}
+	if ($enter =~3) {
+     if (system("./snmp3.sh") == 0) {
+	print item(), "success!\n";
+	}
+	else {
+	print "\n", item(),"Make snmp3.sh available in same folder";
+	print "\n", item(),"Command failed";
+	}
+			}
+	if ($enter =~4) {
+     if (system("./snmp4.sh") == 0) {
+	print item(), "success!\n";
+	}
+	else {
+	print "\n", item(),"Make snmp4.sh available in same folder";
+	print "\n", item(),"Command failed";
+	}
+			}
 }
-
 
 #--------------------------------------------------------------#
 #41  Extract Possible Information from Certificates            #
 #--------------------------------------------------------------#
 sub Extractpossibleinformationfromcertificaties {
      if (system("./crtstart.sh ") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make crt.sh available in same folder\n[~] Command failed\n";
@@ -2257,7 +2363,7 @@ sub Extractpossibleinformationfromcertificaties {
 #--------------------------------------------------------------#
 sub Findvictimhttpsleakeddata  {
      if (system("./inteli.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make inteli.sh available in same folder\n[~] Command failed\n";
@@ -2272,7 +2378,7 @@ sub Findvictimhttpsleakeddata  {
 #--------------------------------------------------------------#
 sub  Findusersfromsitemap {
      if (system("./sitemap.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make sitemap.sh available in same folder\n[~] Command failed\n";
@@ -2285,8 +2391,8 @@ sub  Findusersfromsitemap {
 #44Find Directories from robots.txt                            #
 #--------------------------------------------------------------#
 sub  Finddirectoriesfromrobots {
-     if (system("./sitemap.sh") == 0) {
-	print "success!\n";
+     if (system("./robots.sh") == 0) {
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make sitemap.sh available in same folder\n[~] Command failed\n";
@@ -2327,7 +2433,7 @@ print "\n", item(), $_->url() for @foundLinks;
 #--------------------------------------------------------------#
 sub Findallaccountsfromemail  {
      if (system("./sss.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make sss.sh available in same folder\n[~] Command failed\n";
@@ -2340,7 +2446,7 @@ sub Findallaccountsfromemail  {
 #--------------------------------------------------------------#
 sub Findalltagsfromaccount {
      if (system("./fb.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make fb.sh available in same folder\n[~] Command failed\n";
@@ -2484,7 +2590,7 @@ $p = HTML::TokeParser->new(\$response);
 #--------------------------------------------------------------#
 sub Passivednssearch {
      if (system("./passive.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print "[~] Make passive.sh available in same folder\n[~] Command failed\n";
@@ -2496,13 +2602,29 @@ sub Passivednssearch {
 #50 Use Common Crawl on Target                                 #
 #--------------------------------------------------------------#
 sub Usecommoncrawlontarget {
-     if (system("./common.sh") == 0) {
-	print "success!\n";
+	print "\n", item(),"Download website using common crawl: ";
+	print "\n", item(),"Use JSON reader to understand JSON file structure: ";
+	print "\n", item(),"Enter Option: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+     if (system("./common1.sh") == 0) {
+	print item(), "success!\n";
+	print item(), "Results are saved in json-results folder\n";
 	}
 	else {
-	print item(), "Make common.sh available in same folder\n";
+	print item(), "Make common1.sh available in same folder\n";
 	print item(), "Command failed\n";
-
+	}
+	}
+	if ($enter =~2) {
+     if (system("./common2.sh") == 0) {
+	print item(), "success!\n";
+	print item(), "Results are saved in json-results folder\n";
+	}
+	else {
+	print item(), "Make common2.sh available in same folder\n";
+	print item(), "Command failed\n";
+	}
 	}
 }
 
@@ -2694,7 +2816,7 @@ sub Winctonetbios {
 #--------------------------------------------------------------#
 sub Ips {
      if (system("perl sixth.pl -d google.com -t $ips -s 1 -f 65535 -i wlan0") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print item(),"Command failed\n";
@@ -2875,7 +2997,7 @@ sub MDSSE {
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
      if (system("./mdsse.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print item(),"Make mdsse.sh available in same folder\n";
@@ -2884,7 +3006,7 @@ sub MDSSE {
 	}
 if ($enter =~2)  {
      if (system("./nmapasnlookup.sh") == 0) {
-	print "success!\n";
+	print item(), "success!\n";
 	}
 	else {
 	print item(),"Make nmapasnlookup.sh available in same folder\n";
@@ -3000,6 +3122,84 @@ sub Cname() {
 	print item(),"Command failed\n";
 	}
 }
+
+
+#--------------------------------------------------------------#
+#67   Extraction Endpoints		                       #
+#--------------------------------------------------------------#
+sub endpoints() {
+     if (system("./endpoint_extraction.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in endpoint_extraction_results folder\n";
+	}
+	else {
+	print item(),"Make endpoint_extraction.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+
+#--------------------------------------------------------------#
+#68   Testing CORS			                       #
+#--------------------------------------------------------------#
+sub cors() {
+     if (system("./cors.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make cors.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+
+#--------------------------------------------------------------#
+#69   Wayback URL Download			               #
+#--------------------------------------------------------------#
+sub wayback() {
+	print item(),"Catuion: Downloading URL may take a while\n";
+     if (system("./wayback.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in wayback_results folder\n";
+	}
+	else {
+	print item(),"Make wayback.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+
+#--------------------------------------------------------------#
+#70   Link Finder				               #
+#--------------------------------------------------------------#
+sub linkfinder() {
+	print item(),"Catuion: Downloading JS files may take a while\n";
+	print item(),"1 - Use JS Crawler and Downloader\n";
+	print item(),"2 - Use LinkFinder: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+     if (system("./linkfinder1.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in linkfinder_results folder\n";
+	}
+	else {
+	print item(),"Make linkfinder1.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+	}
+	if ($enter =~2) {
+     if (system("./linkfinder2.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in linkfinder_results folder\n";
+	}
+	else {
+	print item(),"Make linkfinder2.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+	}
+}
+
+
 
 
 #--------------------------------------------------------------#
