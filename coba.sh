@@ -22,12 +22,12 @@ then
 
 read -p "[ + ] Enter victim url in absolute format: " victim
 echo "$victim"
-python cobra_webmeta_crawler.py --wait=2 --download https://$victim
+python cobra_webmeta_crawler.py --wait=2 --download $victim
 
 else
 
 read -p "[ + ] Enter victim url: " victim
 echo "$victim"
-python3 cobra_webmeta_crawler.py --wait=2 --download https://$victim
+python3 cobra_webmeta_crawler.py --wait=2 --download $victim
 
 fi
