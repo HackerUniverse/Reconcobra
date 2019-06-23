@@ -84,6 +84,7 @@ echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
 echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
 cd LinkFinder
 python setup.py install
+cd ..
 echo "y" | git clone https://github.com/heycam/json-describe
 cd json-describe
 cargo build
