@@ -122,6 +122,8 @@ cd json-describe
 cargo build
 cd ..
 echo "y" | apt-get install nmap
+pip install jsbeautifier
+pip install argparse
 pip install requests
 pip install request
 cd SearchEngineScrapy
