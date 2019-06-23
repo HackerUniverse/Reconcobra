@@ -90,6 +90,8 @@ echo "y" | https://github.com/haroonawanofficial/vasl.git
 echo "y" | apt-get install nmap
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
+pip install jsbeautifier
+pip install argparse
 pip install requests
 pip install request
 cd SearchEngineScrapy
