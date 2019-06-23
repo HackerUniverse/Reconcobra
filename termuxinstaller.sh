@@ -35,8 +35,6 @@ apt-get install make
 apt-get install clang
 apt-get install unzip
 apt-get install tar
-echo -e "Installing Java ...";
-wget https://raw.githubusercontent.com/MasterDevX/java/master/installjava && bash installjava
 echo -e "Installing Perl ...";
 apt-get install -y perl
 echo -e "Installing JSON Module ...";
@@ -76,7 +74,7 @@ echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
-echo "y" | git clone https://github.com/Miladkhoshdel/corschecker.git
+echo "y" | git clone https://github.com/chenjj/CORScanner.git
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
