@@ -3256,7 +3256,7 @@ sub geotagging() {
 	print item(),"Results are saved in geotagging_crawler folder\n";
 	}
 	else {
-	print item(),"Make cobc.sh available in same folder\n";
+	print item(),"Make cobd.sh available in same folder\n";
 	print item(),"Command failed\n";
 	}
 }
@@ -3266,7 +3266,7 @@ sub geotagging() {
 	print item(),"Results are saved in geotagging_crawler folder\n";
 	}
 	else {
-	print item(),"Make cobc.sh available in same folder\n";
+	print item(),"Make cobe.sh available in same folder\n";
 	print item(),"Command failed\n";
 	}
 }
