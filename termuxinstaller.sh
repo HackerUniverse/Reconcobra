@@ -67,6 +67,8 @@ echo "y" | apt-get install hping3
 echo "y" | apt-get install python
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
+echo "y" | apt-get install nfs-common
+echo "y" | apt-get install smbclient
 echo "y" | apt-get install cargo
 echo "y" | apt-get install gem
 gem install wayback_machine_downloader
@@ -84,7 +86,6 @@ echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
 echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
 cd LinkFinder
 python setup.py install
-cd ..
 echo "y" | git clone https://github.com/heycam/json-describe
 cd json-describe
 cargo build
