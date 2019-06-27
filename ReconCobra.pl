@@ -3241,8 +3241,8 @@ sub geotagging() {
 	print item(),"Caution: Files that are any type of pictures, audio and video will work\n";
 	print item(),"Caution: Option 2 and 3 requires all files into geotagging_crawler folder\n";
 	print item(),"1 - Crawl and download all GPS and Location related files\n";
-	print item(),"2 - Extract GPS cordintes from local audio and video files\n";
-	print item(),"3 - Extract Location cordinates from local audio and video files\n";
+	print item(),"2 - Extract GPS cordintes from local files\n";
+	print item(),"3 - Extract Location cordinates from local files\n";
 	print item(),"Enter Option: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
