@@ -121,6 +121,7 @@ GetOptions(
     "an|cors=s" => \$cors,
     "ao|wayback=s" => \$wayback,
     "ap|linkfinder=s" => \$linkfinder,
+    "aq|geotagging=s" => \$geotagging,
 );
 
 if ($help) { banner();help(); }
@@ -193,7 +194,8 @@ if ($cname) { banner();Cname(); }
 if ($endpoints) { banner();endpoints(); } 
 if ($cors) { banner();cors(); } 
 if ($wayback) { banner();wayback(); } 
-if ($wayback) { banner();linkfinder(); } 
+if ($linkfinder) { banner();linkfinder(); } 
+if ($geotagging) { banner();geotagging(); } 
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -630,6 +632,12 @@ sub help {
     print color("bold white"),"reconcobra -ao site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
+    print color('bold cyan'),"#                   ";
+    print item('71'),"Geotagging ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -aq site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
 
 }
 
@@ -746,6 +754,7 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('68'),"Check misconfigured Cross Origin Resource Sharing ";print color('bold cyan')," #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('69'),"Wayback Web Downloader ";print color('bold cyan'),"                            #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('70'),"JS Find Link & Analyse ( local and remote ) ";print color('bold cyan'),"       #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('71'),"Extract Geo-Cordinates for Tracking ";print color('bold cyan'),"               #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1367,6 +1376,14 @@ sub menu {
         print color('bold white');       
         print "\n";
         linkfinder();
+        enter();
+    }if($number eq '71'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        geotagging();
         enter();
     }
     if($number eq '0'){
@@ -3213,6 +3230,47 @@ sub linkfinder() {
 }
 
 
+#--------------------------------------------------------------#
+#71  Goe-Cordinates Tracking                                   #
+#--------------------------------------------------------------#
+sub geotagging() {
+	print item(),"Caution: Option 2 and 3 requires all audio and video files into geotagging_crawler folder\n";
+	print item(),"1 - Crawl and download all GPS and Location related files\n";
+	print item(),"2 - Extract GPS cordintes from local audio and video files\n";
+	print item(),"3 - Extract Location cordinates from local audio and video files\n";
+	print item(),"Enter Option: ";
+	chomp($enter=<STDIN>);
+	if ($enter =~1) {
+     if (system("./cobc.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in geotagging_crawler folder\n";
+	}
+	else {
+	print item(),"Make cobc.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+	if ($enter =~2) {
+     if (system("./cobd.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in geotagging_crawler folder\n";
+	}
+	else {
+	print item(),"Make cobc.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+	if ($enter =~3) {
+     if (system("./cobe.sh") == 0) {
+	print item(),"success!\n";
+	print item(),"Results are saved in geotagging_crawler folder\n";
+	}
+	else {
+	print item(),"Make cobc.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+}
 
 
 #--------------------------------------------------------------#
