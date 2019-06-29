@@ -122,6 +122,7 @@ GetOptions(
     "ao|wayback=s" => \$wayback,
     "ap|linkfinder=s" => \$linkfinder,
     "aq|geotagging=s" => \$geotagging,
+    "as|mireer=s" => \$mireer,
 );
 
 if ($help) { banner();help(); }
@@ -196,6 +197,7 @@ if ($cors) { banner();cors(); }
 if ($wayback) { banner();wayback(); } 
 if ($linkfinder) { banner();linkfinder(); } 
 if ($geotagging) { banner();geotagging(); } 
+if ($mireer) { banner();mireer(); } 
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -638,6 +640,12 @@ sub help {
     print color("bold white"),"reconcobra -aq site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
+    print color('bold cyan'),"#                   ";
+    print item('72'),"Mirror Complete Website ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -as site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
 
 }
 
@@ -755,6 +763,7 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('69'),"Wayback Web Downloader ";print color('bold cyan'),"                            #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('70'),"JS Find Link & Analyse ( local and remote ) ";print color('bold cyan'),"       #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('71'),"Extract Geo-Cordinates for Tracking ";print color('bold cyan'),"               #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('72'),"Mirror Complete Website ";print color('bold cyan'),"                           #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1384,6 +1393,14 @@ sub menu {
         print color('bold white');       
         print "\n";
         geotagging();
+        enter();
+    }if($number eq '72'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        mireer();
         enter();
     }
     if($number eq '0'){
@@ -3272,6 +3289,20 @@ sub geotagging() {
 	print item(),"Command failed\n";
 	}
 }
+}
+
+#--------------------------------------------------------------#
+#72   Mirror Complete Website		               #
+#--------------------------------------------------------------#
+sub mireer() {
+	print item(),"Caution: Inside httrack folder, find mirrored target folder \n";
+     if (system("/usr/share/ReconCobra/mireer.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make mireer.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
 }
 
 

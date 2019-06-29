@@ -98,6 +98,7 @@ echo "y" | apt-get install cargo
 echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
 echo "y" | apt-get install python3
+
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
 echo "y" | apt-get install nfs-common
@@ -105,6 +106,10 @@ echo "y" | apt-get install smbclient
 echo "y" | apt-get install gem
 gem install wayback_machine_downloader
 echo "y" | apt-get install perl-LWP-Protocol-https
+echo "y" | git clone https://github.com/xroche/httrack.git --recurse
+cd httrack
+./configure --prefix=$HOME/usr && make -j8 && make install
+cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git

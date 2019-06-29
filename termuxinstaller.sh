@@ -74,6 +74,11 @@ echo "y" | apt-get install gem
 gem install wayback_machine_downloader
 echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
+curl -LO https://raw.githubusercontent.com/Hax4us/httrack_In_termux/master/httrack
+cd httrack
+chmod u+x *
+sh httrack
+cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
 echo "y" | git clone https://github.com/chenjj/CORScanner.git
