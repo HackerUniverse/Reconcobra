@@ -3296,7 +3296,7 @@ sub geotagging() {
 #--------------------------------------------------------------#
 sub mireer() {
 	print item(),"Caution: Inside httrack folder, find mirrored target folder \n";
-     if (system("/usr/share/ReconCobra/mireer.sh") == 0) {
+     if (system("./mireer.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
