@@ -3295,7 +3295,7 @@ sub geotagging() {
 #72   Mirror Complete Website		               #
 #--------------------------------------------------------------#
 sub mireer() {
-	print item(),"Caution: Inside httrack folder, find mirrored target folder \n";
+	print item(),"Caution: Find mirror_websites inside mirror_website folder\n";
      if (system("./mireer.sh") == 0) {
 	print item(),"success!\n";
 	}
