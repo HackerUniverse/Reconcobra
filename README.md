@@ -70,6 +70,9 @@ EULA
 # Running in Termux
 - perl ReconCobraTermux.pl
 
+# Running in Parrot OS
+- ReconCobra
+
 # Mail
 - mrharoonawan@gmail.com
 - Haroon Awan
