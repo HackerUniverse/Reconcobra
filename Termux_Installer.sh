@@ -23,7 +23,7 @@
 clear
 
 echo "Ultimate Recon and Foot Printing Software     Version 1.0a";   
-echo "Termux Installer By: Haroon Awan and Hacker_Universe";
+echo "Termux Installer By: Haroon Awan and HackerUniversee";
 echo "Coded By: Haroon Awan";
 echo "Mail: mrharoonawan@gmail.com";
 echo "";
@@ -117,5 +117,5 @@ cd ..
 chmod u+x *.sh
 
 echo -e "[+] Installed Success!";
-echo -e "[+] Please restart your Termux";
-echo -e "[+] Upon successful restart enter this command for interface, perl ReconCobratermux.pl";
+echo -e "[+] Reboot Termux";
+echo -e "[+] Upon successful reboot enter for interface, perl ReconCobratermux.pl";
