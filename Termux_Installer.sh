@@ -116,4 +116,6 @@ cd ..
 cd ..
 chmod u+x *.sh
 
-echo -e "Installed, run perl ReconCobratermux.pl for interface!";
+echo -e "[+] Installed Success!";
+echo -e "[+] Please restart your Termux";
+echo -e "[+] Upon successful restart enter this command for interface, perl ReconCobratermux.pl";
