@@ -38,7 +38,7 @@ EULA
 </div>
 
 # Kali Installation
-- git clone https://github.com/haroonawanofficial/Reconcobra.git
+- git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
 - sudo chmod u+x *.sh
 - ./Kali_Installer.sh
@@ -47,7 +47,7 @@ EULA
 - Third party software(s)/dependencies/modules will be handled automatically
 
 # Parrot OS Installation
-- git clone https://github.com/haroonawanofficial/Reconcobra.git
+- git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
 - sudo chmod u+x *.sh
 - Bash ParrotOS_Installer.sh
@@ -56,7 +56,7 @@ EULA
 - Third party software(s)/dependencies/modules will be handled automatically
 
 # Termux Installation
-- git clone https://github.com/haroonawanofficial/Reconcobra.git
+- git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
 - chmod u+x *.sh
 - ./Termux_Installer.sh
