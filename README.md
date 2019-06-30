@@ -41,7 +41,16 @@ EULA
 - git clone https://github.com/haroonawanofficial/Reconcobra.git
 - cd Reconcobra
 - sudo chmod u+x *.sh
-- ./installer.sh
+- ./Kali_Installer.sh
+- ReconCobra will integrate as system software
+- Dependencies will be handled automatically
+- Third party software(s)/dependencies/modules will be handled automatically
+
+# Parrot OS Installation
+- git clone https://github.com/haroonawanofficial/Reconcobra.git
+- cd Reconcobra
+- sudo chmod u+x *.sh
+- ./Parrot_Installer.sh
 - ReconCobra will integrate as system software
 - Dependencies will be handled automatically
 - Third party software(s)/dependencies/modules will be handled automatically
@@ -50,8 +59,8 @@ EULA
 - git clone https://github.com/haroonawanofficial/Reconcobra.git
 - cd Reconcobra
 - chmod u+x *.sh
-- ./termuxinstaller.sh
-- perl ReconCobratermux.pl
+- ./Termux_Installer.sh
+- perl ReconCobraTermux.pl
 - Dependencies will be handled automatically for Termux
 - Third party software(s)/dependencies/modules will be handled automatically for Termux
 
