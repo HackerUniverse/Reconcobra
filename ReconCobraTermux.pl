@@ -669,7 +669,10 @@ print color('reset');
 print color('bold red on_black'),"	Info          ";print color('reset'),"";print color('bold white'),"      version 1.9a, [Coded By: Haroon Awan]\n";
 print color('reset');
 
-print color('bold red on_blue'),"	Mail          ";print color('reset'),"";print color('bold red'),"      mrharoonawan\@gmail.com\n";
+print color('bold white on_bright_red'),"	Mail          ";print color('reset'),"";print color('bright_blue'),"      mrharoonawan\@gmail.com\n";
+print color('reset');
+
+print color('bold red on_blue'),"	Homepage      ";print color('reset'),"";print color('bold red'),"      http://www.instagram.com/\Hackeruniversee\n";
 print color('reset');
 
 print color('bold yellow on_red'),"	Official Web  ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
@@ -678,7 +681,7 @@ print color('reset');
 print color('bold green on_black'),"	Facebook      ";print color('reset'),"";print color('bold green'),"      fb.com\\Mubassir.py\n";
 print color('reset');
 
-print color('bold white on_blue'),"	Instagram     ";print color('reset'),"";print color('bold white'),"      http://www.instagram.com/\Hacker_Universe\n";
+print color('bold white on_blue'),"	Instagram     ";print color('reset'),"";print color('bold white'),"      http://www.instagram.com/\hackerfromscratch\n";
 print color('reset');
 
                                                                      

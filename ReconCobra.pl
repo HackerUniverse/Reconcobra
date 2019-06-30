@@ -671,7 +671,7 @@ print color('reset');
 print color('bold white on_bright_red'),"	Mail          ";print color('reset'),"";print color('bright_blue'),"      mrharoonawan\@gmail.com\n";
 print color('reset');
 
-print color('bold red on_blue'),"	Homepage      ";print color('reset'),"";print color('bold red'),"      http://www.instagram.com/\Hacker_Universe\n";
+print color('bold red on_blue'),"	Homepage      ";print color('reset'),"";print color('bold red'),"      http://www.instagram.com/\Hackeruniversee\n";
 print color('reset');
 
 print color('bold yellow on_red'),"	Official Web  ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
