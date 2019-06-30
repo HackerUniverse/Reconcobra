@@ -50,7 +50,7 @@ EULA
 - git clone https://github.com/haroonawanofficial/Reconcobra.git
 - cd Reconcobra
 - sudo chmod u+x *.sh
-- ./ParrotOS_Installer.sh
+- Bash ParrotOS_Installer.sh
 - ReconCobra will integrate as system software
 - Dependencies will be handled automatically
 - Third party software(s)/dependencies/modules will be handled automatically
