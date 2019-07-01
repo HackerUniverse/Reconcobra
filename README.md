@@ -74,7 +74,7 @@ EULA
 # Running in Parrot OS
 - ReconCobra
 
-# Programmer
+# Developer
 - Haroon Awan
 - mrharoonawan@gmail.com
 
