@@ -48,19 +48,19 @@ function linux() {
 echo -e "$red [$green+$red]$off Installing Perl ...";
 sudo apt-get install -y perl
 echo -e "$red [$green+$red]$off Installing JSON Module ...";
-cpan install JSON
+cpan -fi  JSON
 echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
-echo "y" | cpan install WWW::Mechanize
-echo "y" | cpan install use HTML::TokeParser
-echo "y" | cpan install Term::ANSIColor
-echo "y" | cpan install Mojo::DOM
-echo "y" | cpan install Data::Dumper
-echo "y" | cpan install Win32::Console::ANSI
-echo "y" | cpan install HTML::TableExtract
-echo "y" | cpan install Data::Validate::Domain
-echo "y" | cpan install LWP::Protocol::https
-echo "y" | cpan install Mozilla::CA
-echo "y" | cpan install Bundle::LWP
+echo "y" | cpan -fi  WWW::Mechanize
+echo "y" | cpan -fi  use HTML::TokeParser
+echo "y" | cpan -fi  Term::ANSIColor
+echo "y" | cpan -fi  Mojo::DOM
+echo "y" | cpan -fi  Data::Dumper
+echo "y" | cpan -fi  Win32::Console::ANSI
+echo "y" | cpan -fi  HTML::TableExtract
+echo "y" | cpan -fi  Data::Validate::Domain
+echo "y" | cpan -fi  LWP::Protocol::https
+echo "y" | cpan -fi  Mozilla::CA
+echo "y" | cpan -fi  Bundle::LWP
 
 
 echo -e "$red [$green+$red]$off Checking directories..."
@@ -147,7 +147,6 @@ cd ..
 cd ..
 chmod u+x *.sh
 cp * -r /usr/share/ReconCobra
-cp *.sh /usr/share/ReconCobra
 
 if [ -d "/usr/share/ReconCobra" ] ;
 then
