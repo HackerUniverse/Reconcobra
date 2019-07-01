@@ -78,6 +78,6 @@ EULA
 - Haroon Awan
 - mrharoonawan@gmail.com
 
-# Main Contributor & Senior Tester
+# Main Contributor & Tester
 - Arun S.
 - Instagram.com/Hackeruniversee
