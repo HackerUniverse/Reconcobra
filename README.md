@@ -74,7 +74,10 @@ EULA
 # Running in Parrot OS
 - ReconCobra
 
-# Mail
-- mrharoonawan@gmail.com
+# Programmer
 - Haroon Awan
+- mrharoonawan@gmail.com
 
+# Main Contributor & Senior Tester
+- Arun S.
+- Instagram.com/Hackeruniversee
