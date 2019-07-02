@@ -50,7 +50,13 @@ sudo apt-get install -y perl
 echo -e "$red [$green+$red]$off Installing JSON Module ...";
 cpan -fi  JSON
 echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
-echo "y" | cpan -fi  WWW::Mechanize
+echo "y" | wget wget https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-1.91.tar.gz
+tar -xvf WWW-Mechanize-1.91.tar.gz
+cd WWW-Mechanize-1.91
+perl Makefile.PL
+make
+make install
+cd ..
 echo "y" | cpan -fi  use HTML::TokeParser
 echo "y" | cpan -fi  Term::ANSIColor
 echo "y" | cpan -fi  Mojo::DOM
