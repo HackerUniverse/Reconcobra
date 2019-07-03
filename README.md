@@ -49,7 +49,7 @@ EULA
 # Parrot OS Installation
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
-- sudo chmod u+x *.sh
+- chmod u+x *.sh
 - Bash ParrotOS_Installer.sh
 - ReconCobra will integrate as system software
 - Dependencies will be handled automatically
@@ -72,12 +72,12 @@ EULA
 - perl ReconCobraTermux.pl
 
 # Running in Parrot OS
-- ReconCobra
+- ReconCobra or perl ReconCobra.pl
 
 # Developer
 - Haroon Awan
 - mrharoonawan@gmail.com
 
-# Main Contributor & Tester
+# Co-developer & Senior Tester
 - Arun S.
 - Instagram.com/Hackeruniversee
