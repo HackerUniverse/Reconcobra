@@ -1,10 +1,3 @@
-# F.A.Q
-- Reconcobra is Foot printing software for Ultimate Information Gathering
-- Runs on Kali
-- Runs on Parrot OS
-- Runs on Arch Linux
-- Runs on Termux
-
 # LICENSE
 EULA
 
@@ -37,7 +30,16 @@ EULA
     <img src="http://oi66.tinypic.com/24zbvb8.jpg" width="400px"</img> 
 </div>
 
-# Brief Introduction 
+# What is ReconCobra
+- Reconcobra is Foot printing software for Ultimate Information Gathering
+
+# Supported OS
+- Runs on Kali
+- Runs on Parrot OS
+- Runs on Arch Linux
+- Runs on Termux
+
+# Brief Introduction
 - ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.
 - It serves as a defense method to find as much as information possible for gaining unauthorised access and intrusion.  
 - With the emergence of more advanced technology, cybercriminals have also found more ways to get into the system of many organizations. 
@@ -46,7 +48,7 @@ EULA
 ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
 
 
-# Youtube Video
+# Youtube
 ![ReconCobra Youtube Video](http://oi66.tinypic.com/24zbvb8.jpg)](https://www.youtube.com/watch?v=TupCmgzp6hg&feature=youtu.be "ReconCobra")
 
 
