@@ -30,7 +30,7 @@ EULA
     <img src="http://oi66.tinypic.com/24zbvb8.jpg" width="400px"</img> 
 </div>
 
-# What is ReconCobra
+# ReconCobra
 - Reconcobra is Foot printing software for Ultimate Information Gathering
 
 # Supported OS
