@@ -37,6 +37,27 @@ EULA
     <img src="http://oi66.tinypic.com/24zbvb8.jpg" width="400px"</img> 
 </div>
 
+# Brief Introduction 
+- What is ReconCobra?
+ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing 
+
+
+- Why ReconCobra?
+It serves as a defense method to find as much as information possible for gaining unauthorised access and intrusion.  
+With the emergence of more advanced technology, cybercriminals have also found more ways to get into the system of many organizations.  
+ReconCobra software can audit, firewall behaviour, if it is leaking backend machines/server and replying pings, it can find internal and 
+external networks where many software’s like erp, mail firewalls are installed, exposing servers so it do Footprinting, Scanning & Enumeration 
+as much as possible of target, to discover and collect most possible informations like username, web technologies, files, endpoint, api and much more.
+ It’s first step to stop cyber criminals by securing your Infrastructural Information Gathering leakage.
+ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
+
+
+# Youtube Video
+<div align="center">
+    <img src="https://www.youtube.com/watch?v=TupCmgzp6hg&feature=youtu.be" width="400px"</img> 
+</div>
+
+
 # Kali Installation
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
