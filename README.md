@@ -1,7 +1,7 @@
 # LICENSE
 EULA
 
-# Kali Interface
+# Linux OS Interface
 - Software have 72 Options with full automation and powerful information gathering
 <div align="center">
     <img src="http://oi67.tinypic.com/i6a1b5.jpg" width="400px"</img> 
