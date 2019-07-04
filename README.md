@@ -48,9 +48,10 @@ EULA
 ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
 
 
-# Youtube
-![ReconCobra Youtube Video](http://oi66.tinypic.com/24zbvb8.jpg)
+# Youtube Video
 (https://tinyurl.com/yyj9mbz9)
+![ReconCobra Youtube Video](http://oi66.tinypic.com/24zbvb8.jpg)
+
 
 
 # Kali Installation
