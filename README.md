@@ -49,7 +49,8 @@ ReconCobra is false positive free, when there is something it will show no matte
 
 
 # Youtube
-![ReconCobra Youtube Video](http://oi66.tinypic.com/24zbvb8.jpg)](https://www.youtube.com/watch?v=TupCmgzp6hg&feature=youtu.be "ReconCobra")
+![ReconCobra Youtube Video](http://oi66.tinypic.com/24zbvb8.jpg)
+(https://www.youtube.com/watch?v=TupCmgzp6hg&feature=youtu.be "ReconCobra")
 
 
 # Kali Installation
