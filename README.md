@@ -1,12 +1,12 @@
 # F.A.Q
 - Reconcobra is Foot printing software for Ultimate Information Gathering
+- Runs on Kali
+- Runs on Parrot OS
+- Runs on Arch Linux
+- Runs on Termux
 
 # LICENSE
 EULA
-
-# ReconCobra 
-- Runs on Kali
-- Runs on Termux
 
 # Kali Interface
 - Software have 72 Options with full automation and powerful information gathering
@@ -38,24 +38,16 @@ EULA
 </div>
 
 # Brief Introduction 
-- What is ReconCobra?
-ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing 
-
-
-- Why ReconCobra?
-It serves as a defense method to find as much as information possible for gaining unauthorised access and intrusion.  
-With the emergence of more advanced technology, cybercriminals have also found more ways to get into the system of many organizations.  
-ReconCobra software can audit, firewall behaviour, if it is leaking backend machines/server and replying pings, it can find internal and 
-external networks where many software’s like erp, mail firewalls are installed, exposing servers so it do Footprinting, Scanning & Enumeration 
-as much as possible of target, to discover and collect most possible informations like username, web technologies, files, endpoint, api and much more.
- It’s first step to stop cyber criminals by securing your Infrastructural Information Gathering leakage.
+- ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.
+- It serves as a defense method to find as much as information possible for gaining unauthorised access and intrusion.  
+- With the emergence of more advanced technology, cybercriminals have also found more ways to get into the system of many organizations. 
+- ReconCobra software can audit, firewall behaviour, if it is leaking backend machines/server and replying pings, it can find internal and external networks where many software’s like erp, mail firewalls are installed, exposing servers so it do Footprinting, Scanning & Enumeration as much as possible of target, to discover and collect most possible informations like username, web technologies, files, endpoint, api and much more.
+- It’s first step to stop cyber criminals by securing your Infrastructural Information Gathering leakage.
 ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
 
 
 # Youtube Video
-<div align="center">
-    <img src="https://www.youtube.com/watch?v=TupCmgzp6hg&feature=youtu.be" width="400px"</img> 
-</div>
+![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=TupCmgzp6hg&feature=youtu.be "Everything Is AWESOME")
 
 
 # Kali Installation
