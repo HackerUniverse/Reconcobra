@@ -12,7 +12,7 @@ EULA
 </div>
 
 <div align="center">
-    <img src="http://oi65.tinypic.com/33uwg8m.jpg" width="400px"</img> 
+    <img src="http://oi66.tinypic.com/14ui4qw.jpg" width="400px"</img> 
 </div>
 
 # In-Action
