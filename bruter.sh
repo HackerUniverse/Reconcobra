@@ -8,5 +8,4 @@ echo -e ""
 read -p "[+] Enter Target User (root/administrator): " User
 read -p "[+] Enter Target IP: " Target
 read -p "[+] Enter Target Port: " Port
-echo -ne "[+] Enter Target: " Target
 ncrack -v --user $User $Target:$Port
