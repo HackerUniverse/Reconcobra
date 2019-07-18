@@ -846,7 +846,7 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('78'),"Load Encryption Scrambling for Antivirus Evasion";print color('bold cyan'),"   #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('79'),"Load Wi-Fi Takeover Module";print color('bold cyan'),"                         #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('80'),"Load PPTP Brute Force Module ";print color('bold cyan'),"                      #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('81'),"Load Routers/Load Balancer Interface ";print color('bold cyan'),"          #   \n";                
+    print color('bold cyan'),"#          ";print color('reset'),item('81'),"Load Routers/Load Balancer Interface ";print color('bold cyan'),"              #   \n";                
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
