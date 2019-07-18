@@ -118,6 +118,15 @@ echo "y" | git clone https://github.com/chenjj/CORScanner.git
 cd CORScanner
 pip install -r requirements.txt
 cd ..
+echo "y" | git clone https://github.com/stormshadow07/HackTheWorld.git
+cd HackTheWorld
+chmod +x install.sh && ./install.sh
+cd ..
+echo "y" | git clone https://github.com/threat9/routersploit
+cd routersploit
+sudo easy_install pip
+sudo pip install -r requirements.txt
+cd ..
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git

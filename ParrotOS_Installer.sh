@@ -50,13 +50,7 @@ sudo apt-get install -y perl
 echo -e "$red [$green+$red]$off Installing JSON Module ...";
 cpan -fi  JSON
 echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
-echo "y" |wget https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-1.91.tar.gz
-tar -xvf WWW-Mechanize-1.91.tar.gz
-cd WWW-Mechanize-1.91
-perl Makefile.PL
-make
-make install
-cd ..
+echo "y" | cpan -fi  WWW::Mechanize
 echo "y" | cpan -fi  use HTML::TokeParser
 echo "y" | cpan -fi  Term::ANSIColor
 echo "y" | cpan -fi  Mojo::DOM
@@ -103,9 +97,9 @@ echo "y" | apt-get install xdg-utils
 echo "y" | apt-get install cargo
 echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
+echo "y" | apt-get install ccrypt
 echo "y" | apt-get install python2.7
 echo "y" | apt-get install python3
-
 echo "y" | apt-get install golang
 echo "y" | apt-get install curl
 echo "y" | apt-get install nfs-common
@@ -128,7 +122,16 @@ echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
+echo "y" | git clone https://github.com/stormshadow07/HackTheWorld.git
+cd HackTheWorld
+chmod +x install.sh && ./install.sh
+cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
+echo "y" | git clone https://github.com/threat9/routersploit
+cd routersploit
+sudo easy_install pip
+sudo pip install -r requirements.txt
+cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
 echo "y" | git clone https://github.com/heycam/json-describe

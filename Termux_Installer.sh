@@ -35,6 +35,8 @@ apt-get install make
 apt-get install clang
 apt-get install unzip
 apt-get install tar
+apt-get install -y ccrypt
+
 echo -e "Installing Perl ...";
 apt-get install -y perl
 echo -e "Installing JSON Module ...";
@@ -81,6 +83,10 @@ sh httrack
 cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
+echo "y" | git clone https://github.com/stormshadow07/HackTheWorld.git
+cd HackTheWorld
+chmod +x install.sh && ./install.sh
+cd ..
 echo "y" | git clone https://github.com/chenjj/CORScanner.git
 cd CORScanner
 pip install -r requirements.txt
@@ -97,6 +103,15 @@ cargo build
 cd ..
 echo "y" | https://github.com/haroonawanofficial/vasl.git
 echo "y" | apt-get install nmap
+echo "y" | git clone https://github.com/stormshadow07/HackTheWorld.git
+cd HackTheWorld
+chmod +x install.sh && ./install.sh
+cd ..
+echo "y" | git clone https://github.com/threat9/routersploit
+cd routersploit
+sudo easy_install pip
+sudo pip install -r requirements.txt
+cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
 pip install jsbeautifier
