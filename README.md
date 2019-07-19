@@ -83,6 +83,28 @@ ReconCobra is false positive free, when there is something it will show no matte
 - Dependencies will be handled automatically for Termux
 - Third party software(s)/dependencies/modules will be handled automatically for Termux
 
+# Android LED TV Installation
+- Install termux
+- Input usb keyboard
+- git clone https://github.com/haroonawanofficial/ReconCobra.git
+- cd Reconcobra
+- chmod u+x *.sh
+- ./Termux_Installer.sh
+- Reboot your android led tv
+- perl ReconCobraTermux.pl
+- Dependencies will be handled automatically for android led tv
+- Third party software(s)/dependencies/modules will be handled automatically for android led tv
+
+# Black Arch Installation
+- Open issues, if any error occur
+- git clone https://github.com/haroonawanofficial/ReconCobra.git
+- cd Reconcobra
+- chmod u+x *.sh
+- ./BlackArch_Installer.sh
+- ReconCobra will integrate as system software
+- Dependencies will be handled automatically
+- Third party software(s)/dependencies/modules will be handled automatically
+
 # Running in Kali
 - ReconCobra
 
