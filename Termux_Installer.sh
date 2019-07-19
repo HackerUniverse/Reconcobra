@@ -35,6 +35,7 @@ apt-get install make
 apt-get install clang
 apt-get install unzip
 apt-get install tar
+apt-get install -y xrdp
 apt-get install -y ccrypt
 
 echo -e "Installing Perl ...";

@@ -94,6 +94,7 @@ perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
 
 echo -e "$red [$green+$red]$off Installing dependencies..."
 echo "y" | apt-get install xdg-utils
+echo "y" | apt-get install xrdp
 echo "y" | apt-get install cargo
 echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3

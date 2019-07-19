@@ -1813,6 +1813,14 @@ sub port {
         ,5903 => 'VNC'
         ,5905 => 'VNC'
         ,5986 => 'VNC'
+        ,6000 => 'Xwindows'
+        ,6002 => 'Xwindows'
+        ,6003 => 'Xwindows'
+        ,6060 => 'Xwindows'
+        ,6061 => 'Xwindows'
+        ,6062 => 'Xwindows'
+        ,6063 => 'Xwindows'
+        ,5986 => 'VNC'
         ,6379 => 'Redis'
         ,7000 => 'Cassandra Apache'
         ,7001 => 'Cassandra Apache'
@@ -3488,6 +3496,15 @@ sub mireer() {
 #73   Brute Frocer Module		         		               #
 #--------------------------------------------------------------#
 sub bruter() {
+	print item(),"1 - Start Bruter\n";
+	print item(),"2 - Capture Xwindows Information\n";
+	print item(),"3 - Start Xwindows Screen Capture\n";
+	print item(),"4 - Start Xwindows Keystroke Capture\n";
+	print item(),"5 - Takeover Xwindows\n";
+	print item(),"6 - Special Screen Capturing Payload for X11\n";
+	print item(),"Enter Search Engine: ";
+	chomp($enter=<STDIN>);
+if ($enter =~1) {
      if (system("/usr/share/ReconCobra/bruter.sh") == 0) {
 	print item(),"success!\n";
 	}
@@ -3495,6 +3512,53 @@ sub bruter() {
 	print item(),"Make bruter.sh available in same folder\n";
 	print item(),"Command failed\n";
 	}
+}
+if ($enter =~2) {
+	if (system("/usr/share/ReconCobra/xwin.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+	if ($enter =~3) {
+		if (system("/usr/share/ReconCobra/xwin1.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin1.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+		if ($enter =~4) {
+			if (system("/usr/share/ReconCobra/xwin2.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin2.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+		if ($enter =~5) {
+			if (system("/usr/share/ReconCobra/xwin3.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin3.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+		if ($enter =~6) {
+			if (system("/usr/share/ReconCobra/xwin4.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin4.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
 }
 
 
