@@ -1793,6 +1793,7 @@ sub port {
         ,220  => 'IMAP3'
         ,389  => 'LDAP'
         ,443  => 'SSL'
+        ,445  => 'SAMBA'
         ,513  => 'Rlogin'
         ,514  => 'Rlogin'
         ,1433 => 'MSSQL'
