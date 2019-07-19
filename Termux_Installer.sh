@@ -130,8 +130,10 @@ cd EyeWitness/setup
 chmod u+x setup.sh
 ./setup.sh
 cd ..
-cd ..
 chmod u+x *.sh
+cat traceroute-function >> ~/.bashrc
+source ~/.bashrc
+
 
 echo -e "[+] Installed Success!";
 echo -e "[+] Reboot Termux";

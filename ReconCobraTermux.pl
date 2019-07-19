@@ -123,6 +123,16 @@ GetOptions(
     "ap|linkfinder=s" => \$linkfinder,
     "aq|geotagging=s" => \$geotagging,
     "as|mireer=s" => \$mireer,
+    "at|bruter=s" => \$bruter,
+    "au|mascan=s" => \$mascan,
+    "av|daisychain=s" => \$daisychain,
+    "aw|pdatabase=s" => \$pdatabase,
+    "ax|encrypt=s" => \$encrypt,
+    "ay|scrambler=s" =>\$scrambler,
+    "az|wifi=s" => \$wifi,
+    "aaa|pptp=s" => \$pptp,
+    "aab|router=s" => \$router,
+    "aac|mapperr=s" => \$mapperr,
 );
 
 if ($help) { banner();help(); }
@@ -198,6 +208,16 @@ if ($wayback) { banner();wayback(); }
 if ($linkfinder) { banner();linkfinder(); } 
 if ($geotagging) { banner();geotagging(); } 
 if ($mireer) { banner();mireer(); } 
+if ($bruter) { banner();bruter(); } 
+if ($mascan) { banner();mascan(); }
+if ($daisychain) { banner();daisychain(); }
+if ($pdatabase) { banner();pdatabase(); }
+if ($encrypt) { banner();encrypt(); }
+if ($scrambler) { banner();scrambler(); }
+if ($wifi) { banner();wifi(); }
+if ($pptp) { banner();pptp(); }
+if ($router) { banner();router(); }
+if ($mapperr) { banner();mapperr(); }
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -646,7 +666,66 @@ sub help {
     print color("bold white"),"reconcobra -as site.com";
     print color('bold cyan'),"                 #   \n",line_d();
 
+    print color('bold cyan'),"#                   ";
+    print item('73'),"Brute Forcer Module ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -at site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
 
+    print color('bold cyan'),"#                   ";
+    print item('74'),"Juicy Port Scan using Mascan ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -au site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('75'),"Set Daisy Chain ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -av site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('76'),"Search PHPinfo and Database Log via Search Engines ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -aw site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('77'),"File Encryption ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ax site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+
+    print color('bold cyan'),"#                   ";
+    print item('78'),"Load Encryption Scrambling for Antivirus Evasion ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -ay site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('79'),"Load Wi-Fi Takeover Module ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -az site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('80'),"Load PPTP Brute Force Module ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -aaa site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('81'),"Load Routers/Load Balancer Interface ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -aab site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
+    print color('bold cyan'),"#                   ";
+    print item('82'),"Tracert Visual Machine Mapper  ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -aac site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
 }
 
 #--------------------------------------------------------------#
@@ -698,7 +777,7 @@ sub menu {
     print line_u(),color('bold cyan'),"#          ";print color('reset'),item('1'),"Website Information";print color('bold cyan'),"                                 #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('2'),"Domain Whois Lookup";print color('bold cyan'),"                    	            #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('3'),"Find IP Location";print color('bold cyan'),"                                    #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('4'),"Basic Port Scanner";print color('bold cyan'),"                    	            #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('4'),"Recommended Port Scan";print color('bold cyan'),"                    	    #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('5'),"DNS Whois Lookup";print color('bold cyan'),"                                    #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('6'),"Reverse Whois Lookup";print color('bold cyan'),"                                #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('7'),"DNS Zone Transfers Lookup";print color('bold cyan'),"                           #   \n";
@@ -767,10 +846,19 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('70'),"JS Find Link & Analyse ( local and remote ) ";print color('bold cyan'),"       #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('71'),"Extract Geo-Cordinates for Tracking ";print color('bold cyan'),"               #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('72'),"Mirror Complete Website ";print color('bold cyan'),"                           #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('73'),"Brute Forcer Module";print color('bold cyan'),"                                #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('74'),"Databases and Connections Port Scan using Mascan";print color('bold cyan'),"   #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('75'),"Set Daisy Chain";print color('bold cyan'),"                                    #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('76'),"Search PHPinfo and Database Log via Search Engines";print color('bold cyan')," #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('77'),"Load Encrypt/Decrypt Module ";print color('bold cyan'),"                       #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('78'),"Load Encryption Scrambling for Antivirus Evasion";print color('bold cyan'),"   #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('79'),"Load Wi-Fi Takeover Module";print color('bold cyan'),"                         #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('80'),"Load PPTP Brute Force Module ";print color('bold cyan'),"                      #   \n";         
+    print color('bold cyan'),"#          ";print color('reset'),item('81'),"Load Routers/Load Balancer Interface ";print color('bold cyan'),"              #   \n";                
+    print color('bold cyan'),"#          ";print color('reset'),item('82'),"Tracert Visual Machine Mapper ";print color('bold cyan'),"                     #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
-
     chomp($number=<STDIN>);
 
     if($number eq '1'){
@@ -1118,7 +1206,7 @@ sub menu {
         print "\n";
         Extractusersfromform();
         enter();
-        }if($number eq '40'){
+    }if($number eq '40'){
         banner();
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target IP     ";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
@@ -1145,7 +1233,7 @@ sub menu {
         print "\n";
         Findvictimhttpsleakeddata();
         enter();
-        }if($number eq '43'){
+    }if($number eq '43'){
         banner();
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
@@ -1172,7 +1260,7 @@ sub menu {
         print "\n";
         Findallaccountsfromuser();
         enter();
-        }if($number eq '46'){
+    }if($number eq '46'){
         banner();
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
@@ -1199,7 +1287,7 @@ sub menu {
         print "\n";
         Dnshistory();
         enter();
-        }if($number eq '49'){
+    }if($number eq '49'){
         banner();
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
@@ -1226,7 +1314,7 @@ sub menu {
         print "\n";
         hostnametoip();
         enter();
-        }if($number eq '52'){
+    }if($number eq '52'){
         banner();
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website";print color('bold cyan'),"                                  #   \n",line_d();
         print color('bold green'),"\n\nc0bra: _>  ";
@@ -1405,8 +1493,87 @@ sub menu {
         print "\n";
         mireer();
         enter();
-    }
-    if($number eq '0'){
+    }if($number eq '73'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        bruter();
+        enter();
+    }if($number eq '74'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        mascan();
+        enter();
+    }if($number eq '75'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        daisychain();
+        enter();
+    }if($number eq '76'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        pdatabase();
+        enter();
+    }if($number eq '77'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        encrypt();
+        enter();
+    }if($number eq '78'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        scrambler();
+        enter();
+    }if($number eq '79'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        wifi();
+        enter();
+    }if($number eq '80'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        mireer();
+        enter();
+    }if($number eq '81'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        router();
+        enter();
+    }if($number eq '82'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        mapperr();
+        enter();
+    }if($number eq '0'){
         exit;
     }
     else{
@@ -1611,7 +1778,7 @@ sub Findiplocation {
 }
 
 #--------------------------------------------------------------#
-#4                        Port Scanner                         #
+#4      Recommended Port Scanner                               #
 #--------------------------------------------------------------#
 sub port {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
@@ -1632,6 +1799,7 @@ sub port {
         ,68   => 'DHCP'
         ,80   => 'HTTP'
         ,110  => 'POP3'
+        ,111  => 'Portmapper'
         ,115  => 'SFTP'
         ,119  => 'NNTP'
         ,123  => 'NTP'
@@ -1642,17 +1810,55 @@ sub port {
         ,220  => 'IMAP3'
         ,389  => 'LDAP'
         ,443  => 'SSL'
+        ,445  => 'SAMBA'
+        ,513  => 'Rlogin'
+        ,514  => 'Rlogin'
+        ,691  => 'Microsoft Exchange'
+        ,1433 => 'MSSQL'
         ,1521 => 'Oracle SQL'
+        ,1701 => 'L2TP'
+        ,1723 => 'PPTP'
         ,2049 => 'NFS'
         ,3306 => 'mySQL'
         ,3388 => 'RDP'
         ,3389 => 'RDP'
-        ,5800 => 'VNC'
+        ,3390 => 'OWA'
+        ,4125 => 'OWA'
+        ,5060 => 'VNC'
+        ,5061 => 'VNC'
+        ,5062 => 'VNC'
+        ,5063 => 'VNC'
+        ,5064 => 'VNC'
+        ,5065 => 'VNC'
+        ,5432 => 'PostgreSQL'
+        ,5802 => 'VNC'
+        ,5804 => 'VNC'
+        ,5900 => 'VNC'
+        ,5901 => 'VNC'
+        ,5903 => 'VNC'
+        ,5905 => 'VNC'
+        ,5986 => 'VNC'
+        ,6000 => 'Xwindows'
+        ,6002 => 'Xwindows'
+        ,6003 => 'Xwindows'
+        ,6060 => 'Xwindows'
+        ,6061 => 'Xwindows'
+        ,6062 => 'Xwindows'
+        ,6063 => 'Xwindows'
+        ,6379 => 'Redis'
+        ,7000 => 'Cassandra Apache'
+        ,7001 => 'Cassandra Apache'
+        ,7199 => 'Cassandra Apache'
         ,8000 => 'HTTP'
         ,8080 => 'HTTP'
         ,8090 => 'HTTP'
+        ,8443 => 'HTTPS'
         ,8888 => 'HTTP'
         ,9001 => 'HTTP'
+        ,9042 => 'Cassandra Apache'
+        ,27017 => 'MongoDB'
+        ,27018 => 'MongoDB'
+        ,27019 => 'MongoDB'
     );
     foreach my $p ( sort {$a<=>$b} keys( %ports ) )
     {
@@ -3229,7 +3435,7 @@ sub linkfinder() {
 	if ($enter =~2) {
      if (system("./linkfinder2.sh") == 0) {
 	print item(),"success!\n";
-	print item(),"Results are saved in js_linkfinder at results\n";
+	print item(),"Results are saved in LinkFinder folder\n";
 	}
 	else {
 	print item(),"Make linkfinder2.sh available in same folder\n";
@@ -3294,8 +3500,9 @@ sub geotagging() {
 }
 }
 
+
 #--------------------------------------------------------------#
-#72   Mirror Complete Website		               #
+#72   Mirror Complete Website		                           #
 #--------------------------------------------------------------#
 sub mireer() {
 	print item(),"Caution: Find mirror_websites inside mirror_website folder\n";
@@ -3308,6 +3515,207 @@ sub mireer() {
 	}
 }
 
+
+#--------------------------------------------------------------#
+#73   Brute Frocer Module		         		               #
+#--------------------------------------------------------------#
+sub bruter() {
+	print item(),"1 - Start Bruter\n";
+	print item(),"2 - Capture Xwindows Information\n";
+	print item(),"3 - Start Xwindows Screen Capture\n";
+	print item(),"4 - Start Xwindows Keystroke Capture\n";
+	print item(),"5 - Takeover Xwindows\n";
+	print item(),"6 - Special Screen Capturing Payload for X11\n";
+	print item(),"Enter Search Engine: ";
+	chomp($enter=<STDIN>);
+if ($enter =~1) {
+     if (system("./bruter.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make bruter.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+if ($enter =~2) {
+	if (system("./xwin.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+	if ($enter =~3) {
+		if (system("./xwin1.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin1.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+		if ($enter =~4) {
+			if (system("./xwin2.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin2.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+		if ($enter =~5) {
+			if (system("./xwin3.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin3.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+		if ($enter =~6) {
+			if (system("./xwin4.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make xwin4.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+}
+
+
+#--------------------------------------------------------------#
+#74  Juicy Port Scan using Mascan            	               #
+#--------------------------------------------------------------#
+sub mascan() {
+	print "\n";
+	print item(),"Result will be saved in mascanresults.txt\n\n";
+     if (system("./mascan.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make mascan.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+#--------------------------------------------------------------#
+#75  Set Daisy Chain                        	               #
+#--------------------------------------------------------------#
+sub daisychain() {
+	print "\n";
+	print item(),"Caution \n";
+	print item(),"Edit /etc/proxychains.conf and put these proxies after [Proxy List]\n";
+	print item(),"Write as socks4 IP Port or http IP Port as per line\n";
+	print item(),"Use proxychains before any software in terminal, example proxychains nmap, etc\n";
+	print item(),"Proxy list will generate new proxy every 15 minutes\n\n";
+	print item(),"Generating Proxy List\n";
+    $url = "http://proxylist.fatezero.org/proxy.list";
+    $request = $ua->get($url);
+    $response = $request->content;
+
+ while($response =~m/(.*?)\n/g)
+    {
+        print item(),"$1 \n";
+        sleep(1);
+    }
+if ($response =~ /error/) {
+        print item(),"Something Went Wrong\n\n";
+        print item('Note'),"Enter Website Without HTTP/HTTPs\n";
+    }
+}
+
+
+#--------------------------------------------------------------#
+#76  Search PHPinfo and Database Log via Search Engines        #
+#--------------------------------------------------------------#
+sub pdatabase() {
+	print "\n";
+    if (system("./useddatabasefiles.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make useddatabasefiles.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+
+#--------------------------------------------------------------#
+#77  File Encryption								           #
+#--------------------------------------------------------------#
+sub encrypt() {
+	print "\n";
+    if (system("./ccrypt.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make ccrypt.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+#--------------------------------------------------------------#
+#78  Load Encryption Scrambling for Antivirus Evasion          #
+#--------------------------------------------------------------#
+sub scrambler() {
+	print "\n";
+	print item(),"Hint: Type bypassing in Encrypt Shellcode\n";
+    if (system("./scrambler.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make scrambler.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+#--------------------------------------------------------------#
+#79 Load Wi-Fi Takeover Module                                 #
+#--------------------------------------------------------------#
+sub wifi() {
+	print "\n";
+    if (system("./wifi-hacker.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make wifi-hacker.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+
+#--------------------------------------------------------------#
+#81 Load Routers/Load Balancer Interface                       #
+#--------------------------------------------------------------#
+sub router() {
+	print "\n";
+	print item(),"Hint: https://null-byte.wonderhowto.com/how-to/seize-control-router-with-routersploit-0177774\n";
+    if (system("./router.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make router.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
+
+
+#--------------------------------------------------------------#
+#82 Tracert Visual Machine Mapper                              #
+#--------------------------------------------------------------#
+sub mapperr() {
+	print "\n";
+    if (system("./mapper.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make mapper.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
 
 #--------------------------------------------------------------#
 #                            Enter                             #
@@ -3358,3 +3766,4 @@ sub line_d
 #--------------------------------------------------------------#
 #                          ~~The End~~                         #
 #--------------------------------------------------------------#
+

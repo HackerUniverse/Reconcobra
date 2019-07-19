@@ -132,6 +132,7 @@ GetOptions(
     "az|wifi=s" => \$wifi,
     "aaa|pptp=s" => \$pptp,
     "aab|router=s" => \$router,
+    "aac|mapperr=s" => \$mapperr,
 );
 
 if ($help) { banner();help(); }
@@ -216,6 +217,7 @@ if ($scrambler) { banner();scrambler(); }
 if ($wifi) { banner();wifi(); }
 if ($pptp) { banner();pptp(); }
 if ($router) { banner();router(); }
+if ($mapperr) { banner();mapperr(); }
 
 unless (@ARGV > 1) { banner();menu(); }
 
@@ -718,6 +720,12 @@ sub help {
     print color("bold white"),"reconcobra -aab site.com";
     print color('bold cyan'),"                 #   \n",line_d();
     
+    print color('bold cyan'),"#                   ";
+    print item('82'),"Tracert Visual Machine Mapper  ";
+    print color('bold red'),"        => ";
+    print color("bold white"),"reconcobra -aac site.com";
+    print color('bold cyan'),"                 #   \n",line_d();
+    
 }
 
 #--------------------------------------------------------------#
@@ -847,6 +855,7 @@ sub menu {
     print color('bold cyan'),"#          ";print color('reset'),item('79'),"Load Wi-Fi Takeover Module";print color('bold cyan'),"                         #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('80'),"Load PPTP Brute Force Module ";print color('bold cyan'),"                      #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('81'),"Load Routers/Load Balancer Interface ";print color('bold cyan'),"              #   \n";                
+    print color('bold cyan'),"#          ";print color('reset'),item('82'),"Tracert Visual Machine Mapper ";print color('bold cyan'),"                     #   \n";         
     print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
@@ -1555,6 +1564,14 @@ sub menu {
         print color('bold white');       
         print "\n";
         router();
+        enter();
+    }if($number eq '82'){
+        banner();
+        print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Address";print color('bold cyan'),"                                         #   \n",line_d();
+        print color('bold green'),"\n\nc0bra: _>  ";
+        print color('bold white');       
+        print "\n";
+        mapperr();
         enter();
     }if($number eq '0'){
         exit;
@@ -3685,6 +3702,20 @@ sub router() {
 	}
 }
 
+
+#--------------------------------------------------------------#
+#82 Tracert Visual Machine Mapper                              #
+#--------------------------------------------------------------#
+sub mapperr() {
+	print "\n";
+    if (system("/usr/share/ReconCobra/mapper.sh") == 0) {
+	print item(),"success!\n";
+	}
+	else {
+	print item(),"Make mapper.sh available in same folder\n";
+	print item(),"Command failed\n";
+	}
+}
 
 #--------------------------------------------------------------#
 #                            Enter                             #

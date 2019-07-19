@@ -161,6 +161,8 @@ cd ..
 chmod u+x *.sh
 cp * -r /usr/share/ReconCobra
 cp *.sh /usr/share/ReconCobra
+cat traceroute-function >> ~/.bashrc
+source ~/.bashrc
 
 if [ -d "/usr/share/ReconCobra" ] ;
 then
