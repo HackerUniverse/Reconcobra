@@ -769,7 +769,7 @@ sub menu {
     print line_u(),color('bold cyan'),"#          ";print color('reset'),item('1'),"Website Information";print color('bold cyan'),"                                 #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('2'),"Domain Whois Lookup";print color('bold cyan'),"                    	            #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('3'),"Find IP Location";print color('bold cyan'),"                                    #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('4'),"Basic Port Scanner";print color('bold cyan'),"                    	            #   \n";
+    print color('bold cyan'),"#          ";print color('reset'),item('4'),"Recommended Port Scan";print color('bold cyan'),"                    	    #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('5'),"DNS Whois Lookup";print color('bold cyan'),"                                    #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('6'),"Reverse Whois Lookup";print color('bold cyan'),"                                #   \n";
     print color('bold cyan'),"#          ";print color('reset'),item('7'),"DNS Zone Transfers Lookup";print color('bold cyan'),"                           #   \n";
@@ -1761,7 +1761,7 @@ sub Findiplocation {
 }
 
 #--------------------------------------------------------------#
-#4                        Port Scanner                         #
+#4      Recommended Port Scanner                               #
 #--------------------------------------------------------------#
 sub port {
         print line_u(),color('bold cyan'),"#        ";print color('reset'),item(),"Enter Target Website/IP";print color('bold cyan'),"                               #   \n",line_d();
@@ -1792,17 +1792,41 @@ sub port {
         ,220  => 'IMAP3'
         ,389  => 'LDAP'
         ,443  => 'SSL'
+        ,1433 => 'MSSQL'
         ,1521 => 'Oracle SQL'
         ,2049 => 'NFS'
         ,3306 => 'mySQL'
         ,3388 => 'RDP'
         ,3389 => 'RDP'
-        ,5800 => 'VNC'
+        ,3390 => 'OWA'
+        ,4125 => 'OWA'
+        ,5060 => 'VNC'
+        ,5061 => 'VNC'
+        ,5062 => 'VNC'
+        ,5063 => 'VNC'
+        ,5064 => 'VNC'
+        ,5065 => 'VNC'
+        ,5432 => 'PostgreSQL'
+        ,5804 => 'VNC'
+        ,5901 => 'VNC'
+        ,5802 => 'VNC'
+        ,5903 => 'VNC'
+        ,5905 => 'VNC'
+        ,5986 => 'VNC'
+        ,6379 => 'Redis'
+        ,7000 => 'Cassandra Apache'
+        ,7001 => 'Cassandra Apache'
+        ,7199 => 'Cassandra Apache'
         ,8000 => 'HTTP'
         ,8080 => 'HTTP'
         ,8090 => 'HTTP'
+        ,8443 => 'HTTPS'
         ,8888 => 'HTTP'
         ,9001 => 'HTTP'
+        ,9042 => 'Cassandra Apache'
+        ,27017 => 'MongoDB'
+        ,27018 => 'MongoDB'
+        ,27019 => 'MongoDB'
     );
     foreach my $p ( sort {$a<=>$b} keys( %ports ) )
     {
