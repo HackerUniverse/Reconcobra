@@ -34,10 +34,7 @@ EULA
 - Reconcobra is Foot printing software for Ultimate Information Gathering
 
 # Supported OS
-- Runs on Kali
-- Runs on Parrot OS
-- Runs on Arch Linux
-- Runs on Termux
+- Kali, Parrot OS, Black Arch, Termux, Android LED TV
 
 # Brief Introduction
 - ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.
