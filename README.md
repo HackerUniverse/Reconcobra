@@ -105,19 +105,9 @@ ReconCobra is false positive free, when there is something it will show no matte
 - Dependencies will be handled automatically
 - Third party software(s)/dependencies/modules will be handled automatically
 
-# Running in Kali
-- ReconCobra
-
-# Running in Termux
-- perl ReconCobraTermux.pl
-
-# Running in Parrot OS
-- ReconCobra or perl ReconCobra.pl
-
 # Developer
 - Haroon Awan
 - mrharoonawan@gmail.com
 
 # Co-developer & Senior Tester
-- Arun S.
-- Instagram.com/Hackeruniversee
+- Arun S
