@@ -96,6 +96,7 @@ echo -e "$red [$green+$red]$off Installing dependencies..."
 echo "y" | apt-get install xdg-utils
 echo "y" | apt-get install xrdp
 echo "y" | apt-get install cargo
+echo "y" | apt-get install x11-utils xutils-dev imagemagick libxext-dev xspy
 echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
 echo "y" | apt-get install ccrypt
