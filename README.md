@@ -34,7 +34,7 @@ EULA
 - Reconcobra is Foot printing software for Ultimate Information Gathering
 
 # Supported OS
-- Kali, Parrot OS, Black Arch, Termux, Android LED TV
+- Kali, Parrot OS, Black Arch, Termux, Android Led TV
 
 # Brief Introduction
 - ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.
@@ -80,7 +80,7 @@ ReconCobra is false positive free, when there is something it will show no matte
 - Dependencies will be handled automatically for Termux
 - Third party software(s)/dependencies/modules will be handled automatically for Termux
 
-# Android LED TV Installation
+# Android Led TV Installation
 - Install termux
 - Input usb keyboard
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
@@ -93,7 +93,7 @@ ReconCobra is false positive free, when there is something it will show no matte
 - Third party software(s)/dependencies/modules will be handled automatically for android led tv
 
 # Black Arch Installation
-- Open issues, if any error occur
+- Open issue, if error occur
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
 - chmod u+x *.sh
