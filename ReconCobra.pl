@@ -1825,7 +1825,6 @@ sub port {
         ,6061 => 'Xwindows'
         ,6062 => 'Xwindows'
         ,6063 => 'Xwindows'
-        ,5986 => 'VNC'
         ,6379 => 'Redis'
         ,7000 => 'Cassandra Apache'
         ,7001 => 'Cassandra Apache'
