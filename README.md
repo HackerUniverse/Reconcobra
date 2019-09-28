@@ -1,7 +1,7 @@
 # LICENSE
 EULA
 
-# Linux OS Interface
+# Universal Linux Interface
 - Software have 82 Options with full automation and powerful information gathering
 <div align="center">
     <img src="https://i.ibb.co/nzT6XLk/Recon-Cobra-page1.jpg" width="400px"</img> 
@@ -11,25 +11,8 @@ EULA
     <img src="https://i.ibb.co/8BDJ5RJ/Recon-Cobra-page2.jpg" width="400px"</img> 
 </div>
 
-# In-Action
-- Extracting subdomains via certificate search
-<div align="center">
-    <img src="http://oi63.tinypic.com/wcbayp.jpg" width="400px"</img> 
-</div>
-
-<div align="center">
-    <img src="http://oi64.tinypic.com/34pxfzb.jpg" width="400px"</img> 
-</div>
-
-# Termux Interface
-<div align="center">
-    <img src="http://oi66.tinypic.com/24zbvb8.jpg" width="400px"</img> 
-</div>
-
-# ReconCobra
+# Software Information: ReconCobra
 - Reconcobra is Foot printing software for Ultimate Information Gathering
-
-# Supported OS
 - Kali, Parrot OS, Black Arch, Termux, Android Led TV
 
 # Brief Introduction
