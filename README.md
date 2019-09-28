@@ -4,15 +4,11 @@ EULA
 # Linux OS Interface
 - Software have 82 Options with full automation and powerful information gathering
 <div align="center">
-    <img src="http://oi67.tinypic.com/i6a1b5.jpg" width="400px"</img> 
+    <img src="https://i.ibb.co/nzT6XLk/Recon-Cobra-page1.jpg" width="400px"</img> 
 </div>
 
 <div align="center">
-    <img src="http://oi66.tinypic.com/156wm15.jpg" width="400px"</img> 
-</div>
-
-<div align="center">
-    <img src="http://oi63.tinypic.com/2ez682q.jpg" width="400px"</img> 
+    <img src="https://i.ibb.co/8BDJ5RJ/Recon-Cobra-page2.jpg" width="400px"</img> 
 </div>
 
 # In-Action
