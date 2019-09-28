@@ -41,12 +41,12 @@ EULA
 ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
 
 
-# Youtube Video
-Fan Made:
-https://www.youtube.com/watch?v=kfykYEMS8YU
-https://www.youtube.com/watch?v=j2DsDi43jO8
-Official:
-https://www.youtube.com/watch?v=TupCmgzp6hg
+# Fan Made Youtube Video
+- https://www.youtube.com/watch?v=kfykYEMS8YU
+- https://www.youtube.com/watch?v=j2DsDi43jO8
+
+# Official Youtube Video
+- https://www.youtube.com/watch?v=TupCmgzp6hg
 
 
 
