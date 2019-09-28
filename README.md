@@ -42,9 +42,14 @@ ReconCobra is false positive free, when there is something it will show no matte
 
 
 # Youtube Video
-(https://tinyurl.com/yyj9mbz9)
+Fan Made:
+https://www.youtube.com/watch?v=kfykYEMS8YU
+https://www.youtube.com/watch?v=j2DsDi43jO8
 
-![ReconCobra Youtube Video]
+Official:
+https://www.youtube.com/watch?v=TupCmgzp6hg
+
+
 
 
 
@@ -70,7 +75,10 @@ ReconCobra is false positive free, when there is something it will show no matte
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
 - chmod u+x *.sh
+- pkg install proot
+- type: termux-chroot
 - ./Termux_Installer.sh
+- ./Termux_fixme.sh
 - Reboot your Termux
 - perl ReconCobraTermux.pl
 - Dependencies will be handled automatically for Termux
@@ -82,11 +90,14 @@ ReconCobra is false positive free, when there is something it will show no matte
 - git clone https://github.com/haroonawanofficial/ReconCobra.git
 - cd Reconcobra
 - chmod u+x *.sh
+- pkg install proot
+- type: termux-chroot
 - ./Termux_Installer.sh
-- Reboot your android led tv
+- ./Termux_fixme.sh
+- Reboot your Termux
 - perl ReconCobraTermux.pl
-- Dependencies will be handled automatically for android led tv
-- Third party software(s)/dependencies/modules will be handled automatically for android led tv
+- Dependencies will be handled automatically for Termux
+- Third party software(s)/dependencies/modules will be handled automatically for Termux
 
 # Black Arch Installation
 - Open issue, if error occur
