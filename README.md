@@ -11,7 +11,7 @@ EULA
     <img src="https://i.ibb.co/8BDJ5RJ/Recon-Cobra-page2.jpg" width="400px"</img> 
 </div>
 
-# Software Information: ReconCobra
+# ReconCobra
 - Reconcobra is Foot printing software for Ultimate Information Gathering
 - Kali, Parrot OS, Black Arch, Termux, Android Led TV
 
