@@ -100,3 +100,6 @@ https://codeby.net/threads/reconcobra.68782/#post-351377
 
 # Co-developer & Senior Tester
 - Arun S
+
+# Sponsor and Support via BTC
+- 3BuUYgEgsRuEra4GwqNVLKnDCTjLEDfptu
