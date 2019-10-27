@@ -2,7 +2,7 @@
 EULA
 
 # Universal Linux Interface
-- Software have 82 Options with full automation and powerful information gathering
+- Software have 82 Options with full automation with powerful information gathering capability
 <div align="center">
     <img src="https://i.ibb.co/nzT6XLk/Recon-Cobra-page1.jpg" width="400px"</img> 
 </div>
@@ -23,6 +23,9 @@ EULA
 - It’s first step to stop cyber criminals by securing your Infrastructural Information Gathering leakage.
 ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
 
+
+# Fan Made Tutorial
+https://codeby.net/threads/reconcobra.68782/#post-351377
 
 # Fan Made Youtube Video
 - https://www.youtube.com/watch?v=kfykYEMS8YU
