@@ -23,9 +23,10 @@ EULA
 - It’s first step to stop cyber criminals by securing your Infrastructural Information Gathering leakage.
 ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
 
-
-# Fan Made Tutorial
-https://codeby.net/threads/reconcobra.68782/#post-351377
+# Appeared
+- https://codeby.net/threads/reconcobra.68782
+- https://www.facebook.com/1470285456587684/posts/reconcobra-ultimate-recon-software-for-information-gatheringbrief-introductionre/2351883108427910/
+- https://raidforums.com/Thread-reconcobra-Ultimate-Recon-Software-for-Information-Gathering
 
 # Fan Made Youtube Video
 - https://www.youtube.com/watch?v=kfykYEMS8YU
