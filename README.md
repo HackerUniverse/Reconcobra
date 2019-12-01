@@ -27,10 +27,14 @@ ReconCobra is false positive free, when there is something it will show no matte
 - https://codeby.net/threads/reconcobra.68782
 - https://www.facebook.com/1470285456587684/posts/reconcobra-ultimate-recon-software-for-information-gatheringbrief-introductionre/2351883108427910/
 - https://raidforums.com/Thread-reconcobra-Ultimate-Recon-Software-for-Information-Gathering
+- Kelvin Security
+- National Cyber Services Security
+- Mr. Robot Z
 
 # Fan Made Youtube Video
 - https://www.youtube.com/watch?v=kfykYEMS8YU
 - https://www.youtube.com/watch?v=j2DsDi43jO8
+- https://www.facebook.com/MRRobotZalla/videos/769801130133298/?t=0
 
 # Official Youtube Video
 - https://www.youtube.com/watch?v=TupCmgzp6hg
