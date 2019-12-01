@@ -116,6 +116,8 @@ echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
 echo "y" | git clone https://github.com/chenjj/CORScanner.git
 cd CORScanner
+echo "y" | apt-get install python-pip
+echo "y" | apt-get install python3-pip
 pip install -r requirements.txt
 cd ..
 echo "y" | git clone https://github.com/stormshadow07/HackTheWorld.git
