@@ -29,7 +29,17 @@ ReconCobra is false positive free, when there is something it will show no matte
 - https://raidforums.com/Thread-reconcobra-Ultimate-Recon-Software-for-Information-Gathering
 - Kelvin Security
 - National Cyber Services Security
-- Mr. Robot Z
+- https://psdrepo.blogspot.com/2019/08/codebynet_14
+- Cyber Junkies
+- https://vaultdomain.com/reconcobrathe-ultimate-recon-software-for-information-gathering-osint/
+- rdp4you
+- Digital Union Media in OSINT category
+
+# Tweets
+- Over, 1000+ Tweets about ReconCobra
+
+# Integrations
+- Tigerman Root Software Package
 
 # Fan Made Youtube Video
 - https://www.youtube.com/watch?v=kfykYEMS8YU
