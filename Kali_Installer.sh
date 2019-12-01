@@ -126,7 +126,9 @@ chmod +x install.sh && ./install.sh
 cd ..
 echo "y" | git clone https://github.com/threat9/routersploit
 cd routersploit
-sudo easy_install pip
+sudo apt-get install python-setuptools
+pip install setuptools
+python setup.py install
 sudo pip install -r requirements.txt
 cd ..
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
