@@ -1,24 +1,45 @@
 # LICENSE
 EULA
 
-# Universal Linux Interface
+# ReconCobra
+- Reconcobra is Foot printing software for Ultimate Information Gathering
+- Kali, Parrot OS, Black Arch, Termux, Android Led TV
+
+
+# Interface
 - Software have 82 Options with full automation with powerful information gathering capability
 <div align="center">
     <img src="https://i.ibb.co/nzT6XLk/Recon-Cobra-page1.jpg" width="400px"</img> 
 </div>
 
 <div align="center">
-    <img src="https://i.ibb.co/8BDJ5RJ/Recon-Cobra-page2.jpg" width="400px"</img> 
-</div>
-
-<div align="center">
     <img src="https://codeby.net/attachments/cobra1-png.32373/" width="400px"</img> 
 </div>
 
+# In-Action
 
-# ReconCobra
-- Reconcobra is Foot printing software for Ultimate Information Gathering
-- Kali, Parrot OS, Black Arch, Termux, Android Led TV
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra2-png.32385/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra3-png.32374/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra4-png.32375/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra5-png.32376/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra2-png.32385/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra6-png.32377/" width="400px"</img> 
+</div>
+<div align="center">
+    <img src="https://codeby.net/attachments/cobra7-png.32378/" width="400px"</img> 
+</div>
+
 
 # Brief Introduction
 - ReconCobra is useful in Banks, Private Organisations and Ethical hacker personnel for legal auditing.
