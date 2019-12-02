@@ -49,6 +49,11 @@ EULA
 - It’s first step to stop cyber criminals by securing your Infrastructural Information Gathering leakage.
 ReconCobra is false positive free, when there is something it will show no matter what, if it is not, it will give blank results rather error.
 
+
+# University Course
+- ReconCobra is now a part of International Hacking Trainings for OSINT
+- Cybersecurity365.com OSINT for Reconnaissance trainings for CEH, CISSP, Security+, ITPA
+
 # Appeared
 - https://codeby.net/threads/reconcobra.68782
 - https://www.facebook.com/1470285456587684/posts/reconcobra-ultimate-recon-software-for-information-gatheringbrief-introductionre/2351883108427910/
