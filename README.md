@@ -140,7 +140,8 @@ ReconCobra is false positive free, when there is something it will show no matte
 - Third party software(s)/dependencies/modules will be handled automatically
 
 # API(s)
-- Get your own API and Secret Key from censys.io for censys python module
+- Get your own API and Secret Key from censys.io for python module - named censys.py
+- Get your own API Keys from securitytrails.com for python module - named vasl/vasl.py
 
 # Developer
 - Haroon Awan
