@@ -5,6 +5,9 @@ EULA
 - Reconcobra is Foot printing software for Ultimate Information Gathering
 - Kali, Parrot OS, Black Arch, Termux, Android Led TV
 
+# Api
+- Edit censys.py and enter your own API and Secret Key
+- Get updated Keys from censys.io
 
 # Interface
 - Software have 82 Options with full automation with powerful information gathering capability
