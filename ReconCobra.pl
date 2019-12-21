@@ -3318,8 +3318,8 @@ if ($enter =~4)  {
 #65   Find Subdomains using API Searcher                       #
 #--------------------------------------------------------------#
 sub Apisubdomain() {
-	print item(),"1 - Censys API Search\n";
-	print item(),"2 - Security Trails API Search\n";
+	print item(),"1 - Security Trails API Search\n";
+	print item(),"2 - Censys API Search\n";
 	print item(),"3 - Virustotal API Search\n";
 	print item(),"Enter API Search Engine: ";
 	chomp($enter=<STDIN>);
