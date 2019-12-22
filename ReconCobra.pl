@@ -735,128 +735,128 @@ sub banner {
     if ($^O =~ /MSWin32/) {system("mode con: cols=130 lines=40");system("cls"); }else { system("resize -s 40 130");system("clear"); }
 
 print color('bold green on_black');
-print"	▄████████##▄██████▄##▀█████████▄#####▄████████####▄████████#\n";
-print"	███####███#███####███###███####███###███####███###███####███#\n";
-print"	███####█▀##███####███###███####███###███####███###███####███#\n";
-print"	███########███####███##▄███▄▄▄██▀###▄███▄▄▄▄██▀###███####███#\n";
-print"	███########███####███#▀▀███▀▀▀██▄##▀▀███▀▀▀▀▀###▀███████████#\n";
-print"	███####█▄##███####███###███####██▄#▀███████████###███####███#\n";
-print"	███####███#███####███###███####███###███####███###███####███#\n";
-print"	████████▀###▀██████▀##▄█████████▀####███####███###███####█▀##\n";
-print"	#####################################███####███##############\n";
+print"▄████████##▄██████▄##▀█████████▄#####▄████████####▄████████\n";
+print"███####███#███####███###███####███###███####███###███####███\n";
+print"███####█▀##███####███###███####███###███####███###███####███\n";
+print"███########███####███##▄███▄▄▄██▀###▄███▄▄▄▄██▀###███####███\n";
+print"███########███####███#▀▀███▀▀▀██▄##▀▀███▀▀▀▀▀###▀███████████\n";
+print"███####█▄##███####███###███####██▄#▀███████████###███####███\n";
+print"███####███#███####███###███####███###███####███###███####███\n";
+print"████████▀###▀██████▀##▄█████████▀####███####███###███####█▀\n";
+print"#####################################███####███############\n";
 print color('reset');
-print color('bold red on_black'),"	Info          ";print color('reset'),"";print color('bold white'),"      version 1.9a, [Coded By: Haroon Awan]\n";
-print color('reset');
-
-print color('bold white on_bright_red'),"	Mail          ";print color('reset'),"";print color('bright_blue'),"      mrharoonawan\@gmail.com\n";
+print color('bold red on_black'),"Info          ";print color('reset'),"";print color('bold white'),"      version 1.9a, [Coded By: Haroon Awan]\n";
 print color('reset');
 
-print color('bold red on_blue'),"	Homepage      ";print color('reset'),"";print color('bold red'),"      http://www.instagram.com/\Hackeruniversee\n";
+print color('bold white on_bright_red'),"Mail          ";print color('reset'),"";print color('bright_blue'),"      mrharoonawan\@gmail.com\n";
 print color('reset');
 
-print color('bold yellow on_red'),"	Web           ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
+print color('bold red on_blue'),"Homepage      ";print color('reset'),"";print color('bold red'),"      http://www.instagram.com/\Hackeruniversee\n";
 print color('reset');
 
-print color('bold green on_black'),"	Facebook      ";print color('reset'),"";print color('bold green'),"      fb.com/officialharoonawan\n";
+print color('bold yellow on_red'),"Web           ";print color('reset'),"";print color('bold yellow'),"      http://www.mubassirkamdar.com\n";
 print color('reset');
 
-print color('bold white on_blue'),"	Instagram     ";print color('reset'),"";print color('bold white'),"      http://www.instagram.com/\hackerfromscratch\n";
+print color('bold green on_black'),"Facebook      ";print color('reset'),"";print color('bold green'),"      fb.com/officialharoonawan\n";
+print color('reset');
+
+print color('bold white on_blue'),"Instagram     ";print color('reset'),"";print color('bold white'),"      http://www.instagram.com/\hackerfromscratch\n";
 print color('reset');
 
                                                                      
 
 
-print color('bold cyan'),"\n    #---------------------------------------------------------# \n"; 
-print color('bold cyan'),"    # ";print color('bold magenta'),"   Ultimate Reconnaissance for Information Gathering  "; print color('bold cyan'),"  # \n"; 
-print color('bold cyan'),"    #---------------------------------------------------------# \n"; 
+print color('bold cyan'),"\n  #---------------------------------------------------------# \n"; 
+print color('bold cyan'),"  # ";print color('bold magenta'),"   Ultimate Reconnaissance for Information Gathering  "; print color('bold cyan'),"  # \n"; 
+print color('bold cyan'),"  #---------------------------------------------------------# \n"; 
 }
 #--------------------------------------------------------------#
 #                             Menu                             #
 #--------------------------------------------------------------#
 sub menu {
-    print line_u(),color('bold cyan'),"#          ";print color('reset'),item('1'),"Website Information";print color('bold cyan'),"                                 #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('2'),"Domain Whois Lookup";print color('bold cyan'),"                    	            #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('3'),"Find IP Location";print color('bold cyan'),"                                    #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('4'),"Recommended Port Scan";print color('bold cyan'),"                    	    #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('5'),"DNS Whois Lookup";print color('bold cyan'),"                                    #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('6'),"Reverse Whois Lookup";print color('bold cyan'),"                                #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('7'),"DNS Zone Transfers Lookup";print color('bold cyan'),"                           #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('8'),"Reverse IP Lookup";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('9'),"Forward IP Lookup";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('10'),"Reverse DNS Lookup";print color('bold cyan'),"                                 #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('11'),"Forward DNS Lookup";print color('bold cyan'),"                                 #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('12'),"Shared DNS Lookup";print color('bold cyan'),"                                  #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('13'),"Technology lookup";print color('bold cyan'),"                                  #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('14'),"Website Recon";print color('bold cyan'),"                                      #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('15'),"Metadata Crawler";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('16'),"Metadata Googler";print color('bold cyan'),"                                   #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('17'),"Subdomain Scanner using Search Engines";print color('bold cyan'),"             #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('18'),"Subdomain Takeover Scanner using file";print color('bold cyan'),"              #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('19'),"Brute Subdomains using nmap";print color('bold cyan'),"                        #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('20'),"Brute DNS Subdomains";print color('bold cyan'),"                               #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('21'),"Find Configuration Errors on Target using google";print color('bold cyan'),"   #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('22'),"Find ASN";print color('bold cyan'),"                                           #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('23'),"Find Netblocks";print color('bold cyan'),"                                     #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('24'),"Capture Screenshots";print color('bold cyan'),"                                #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('25'),"Find Nearest Servers to Victim";print color('bold cyan'),"                     #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('26'),"Sweep Netblocks & Resolve";print color('bold cyan'),"                          #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('27'),"Load DNS Hacking Suite Panthera";print color('bold cyan'),"                    #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('28'),"Find Emails and Names";print color('bold cyan'),"                              #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('29'),"Find Contact Information";print color('bold cyan'),"                           #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('30'),"Common Nmap Port Scan";print color('bold cyan'),"                              #   \n";                    
-    print color('bold cyan'),"#          ";print color('reset'),item('31'),"Ping Hop and Firewalk";print color('bold cyan'),"                              #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('32'),"Find Internal Networks & Sweep";print color('bold cyan'),"                     #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('33'),"Decoy Scan & Generate Metasploit Data";print color('bold cyan'),"              #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('34'),"Find SSL Bugs & Information";print color('bold cyan'),"                        #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('35'),"Extract Users via FTP";print color('bold cyan'),"                              #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('36'),"Extract Users via POP3";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('37'),"Extract Users via IMAP";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('38'),"Extract Users via SMTP";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('39'),"Extract Users via Form";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('40'),"Extract Full Possible Information via SNMP";print color('bold cyan'),"         #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('41'),"Extract Possible Information from Certificates";print color('bold cyan'),"     #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('42'),"Find Victim HTTPS Leaked Data ";print color('bold cyan'),"                     #   \n";                                                                
-    print color('bold cyan'),"#          ";print color('reset'),item('43'),"Find Users via sitemap";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('44'),"Find Directories from robots.txt";print color('bold cyan'),"                   #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('45'),"Find all accounts by user";print color('bold cyan'),"                          #   \n";    
-    print color('bold cyan'),"#          ";print color('reset'),item('46'),"Find all accounts by email";print color('bold cyan'),"                         #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('47'),"Find all tags by account";print color('bold cyan'),"                           #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('48'),"DNS History";print color('bold cyan'),"                                        #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('49'),"Passive DNS Search";print color('bold cyan'),"                                 #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('50'),"Use Common Crawl on Target";print color('bold cyan'),"                         #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('51'),"Hostname to IP Resolver using Search Engines";print color('bold cyan'),"       #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('52'),"Reverse NS Lookup";print color('bold cyan'),"                                  #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('53'),"Forward NS Lookup";print color('bold cyan'),"                                  #   \n";
-    print color('bold cyan'),"#          ";print color('reset'),item('54'),"Win - Extract Netbios Information";print color('bold cyan'),"                  #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('55'),"Win - Contact & Extract Null Shares IPC\$";print color('bold cyan'),"           #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('56'),"Win - Gather Full Information via Netbios";print color('bold cyan'),"          #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('57'),"Win - Connect to Open Netbios";print color('bold cyan'),"                      #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('58'),"Invisible Port Scanner";print color('bold cyan'),"                             #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('59'),"Bypass Cloud Flare";print color('bold cyan'),"                                 #   \n";                                
-    print color('bold cyan'),"#          ";print color('reset'),item('60'),"DNS Cached Records";print color('bold cyan'),"                                 #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('61'),"Bypass Content Management System Waf Firewall";print color('bold cyan'),"      #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"                                          #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('63'),"Master Domain Subdomain Subnet Scanner";print color('bold cyan'),"             #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('64'),"Domain Certificate Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('67'),"Endpoint Extraction ";print color('bold cyan'),"                               #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('68'),"Check misconfigured Cross Origin Resource Sharing ";print color('bold cyan')," #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('69'),"Wayback Web Downloader ";print color('bold cyan'),"                            #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('70'),"JS Find Link & Analyse ( local and remote ) ";print color('bold cyan'),"       #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('71'),"Extract Geo-Cordinates for Tracking ";print color('bold cyan'),"               #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('72'),"Mirror Complete Website ";print color('bold cyan'),"                           #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('73'),"Brute Forcer Module";print color('bold cyan'),"                                #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('74'),"Databases and Connections Port Scan using Mascan";print color('bold cyan'),"   #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('75'),"Set Daisy Chain";print color('bold cyan'),"                                    #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('76'),"Search PHPinfo and Database Log via Search Engines";print color('bold cyan')," #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('77'),"Load Encrypt/Decrypt Module ";print color('bold cyan'),"                       #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('78'),"Load Encryption Scrambling for Antivirus Evasion";print color('bold cyan'),"   #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('79'),"Load Wi-Fi Takeover Module";print color('bold cyan'),"                         #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('80'),"Load PPTP Brute Force Module ";print color('bold cyan'),"                      #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('81'),"Load Routers/Load Balancer Interface ";print color('bold cyan'),"              #   \n";                
-    print color('bold cyan'),"#          ";print color('reset'),item('82'),"Tracert Visual Machine Mapper ";print color('bold cyan'),"                     #   \n";         
-    print color('bold cyan'),"#          ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
+    print line_u(),color('bold cyan'),"#    ";print color('reset'),item('1'),"Website Information";print color('bold cyan'),"                                 #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('2'),"Domain Whois Lookup";print color('bold cyan'),"                    	      #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('3'),"Find IP Location";print color('bold cyan'),"                                    #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('4'),"Recommended Port Scan";print color('bold cyan'),"                    	      #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('5'),"DNS Whois Lookup";print color('bold cyan'),"                                    #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('6'),"Reverse Whois Lookup";print color('bold cyan'),"                                #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('7'),"DNS Zone Transfers Lookup";print color('bold cyan'),"                           #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('8'),"Reverse IP Lookup";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('9'),"Forward IP Lookup";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('10'),"Reverse DNS Lookup";print color('bold cyan'),"                                 #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('11'),"Forward DNS Lookup";print color('bold cyan'),"                                 #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('12'),"Shared DNS Lookup";print color('bold cyan'),"                                  #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('13'),"Technology lookup";print color('bold cyan'),"                                  #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('14'),"Website Recon";print color('bold cyan'),"                                      #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('15'),"Metadata Crawler";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('16'),"Metadata Googler";print color('bold cyan'),"                                   #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('17'),"Subdomain Scanner using Search Engines";print color('bold cyan'),"             #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('18'),"Subdomain Takeover Scanner using file";print color('bold cyan'),"              #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('19'),"Brute Subdomains using nmap";print color('bold cyan'),"                        #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('20'),"Brute DNS Subdomains";print color('bold cyan'),"                               #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('21'),"Find Configuration Errors on Target using google";print color('bold cyan'),"   #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('22'),"Find ASN";print color('bold cyan'),"                                           #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('23'),"Find Netblocks";print color('bold cyan'),"                                     #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('24'),"Capture Screenshots";print color('bold cyan'),"                                #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('25'),"Find Nearest Servers to Victim";print color('bold cyan'),"                     #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('26'),"Sweep Netblocks & Resolve";print color('bold cyan'),"                          #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('27'),"Load DNS Hacking Suite Panthera";print color('bold cyan'),"                    #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('28'),"Find Emails and Names";print color('bold cyan'),"                              #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('29'),"Find Contact Information";print color('bold cyan'),"                           #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('30'),"Common Nmap Port Scan";print color('bold cyan'),"                              #   \n";                    
+    print color('bold cyan'),"#    ";print color('reset'),item('31'),"Ping Hop and Firewalk";print color('bold cyan'),"                              #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('32'),"Find Internal Networks & Sweep";print color('bold cyan'),"                     #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('33'),"Decoy Scan & Generate Metasploit Data";print color('bold cyan'),"              #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('34'),"Find SSL Bugs & Information";print color('bold cyan'),"                        #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('35'),"Extract Users via FTP";print color('bold cyan'),"                              #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('36'),"Extract Users via POP3";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('37'),"Extract Users via IMAP";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('38'),"Extract Users via SMTP";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('39'),"Extract Users via Form";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('40'),"Extract Full Possible Information via SNMP";print color('bold cyan'),"         #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('41'),"Extract Possible Information from Certificates";print color('bold cyan'),"     #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('42'),"Find Victim HTTPS Leaked Data ";print color('bold cyan'),"                     #   \n";                                                                
+    print color('bold cyan'),"#    ";print color('reset'),item('43'),"Find Users via sitemap";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('44'),"Find Directories from robots.txt";print color('bold cyan'),"                   #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('45'),"Find all accounts by user";print color('bold cyan'),"                          #   \n";    
+    print color('bold cyan'),"#    ";print color('reset'),item('46'),"Find all accounts by email";print color('bold cyan'),"                         #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('47'),"Find all tags by account";print color('bold cyan'),"                           #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('48'),"DNS History";print color('bold cyan'),"                                        #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('49'),"Passive DNS Search";print color('bold cyan'),"                                 #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('50'),"Use Common Crawl on Target";print color('bold cyan'),"                         #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('51'),"Hostname to IP Resolver using Search Engines";print color('bold cyan'),"       #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('52'),"Reverse NS Lookup";print color('bold cyan'),"                                  #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('53'),"Forward NS Lookup";print color('bold cyan'),"                                  #   \n";
+    print color('bold cyan'),"#    ";print color('reset'),item('54'),"Win - Extract Netbios Information";print color('bold cyan'),"                  #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('55'),"Win - Contact & Extract Null Shares IPC\$";print color('bold cyan'),"           #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('56'),"Win - Gather Full Information via Netbios";print color('bold cyan'),"          #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('57'),"Win - Connect to Open Netbios";print color('bold cyan'),"                      #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('58'),"Invisible Port Scanner";print color('bold cyan'),"                             #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('59'),"Bypass Cloud Flare";print color('bold cyan'),"                                 #   \n";                                
+    print color('bold cyan'),"#    ";print color('reset'),item('60'),"DNS Cached Records";print color('bold cyan'),"                                 #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('61'),"Bypass Content Management System Waf Firewall";print color('bold cyan'),"      #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('62'),"Shared NS";print color('bold cyan'),"                                          #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('63'),"Master Domain Subdomain Subnet Scanner";print color('bold cyan'),"             #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('64'),"Domain Certificate Subdomain Enumeration";print color('bold cyan'),"           #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('65'),"Find Subdomains using API Searcher ";print color('bold cyan'),"                #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('66'),"Find Cname Information of netblock ";print color('bold cyan'),"                #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('67'),"Endpoint Extraction ";print color('bold cyan'),"                               #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('68'),"Check misconfigured Cross Origin Resource Sharing ";print color('bold cyan')," #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('69'),"Wayback Web Downloader ";print color('bold cyan'),"                            #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('70'),"JS Find Link & Analyse ( local and remote ) ";print color('bold cyan'),"       #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('71'),"Extract Geo-Cordinates for Tracking ";print color('bold cyan'),"               #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('72'),"Mirror Complete Website ";print color('bold cyan'),"                           #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('73'),"Brute Forcer Module";print color('bold cyan'),"                                #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('74'),"Databases and Connections Port Scan using Mascan";print color('bold cyan'),"   #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('75'),"Set Daisy Chain";print color('bold cyan'),"                                    #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('76'),"Search PHPinfo and Database Log via Search Engines";print color('bold cyan')," #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('77'),"Load Encrypt/Decrypt Module ";print color('bold cyan'),"                       #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('78'),"Load Encryption Scrambling for Antivirus Evasion";print color('bold cyan'),"   #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('79'),"Load Wi-Fi Takeover Module";print color('bold cyan'),"                         #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('80'),"Load PPTP Brute Force Module ";print color('bold cyan'),"                      #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('81'),"Load Routers/Load Balancer Interface ";print color('bold cyan'),"              #   \n";                
+    print color('bold cyan'),"#    ";print color('reset'),item('82'),"Tracert Visual Machine Mapper ";print color('bold cyan'),"                     #   \n";         
+    print color('bold cyan'),"#    ";print color('reset'),item('0'),"Exit";print color('bold cyan'),"                                                #   \n",line_d();
     print color('bold green'),"\n\nC0bra: _>  ";
     print color('reset');
     chomp($number=<STDIN>);
@@ -3639,16 +3639,16 @@ sub item
 sub line_u
 {
     return 
-    color('bold cyan'),"#-------------------------------------------------------------------# \n",
-    "#                                                                   # \n";
+    color('bold cyan'),"#-------------------------------------------------------------# \n",
+    "#                                                             # \n";
     
 }
 
 sub line_d
 {
     return
-    color('bold cyan'),"#                                                                   # \n",
-    color('bold cyan'),"#-------------------------------------------------------------------# ",
+    color('bold cyan'),"#                                                             # \n",
+    color('bold cyan'),"#-------------------------------------------------------------# ",
     "                                                                    ";
 }
 #--------------------------------------------------------------#
