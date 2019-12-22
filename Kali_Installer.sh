@@ -105,6 +105,7 @@ echo "y" | apt-get install curl
 echo "y" | apt-get install nfs-common
 echo "y" | apt-get install smbclient
 echo "y" | apt-get install gem
+gem install whois
 gem install wayback_machine_downloader
 echo "y" | apt-get install perl-LWP-Protocol-https
 echo "y" | git clone https://github.com/xroche/httrack.git --recurse
