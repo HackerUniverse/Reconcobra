@@ -165,6 +165,8 @@ cd ..
 chmod u+x *.sh
 cp * -r /usr/share/ReconCobra
 cp *.sh /usr/share/ReconCobra
+chmod -R 777 /usr/share/ReconCobra
+chmod -R 777 ./
 cat traceroute-function >> ~/.bashrc
 source ~/.bashrc
 
