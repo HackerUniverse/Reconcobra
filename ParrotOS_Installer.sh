@@ -121,6 +121,9 @@ cd CORScanner
 pip install -r requirements.txt
 cd ..
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
+echo "y" | git clone https://github.com/m4ll0k/Infoga.git
+cd infoga
+python2 setup.py install
 echo "y" | git clone https://github.com/exiftool/exiftool.git
 echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
