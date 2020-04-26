@@ -9,8 +9,7 @@ OKORANGE='\033[93m'
 DELAY=1
 RESET='\e[0m'
 
-echo "Enter Target"
-read Target
+read -p "[+] Enter Target: " Target
 # LOAD WEBSITE IN A WEB BROSER
-$BROWSER "https://www.social-searcher.com/google-social-search/?q=$Target&fb=on&tw=on&gp=on&in=on&li=on&pi=on" 2> /dev/null
+$BROWSER "https://www.google.com/search?q=site:$Target+sql+%7C+phpinfo" 2> /dev/null
 

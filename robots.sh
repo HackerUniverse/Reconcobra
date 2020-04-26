@@ -1,4 +1,5 @@
 #!/bin/bash
+TARGET="$1"
 BROWSER="xdg-open"
 VER="1.9"
 OKBLUE='\033[94m'
@@ -8,5 +9,8 @@ OKORANGE='\033[93m'
 DELAY=1
 RESET='\e[0m'
 
+echo "Enter Target"
+read Target
 # LOAD WEBSITE IN A WEB BROSER
-$BROWSER "http://commoncrawl.org/2019/04/april-2019-crawl-archive-now-available/" 2> /dev/null
+$BROWSER "https://www.google.com/search?q=site:$Target+ext:txt+robots.txt" 2> /dev/null
+

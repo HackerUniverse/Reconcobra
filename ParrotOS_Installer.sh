@@ -48,15 +48,21 @@ function linux() {
 echo -e "$red [$green+$red]$off Installing Perl ...";
 sudo apt-get install -y perl
 echo -e "$red [$green+$red]$off Installing JSON Module ...";
-cpan install JSON
+cpan -fi  JSON
 echo -e "$red [$green+$red]$off Installing Extra Perl Modules ...";
-echo "y" | cpan install WWW::Mechanize
-echo "y" | cpan install use HTML::TokeParser
-echo "y" | cpan install Term::ANSIColor
-echo "y" | cpan install Mojo::DOM
-echo "y" | cpan install Data::Dumper
-echo "y" | cpan install Win32::Console::ANSI
-echo "y" | cpan install HTML::TableExtract
+echo "y" | cpan -fi  WWW::Mechanize
+echo "y" | cpan -fi  use HTML::TokeParser
+echo "y" | cpan -fi  Term::ANSIColor
+echo "y" | cpan -fi  Mojo::DOM
+echo "y" | cpan -fi  Data::Dumper
+echo "y" | cpan -fi  Win32::Console::ANSI
+echo "y" | cpan -fi  HTML::TableExtract
+echo "y" | cpan -fi  Data::Validate::Domain
+echo "y" | cpan -fi  LWP::Protocol::https
+echo "y" | cpan -fi  Mozilla::CA
+echo "y" | cpan -fi  Bundle::LWP
+
+
 echo -e "$red [$green+$red]$off Checking directories..."
 if [ -d "/usr/share/ReconCobra" ]; then
     echo -e "$red [$green+$red]$off A Directory ReconCobra Was Found! Do You Want To Replace It? [Y/n]:" ;
@@ -68,7 +74,7 @@ if [ -d "/usr/share/ReconCobra" ]; then
       sudo rm "/usr/local/bin/ReconCobra"
 
 else
-echo -e "$red [$green✘$red]$off If You Want To Install You Must Remove Previous Installations";
+echo -e "$red [$green+$red]$off If You Want To Install You Must Remove Previous Installations";
         exit
     fi
 fi 
@@ -86,19 +92,63 @@ perl /usr/share/ReconCobra/ReconCobra.pl" '${1+"$@"}' > "ReconCobra";
     sudo cp "ReconCobra" "/usr/local/bin/"
     rm "ReconCobra";
 
+echo -e "$red [$green+$red]$off Installing dependencies..."
 echo "y" | apt-get install xdg-utils
+echo "y" | apt-get install xrdp
+echo "y" | apt-get install cargo
+echo "y" | apt-get install x11-utils xutils-dev imagemagick libxext-dev xspy
+echo "y" | apt-get install python-yaml
 echo "y" | apt-get install hping3
+echo "y" | apt-get install ccrypt
+echo "y" | apt-get install python2.7
 echo "y" | apt-get install python3
+echo "y" | apt-get install golang
+echo "y" | apt-get install curl
+echo "y" | apt-get install nfs-common
+echo "y" | apt-get install smbclient
+echo "y" | apt-get install gem
+gem install whois
+gem install wayback_machine_downloader
+echo "y" | apt-get install perl-LWP-Protocol-https
+echo "y" | git clone https://github.com/xroche/httrack.git --recurse
+cd httrack
+./configure --prefix=$HOME/usr && make -j8 && make install
+cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/cobra.git
 echo "y" | git clone https://github.com/haroonawanofficial/maahro.git
 echo "y" | git clone https://github.com/haroonawanofficial/ShaheenX.git
+echo "y" | git clone https://github.com/chenjj/CORScanner.git
+cd CORScanner
+pip install -r requirements.txt
+cd ..
 echo "y" | git clone https://github.com/yassineaboukir/Asnlookup.git
+echo "y" | git clone https://github.com/m4ll0k/Infoga.git
+cd infoga
+python2 setup.py install
 echo "y" | git clone https://github.com/exiftool/exiftool.git
+echo "y" | git clone https://github.com/GerbenJavado/LinkFinder.git
 echo "y" | git clone https://github.com/sensepost/BiLE-suite.git
+echo "y" | git clone https://github.com/stormshadow07/HackTheWorld.git
+cd HackTheWorld
+chmod +x install.sh && ./install.sh
+cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/vasl.git
+echo "y" | git clone https://github.com/threat9/routersploit
+cd routersploit
+sudo easy_install pip
+sudo pip install -r requirements.txt
+cd ..
 echo "y" | git clone https://github.com/haroonawanofficial/panthera.git
 echo "y" | git clone https://github.com/naqushab/SearchEngineScrapy.git
+echo "y" | git clone https://github.com/heycam/json-describe
+cd json-describe
+cargo build
+cd ..
 echo "y" | apt-get install nmap
+pip install jsbeautifier
+pip install argparse
+pip install requests
+pip install request
 cd SearchEngineScrapy
 pip install -r requirements.txt
 sudo virtualenv --python="2" env
@@ -108,7 +158,15 @@ echo "y" | git clone https://github.com/FortyNorthSecurity/EyeWitness.git
 cd EyeWitness/setup
 chmod u+x setup.sh
 ./setup.sh
-
+cd ..
+cd ..
+chmod u+x *.sh
+cp * -r /usr/share/ReconCobra
+cp *.sh /usr/share/ReconCobra
+chmod -R 777 /usr/share/ReconCobra
+chmod -R 777 ./
+cat traceroute-function >> ~/.bashrc
+source ~/.bashrc
 
 if [ -d "/usr/share/ReconCobra" ] ;
 then
@@ -116,7 +174,7 @@ echo -e "$red [$green+$red]$off ReconCobra Successfully Installed, Starting";
 sleep 2;
 ReconCobra
 else
-echo -e "$red [$green✘$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
+echo -e "$red [$green+$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi 
 }
@@ -126,6 +184,6 @@ banner
 echo -e "$red [$green+$red]$off ReconCobra Will Be Installed In Your System";
 linux
 else
-echo -e "$red [$green✘$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
+echo -e "$red [$green+$red]$off ReconCobra Cannot Be Installed. Trying using Portable Edition !";
     exit
 fi

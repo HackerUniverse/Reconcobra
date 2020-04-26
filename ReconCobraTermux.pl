@@ -733,7 +733,6 @@ sub help {
 #--------------------------------------------------------------#
 sub banner {
     if ($^O =~ /MSWin32/) {system("mode con: cols=130 lines=40");system("cls"); }else { system("resize -s 40 130");system("clear"); }
-
 print color('bold green on_black');
 print"▄████████##▄██████▄##▀█████████▄#####▄████████####▄████████\n";
 print"███####███#███####███###███####███###███####███###███####███\n";
@@ -1583,15 +1582,25 @@ sub menu {
 }
 
 #--------------------------------------------------------------#
+
 #1                    Website information                      #
+
 #--------------------------------------------------------------#
+
 sub Websiteinformation {
+
 if (system("whois $info") == 0) {
+
 	print "Success!\n";
+
 	}
+
 	else {
+
 	print "[~] Did you forget to upgrade ReconCobra? \n[~] Command failed\n";
+
 	}
+
 }
 
 #--------------------------------------------------------------#
@@ -1719,7 +1728,9 @@ sub port {
         ,5064 => 'VNC'
         ,5065 => 'VNC'
         ,5432 => 'PostgreSQL'
-        ,5802 => 'VNC'
+        ,5800 => 'VNC'
+	,5801 => 'VNC'
+	,5802 => 'VNC'
         ,5804 => 'VNC'
         ,5900 => 'VNC'
         ,5901 => 'VNC'
@@ -2015,7 +2026,7 @@ $p = HTML::TokeParser->new(\$response);
 #15                       Metadata Crawler                     #
 #--------------------------------------------------------------#
 sub Metadatacrawler {
-if (system("/usr/share/ReconCobra/coba.sh") == 0) {
+if (system("./coba.sh") == 0) {
 	print "Success!\n";
 	}
 	else {
@@ -2027,7 +2038,7 @@ if (system("/usr/share/ReconCobra/coba.sh") == 0) {
 #16                        Metadata Googler                    #
 #--------------------------------------------------------------#
 sub Metadatagoogler {
-if (system("/usr/share/ReconCobra/cobb.sh") == 0) {
+if (system("./cobb.sh") == 0) {
 	print "Success! \n";
 	print "Downlaoded meta files are stored in downloaded_meta_files directory \n";
 	print "Results are stored in metacrawler_results directory \n";
@@ -2047,7 +2058,7 @@ sub Subdomainscanner {
 	print item(),"Enter Search Engine: ";
 	chomp($enter=<STDIN>);
 if ($enter =~1) {
-	if (system("/usr/share/ReconCobra/ShaheenX.sh") == 0) {
+	if (system("./ShaheenX.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2055,7 +2066,7 @@ if ($enter =~1) {
 }
 }
 if ($enter =~2) {
-	if (system("/usr/share/ReconCobra/sub1.sh") == 0) {
+	if (system("./sub1.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2069,7 +2080,7 @@ if ($enter =~2) {
 #18                       Subdomain Takeover Scanner           #
 #--------------------------------------------------------------#
 sub Subdomaintakeover {
-if (system("/usr/share/ReconCobra/takeoverscanner.sh") == 0) {
+if (system("./takeoverscanner.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2083,7 +2094,7 @@ if (system("/usr/share/ReconCobra/takeoverscanner.sh") == 0) {
 #19                         Brute Subdomains                   #
 #--------------------------------------------------------------#
 sub Brutedomain {
-if (system("/usr/share/ReconCobra/maahro.sh") == 0) {
+if (system("./maahro.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2111,7 +2122,7 @@ if (system("perl panthera/dnsbrute.pl") == 0) {
 #21                       Configuration Errors                 #
 #--------------------------------------------------------------#
 sub Configerrors {
-if (system("/usr/share/ReconCobra/browser.sh") == 0) {
+if (system("./browser.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2123,7 +2134,7 @@ if (system("/usr/share/ReconCobra/browser.sh") == 0) {
 #22                       Find ASN                             #
 #--------------------------------------------------------------#
 sub Findasn {
-if (system("/usr/share/ReconCobra/findasn.sh") == 0) {
+if (system("./findasn.sh") == 0) {
 	print "success, file written input.txt!\n";
 	}
 	else {
@@ -2135,7 +2146,7 @@ if (system("/usr/share/ReconCobra/findasn.sh") == 0) {
 #23                       Find Netblocks                       #
 #--------------------------------------------------------------#
 sub Findnetblock {
-if (system("/usr/share/ReconCobra/netblock.sh") == 0) {
+if (system("./netblock.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2149,7 +2160,7 @@ if (system("/usr/share/ReconCobra/netblock.sh") == 0) {
 #24                       Capture Screenshots                  #
 #--------------------------------------------------------------#
 sub Capturescreenshots {
-if (system("/usr/share/ReconCobra/screenshot.sh") == 0) {
+if (system("./screenshot.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2162,7 +2173,7 @@ if (system("/usr/share/ReconCobra/screenshot.sh") == 0) {
 #25                       Find Nearest Servers to Target       #
 #--------------------------------------------------------------#
 sub nearestvictim {
-if (system("/usr/share/ReconCobra/bile.sh") == 0) {
+if (system("./bile.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2176,7 +2187,7 @@ if (system("/usr/share/ReconCobra/bile.sh") == 0) {
 #26                       Sweep Netblocks and Resolve          #
 #--------------------------------------------------------------#
 sub Sweepandnetblock() {
-if (system("/usr/share/ReconCobra/resolve.sh") == 0) {
+if (system("./resolve.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2205,7 +2216,7 @@ if (system("perl $file") == 0) {
 #28                        Find Emails and Names               #
 #--------------------------------------------------------------#
 sub Findemailsandnames {
-if (system("/usr/share/ReconCobra/email.sh") == 0) {
+if (system("./email.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2219,7 +2230,7 @@ if (system("/usr/share/ReconCobra/email.sh") == 0) {
 #29                       Find Contact Information             #
 #--------------------------------------------------------------#
 sub Findcontactinformation {
-if (system("/usr/share/ReconCobra/theharvester.sh") == 0) {
+if (system("./theharvester.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2232,7 +2243,7 @@ if (system("/usr/share/ReconCobra/theharvester.sh") == 0) {
 #30                       Common Nmap Port Scan                #
 #--------------------------------------------------------------#
 sub Commonnmapportscan {
-if (system("/usr/share/ReconCobra/nmapcommonscan.sh") == 0) {
+if (system("./nmapcommonscan.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2247,19 +2258,19 @@ if (system("/usr/share/ReconCobra/nmapcommonscan.sh") == 0) {
 sub Pinghopandinternalnetworks {
 print "\n",item(),"Peform three types of Firewalk scan";
 print "\n",item(),"Results will be saved in Firewalk_results\n";
-if (system("/usr/share/ReconCobra/firewalka.sh") == 0) {
+if (system("./firewalka.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
 	print item(),"Command failed\n";
 	}
-if (system("/usr/share/ReconCobra/firewalkb.sh") == 0) {
+if (system("./firewalkb.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
 	print item(),"Command failed\n";
 	}
-if (system("/usr/share/ReconCobra/firewalkc.sh") == 0) {
+if (system("./firewalkc.sh") == 0) {
 	print item(),"Command failed\n";
 	}
 	else {
@@ -2301,7 +2312,7 @@ $p = HTML::TokeParser->new(\$response);
 #33 Decoy Scan & Generate Metasploit Data                      #
 #--------------------------------------------------------------#
 sub Decoayscanandgeneratemetasploitdata {
-if (system("/usr/share/ReconCobra/resolve.sh") == 0) {
+if (system("./resolve.sh") == 0) {
 	print "\n",item(),"success!\n";
 	}
 	else {
@@ -2336,7 +2347,7 @@ $p = HTML::TokeParser->new(\$response);
 }
 print "\n\n\n";
 print item(), "Starting SSL protocol check\n\n";
-if (system("/usr/share/ReconCobra/ssl.sh $fsbi") == 0) {
+if (system("./ssl.sh $fsbi") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2350,7 +2361,7 @@ if (system("/usr/share/ReconCobra/ssl.sh $fsbi") == 0) {
 #35             Extract Users via FTP                          #
 #--------------------------------------------------------------#
 sub Extractusersfromftp {
-if (system("/usr/share/ReconCobra/ftp.sh") == 0) {
+if (system("./ftp.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2363,7 +2374,7 @@ if (system("/usr/share/ReconCobra/ftp.sh") == 0) {
 # 36         Extract Users via POP3                            #
 #--------------------------------------------------------------#
 sub Extractusersfrompop3 {
-if (system("/usr/share/ReconCobra/pop3.sh") == 0) {
+if (system("./pop3.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2376,7 +2387,7 @@ if (system("/usr/share/ReconCobra/pop3.sh") == 0) {
 # 37         Extract Users via IMAP                            #
 #--------------------------------------------------------------#
 sub Extractusersfromimap {
-   if (system("/usr/share/ReconCobra/imap.sh") == 0) {
+   if (system("./imap.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2390,7 +2401,7 @@ sub Extractusersfromimap {
 # 38         Extract Users via SMTP                            #
 #--------------------------------------------------------------#
 sub Extractusersfromsmtp {
-     if (system("/usr/share/ReconCobra/smtp.sh") == 0) {
+     if (system("./smtp.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2404,7 +2415,7 @@ sub Extractusersfromsmtp {
 #39          Extract Users via Form                            #
 #--------------------------------------------------------------#
 sub Extractusersfromform {
-     if (system("/usr/share/ReconCobra/http-form.sh") == 0) {
+     if (system("./http-form.sh") == 0) {
 	print item(), "success!\n";
 					}
 	else 	{
@@ -2439,7 +2450,7 @@ sub Extractfullpossibleinformationfromsnmp {
 	print "\n", item(),"Enter Option: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
-     if (system("/usr/share/ReconCobra/snmp1.sh") == 0) {
+     if (system("./snmp1.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2448,7 +2459,7 @@ sub Extractfullpossibleinformationfromsnmp {
 	}
 			}
 	if ($enter =~2) {
-     if (system("/usr/share/ReconCobra/snmp2.sh") == 0) {
+     if (system("./snmp2.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2457,7 +2468,7 @@ sub Extractfullpossibleinformationfromsnmp {
 	}
 			}
 	if ($enter =~3) {
-     if (system("/usr/share/ReconCobra/snmp3.sh") == 0) {
+     if (system("./snmp3.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2466,7 +2477,7 @@ sub Extractfullpossibleinformationfromsnmp {
 	}
 			}
 	if ($enter =~4) {
-     if (system("/usr/share/ReconCobra/snmp4.sh") == 0) {
+     if (system("./snmp4.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2480,7 +2491,7 @@ sub Extractfullpossibleinformationfromsnmp {
 #41  Extract Possible Information from Certificates            #
 #--------------------------------------------------------------#
 sub Extractpossibleinformationfromcertificaties {
-     if (system("/usr/share/ReconCobra/crtstart.sh ") == 0) {
+     if (system("./crtstart.sh ") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2493,7 +2504,7 @@ sub Extractpossibleinformationfromcertificaties {
 #42 Find Victim HTTPS Leaked Data                              #
 #--------------------------------------------------------------#
 sub Findvictimhttpsleakeddata  {
-     if (system("/usr/share/ReconCobra/inteli.sh") == 0) {
+     if (system("./inteli.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2508,7 +2519,7 @@ sub Findvictimhttpsleakeddata  {
 #43Find Users via sitemap                                      #
 #--------------------------------------------------------------#
 sub  Findusersfromsitemap {
-     if (system("/usr/share/ReconCobra/sitemap.sh") == 0) {
+     if (system("./sitemap.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2522,7 +2533,7 @@ sub  Findusersfromsitemap {
 #44Find Directories from robots.txt                            #
 #--------------------------------------------------------------#
 sub  Finddirectoriesfromrobots {
-     if (system("/usr/share/ReconCobra/robots.sh") == 0) {
+     if (system("./robots.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2563,7 +2574,7 @@ print "\n", item(), $_->url() for @foundLinks;
 #46 Facebook Intelligence Gathering email                      #
 #--------------------------------------------------------------#
 sub Findallaccountsfromemail  {
-     if (system("/usr/share/ReconCobra/sss.sh") == 0) {
+     if (system("./sss.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2576,7 +2587,7 @@ sub Findallaccountsfromemail  {
 #47 Find all tags by account                                   #
 #--------------------------------------------------------------#
 sub Findalltagsfromaccount {
-     if (system("/usr/share/ReconCobra/fb.sh") == 0) {
+     if (system("./fb.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2720,7 +2731,7 @@ $p = HTML::TokeParser->new(\$response);
 #49 Passive DNS Search                                         #
 #--------------------------------------------------------------#
 sub Passivednssearch {
-     if (system("/usr/share/ReconCobra/passive.sh") == 0) {
+     if (system("./passive.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2738,7 +2749,7 @@ sub Usecommoncrawlontarget {
 	print "\n", item(),"Enter Option: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
-     if (system("/usr/share/ReconCobra/common1.sh") == 0) {
+     if (system("./common1.sh") == 0) {
 	print item(), "success!\n";
 	print item(), "Results are saved in json-results folder\n";
 	}
@@ -2748,7 +2759,7 @@ sub Usecommoncrawlontarget {
 	}
 	}
 	if ($enter =~2) {
-     if (system("/usr/share/ReconCobra/common2.sh") == 0) {
+     if (system("./common2.sh") == 0) {
 	print item(), "success!\n";
 	print item(), "Results are saved in json-results folder\n";
 	}
@@ -2767,7 +2778,7 @@ sub hostnametoip {
 	print item(), "Look for required provider with hostnametoip.txt format\n";
 	print item(), "Loading\n";
 	sleep(7);
-     if (system("/usr/share/ReconCobra/hostnametoip.sh") == 0) {
+     if (system("./hostnametoip.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -2880,14 +2891,14 @@ print qq /
     1E: Browser Service Elections
     /;
 
-     if (system("/usr/share/ReconCobra/smbclient1.sh") == 0) {
+     if (system("./smbclient1.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
 	print item(),"Command failed\n";
 	}
 
-     if (system("/usr/share/ReconCobra/enumdom.sh") == 0) {
+     if (system("./enumdom.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Write down hexadecimals then query, e.g., queryuser 0x3e8!\n";
 	}
@@ -2902,7 +2913,7 @@ print qq /
 #56 Win - Gather Full Information via Netbios                  #
 #--------------------------------------------------------------#
 sub Wingfivnetbios {
-     if (system("/usr/share/ReconCobra/smbvul.sh") == 0) {
+     if (system("./smbvul.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -2923,13 +2934,13 @@ sub Wingfivnetbios {
 #57  Win - Connect to Open Netbios                              #
 #--------------------------------------------------------------#
 sub Winctonetbios {
-     if (system("/usr/share/ReconCobra/smbclient.sh") == 0) {
+     if (system("./smbclient.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
 	print item(),"Command failed\n";
 	}
-     if (system("/usr/share/ReconCobra/smbclient2.sh ") == 0) {
+     if (system("./smbclient2.sh ") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3085,7 +3096,7 @@ sub convert
 }
 
 print item(),"IP for binary conversion is: "; 
-system("/usr/share/ReconCobra/ip2bin.sh");
+system("./ip2bin.sh");
 
 
 }
@@ -3127,7 +3138,7 @@ sub MDSSE {
 	print item(),"Enter Option: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
-     if (system("/usr/share/ReconCobra/mdsse.sh") == 0) {
+     if (system("./mdsse.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -3136,7 +3147,7 @@ sub MDSSE {
 	}
 	}
 if ($enter =~2)  {
-     if (system("/usr/share/ReconCobra/nmapasnlookup.sh") == 0) {
+     if (system("./nmapasnlookup.sh") == 0) {
 	print item(), "success!\n";
 	}
 	else {
@@ -3159,7 +3170,7 @@ sub DomainCertificate() {
 	print item(),"Enter Certificate Search Engine: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
-     if (system("/usr/share/ReconCobra/crtstart.sh") == 0) {
+     if (system("./crtstart.sh") == 0) {
 	print item(),"success! Find results at crt folder\n";
 	}
 	else {
@@ -3169,7 +3180,7 @@ sub DomainCertificate() {
 	}
 }
 if ($enter =~2)  {
-     if (system("/usr/share/ReconCobra/googlegct.sh") == 0) {
+     if (system("./googlegct.sh") == 0) {
 	print item(),"success! Find results at crt folder\n";
 	}
 	else {
@@ -3180,7 +3191,7 @@ if ($enter =~2)  {
 }
 
 if ($enter =~3)  {
-     if (system("/usr/share/ReconCobra/certspot.sh") == 0) {
+     if (system("./certspot.sh") == 0) {
 	print item(),"success! Find results at crt folder\n";
 	}
 	else {
@@ -3191,7 +3202,7 @@ if ($enter =~3)  {
 }
 
 if ($enter =~4)  {
-     if (system("/usr/share/ReconCobra/entrust.sh") == 0) {
+     if (system("./entrust.sh") == 0) {
 	print item(),"success! Find results at crt folder\n";
 	}
 	else {
@@ -3206,13 +3217,13 @@ if ($enter =~4)  {
 #65   Find Subdomains using API Searcher                       #
 #--------------------------------------------------------------#
 sub Apisubdomain() {
-	print item(),"1 - Security Trails API Search\n";
-	print item(),"2 - Censys API Search\n";
+	print item(),"1 - Censys API Search\n";
+	print item(),"2 - Security Trails API Search\n";
 	print item(),"3 - Virustotal API Search\n";
 	print item(),"Enter API Search Engine: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
-     if (system("/usr/share/ReconCobra/vasl.sh") == 0) {
+     if (system("./vasl.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3220,7 +3231,7 @@ sub Apisubdomain() {
 	}
 }
 if ($enter =~2)  {
-     if (system("/usr/share/ReconCobra/censys.sh") == 0) {
+     if (system("./censys.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3228,7 +3239,7 @@ if ($enter =~2)  {
 	}
 }
 if ($enter =~3)  {
-     if (system("/usr/share/ReconCobra/virustotal.sh") == 0) {
+     if (system("./virustotal.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3245,7 +3256,7 @@ sub Cname() {
 	print item(),"Enter desired subnet/ip/net-block or cidr for cname information\n";
 	print item(),"Loading\n";
 	sleep(5);
-     if (system("/usr/share/ReconCobra/cname.sh") == 0) {
+     if (system("./cname.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3259,7 +3270,7 @@ sub Cname() {
 #67   Extraction Endpoints		                       #
 #--------------------------------------------------------------#
 sub endpoints() {
-     if (system("/usr/share/ReconCobra/endpoint_extraction.sh") == 0) {
+     if (system("./endpoint_extraction.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in endpoint_extraction_results folder\n";
 	}
@@ -3274,7 +3285,7 @@ sub endpoints() {
 #68   Testing CORS			                       #
 #--------------------------------------------------------------#
 sub cors() {
-     if (system("/usr/share/ReconCobra/cors.sh") == 0) {
+     if (system("./cors.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3289,7 +3300,7 @@ sub cors() {
 #--------------------------------------------------------------#
 sub wayback() {
 	print item(),"Catuion: Downloading URL may take a while\n";
-     if (system("/usr/share/ReconCobra/wayback.sh") == 0) {
+     if (system("./wayback.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in wayback_results folder\n";
 	}
@@ -3311,7 +3322,7 @@ sub linkfinder() {
 	print item(),"Enter Option: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
-     if (system("/usr/share/ReconCobra/linkfinder1.sh") == 0) {
+     if (system("./linkfinder1.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in js_linkfinder at results folder\n";
 	}
@@ -3321,7 +3332,7 @@ sub linkfinder() {
 	}
 	}
 	if ($enter =~2) {
-     if (system("/usr/share/ReconCobra/linkfinder2.sh") == 0) {
+     if (system("./linkfinder2.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in LinkFinder folder\n";
 	}
@@ -3331,7 +3342,7 @@ sub linkfinder() {
 	}
 	}
 	if ($enter =~3) {
-     if (system("/usr/share/ReconCobra/linkfinder3.sh") == 0) {
+     if (system("./linkfinder3.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in LinkFinder folder\n";
 	}
@@ -3357,7 +3368,7 @@ sub geotagging() {
 	print item(),"Enter Option: ";
 	chomp($enter=<STDIN>);
 	if ($enter =~1) {
-     if (system("/usr/share/ReconCobra/cobc.sh") == 0) {
+     if (system("./cobc.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in geotagging_crawler folder\n";
 	}
@@ -3367,7 +3378,7 @@ sub geotagging() {
 	}
 }
 	if ($enter =~2) {
-     if (system("/usr/share/ReconCobra/cobd.sh") == 0) {
+     if (system("./cobd.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in geotagging_crawler folder\n";
 	}
@@ -3377,7 +3388,7 @@ sub geotagging() {
 	}
 }
 	if ($enter =~3) {
-     if (system("/usr/share/ReconCobra/cobe.sh") == 0) {
+     if (system("./cobe.sh") == 0) {
 	print item(),"success!\n";
 	print item(),"Results are saved in geotagging_crawler folder\n";
 	}
@@ -3394,7 +3405,7 @@ sub geotagging() {
 #--------------------------------------------------------------#
 sub mireer() {
 	print item(),"Caution: Find mirror_websites inside mirror_website folder\n";
-     if (system("/usr/share/ReconCobra/mireer.sh") == 0) {
+     if (system("./mireer.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3417,7 +3428,7 @@ sub bruter() {
 	print item(),"Enter Search Engine: ";
 	chomp($enter=<STDIN>);
 if ($enter =~1) {
-     if (system("/usr/share/ReconCobra/bruter.sh") == 0) {
+     if (system("./bruter.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3426,7 +3437,7 @@ if ($enter =~1) {
 	}
 }
 if ($enter =~2) {
-	if (system("/usr/share/ReconCobra/xwin.sh") == 0) {
+	if (system("./xwin.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3435,7 +3446,7 @@ if ($enter =~2) {
 	}
 }
 	if ($enter =~3) {
-		if (system("/usr/share/ReconCobra/xwin1.sh") == 0) {
+		if (system("./xwin1.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3444,7 +3455,7 @@ if ($enter =~2) {
 	}
 }
 		if ($enter =~4) {
-			if (system("/usr/share/ReconCobra/xwin2.sh") == 0) {
+			if (system("./xwin2.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3453,7 +3464,7 @@ if ($enter =~2) {
 	}
 }
 		if ($enter =~5) {
-			if (system("/usr/share/ReconCobra/xwin3.sh") == 0) {
+			if (system("./xwin3.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3462,7 +3473,7 @@ if ($enter =~2) {
 	}
 }
 		if ($enter =~6) {
-			if (system("/usr/share/ReconCobra/xwin4.sh") == 0) {
+			if (system("./xwin4.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3480,7 +3491,7 @@ if ($enter =~2) {
 sub mascan() {
 	print "\n";
 	print item(),"Result will be saved in mascanresults.txt\n\n";
-     if (system("/usr/share/ReconCobra/mascan.sh") == 0) {
+     if (system("./mascan.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3521,7 +3532,7 @@ if ($response =~ /error/) {
 #--------------------------------------------------------------#
 sub pdatabase() {
 	print "\n";
-    if (system("/usr/share/ReconCobra/useddatabasefiles.sh") == 0) {
+    if (system("./useddatabasefiles.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3536,7 +3547,7 @@ sub pdatabase() {
 #--------------------------------------------------------------#
 sub encrypt() {
 	print "\n";
-    if (system("/usr/share/ReconCobra/ccrypt.sh") == 0) {
+    if (system("./ccrypt.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3551,7 +3562,7 @@ sub encrypt() {
 sub scrambler() {
 	print "\n";
 	print item(),"Hint: Type bypassing in Encrypt Shellcode\n";
-    if (system("/usr/share/ReconCobra/scrambler.sh") == 0) {
+    if (system("./scrambler.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3565,7 +3576,7 @@ sub scrambler() {
 #--------------------------------------------------------------#
 sub wifi() {
 	print "\n";
-    if (system("/usr/share/ReconCobra/wifi-hacker.sh") == 0) {
+    if (system("./wifi-hacker.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3581,7 +3592,7 @@ sub wifi() {
 sub router() {
 	print "\n";
 	print item(),"Hint: https://null-byte.wonderhowto.com/how-to/seize-control-router-with-routersploit-0177774\n";
-    if (system("/usr/share/ReconCobra/router.sh") == 0) {
+    if (system("./router.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3596,7 +3607,7 @@ sub router() {
 #--------------------------------------------------------------#
 sub mapperr() {
 	print "\n";
-    if (system("/usr/share/ReconCobra/mapper.sh") == 0) {
+    if (system("./mapper.sh") == 0) {
 	print item(),"success!\n";
 	}
 	else {
@@ -3639,16 +3650,16 @@ sub item
 sub line_u
 {
     return 
-    color('bold cyan'),"#-------------------------------------------------------------# \n",
-    "#                                                             # \n";
+    color('bold cyan'),"#-------------------------------------------------------------------# \n",
+    "#                                                                   # \n";
     
 }
 
 sub line_d
 {
     return
-    color('bold cyan'),"#                                                             # \n",
-    color('bold cyan'),"#-------------------------------------------------------------# ",
+    color('bold cyan'),"#                                                                   # \n",
+    color('bold cyan'),"#-------------------------------------------------------------------# ",
     "                                                                    ";
 }
 #--------------------------------------------------------------#

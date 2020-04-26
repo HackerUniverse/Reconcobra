@@ -1,5 +1,4 @@
 #!/bin/bash
-#apt-get install xdg-utils
 TARGET="$1"
 BROWSER="xdg-open"
 VER="1.9"
@@ -9,11 +8,6 @@ OKGREEN='\033[92m'
 OKORANGE='\033[93m'
 DELAY=1
 RESET='\e[0m'
-
-if [ -z $TARGET ]; then
-	echo -e "$OKORANGE + -- --=[Usage: passive.sh <domain>$RESET"
-	exit
-fi
 
 # LOAD WEBSITE IN A WEB BROSER
 $BROWSER "https://passivedns.mnemonic.no" 2> /dev/null
