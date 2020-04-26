@@ -1,4 +1,4 @@
-# LICENSE
+## LICENSE
 EULA
 
 # ReconCobra
