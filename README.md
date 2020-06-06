@@ -21,6 +21,5 @@ EULA
 - perl reconcobra.pl
 
 # Mail
-- mrharoonawan@gmail.com
-- Haroon Awan
+- @hackeruniversee IG
 
