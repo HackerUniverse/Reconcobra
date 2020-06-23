@@ -9,8 +9,10 @@ OKORANGE='\033[93m'
 DELAY=1
 RESET='\e[0m'
 
-if [ -z $TARGET ]; then
-	echo -e "$OKORANGE + -- --=[Usage: browser.sh <domain>$RESET"
+echo "[ + ] Enter Url" 
+read URL
+if [ -z $URL ]; then
+	echo -e "$OKORANGE + browser.sh URL $RESET"
 	exit
 fi
 
@@ -27,3 +29,4 @@ $BROWSER "https://www.google.com/search?q=site:$TARGET+ext:log" 2> /dev/null
 $BROWSER "https://www.google.com/search?q=site:$TARGET+ext:bkf+|+ext:bkp+|+ext:bak+|+ext:old+|+ext:backup" 2> /dev/null
 $BROWSER "https://www.google.com/search?q=site:$TARGET+intext:%22sql+syntax+near%22+|+intext:%22syntax+error+has+occurred%22+|+intext:%22incorrect+syntax+near%22+|+intext:%22unexpected+end+of+SQL+command%22+|+intext:%22Warning:+mysql_connect()%22+|+intext:%22Warning:+mysql_query()%22+|+intext:%22Warning:+pg_connect()%22" 2> /dev/null
 $BROWSER "https://www.google.com/search?q=site:$TARGET+ext:doc+|+ext:docx+|+ext:odt+|+ext:pdf+|+ext:rtf+|+ext:sxw+|+ext:psw+|+ext:ppt+|+ext:pptx+|+ext:pps+|+ext:csv" 2> /dev/null
+$BROWSER "https://www.google.com/search?q=site:$TARGET+ext:php+|+ext:asp+|+ext:aspx+|+ext:jspf+|+ext:jspa+|+ext:txt+|+ext:swf" 2> /dev/null
